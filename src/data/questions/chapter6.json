@@ -1,0 +1,496 @@
+{
+  "chapter": 6,
+  "title": "Windows Configuration and Management",
+  "questions": [
+    {
+      "id": "ch6-q1",
+      "question": "What is the primary purpose of the Windows Control Panel?",
+      "options": [
+        "Browse the internet",
+        "Modify and control hardware and software settings",
+        "Play games",
+        "Edit documents"
+      ],
+      "correct": 1,
+      "explanation": "Control Panel is used to make modifications and control tasks for almost every aspect of the hardware and software including OS functions.",
+      "difficulty": "easy",
+      "tags": ["Control Panel", "configuration", "Windows"]
+    },
+    {
+      "id": "ch6-q2",
+      "question": "What information does Device Manager provide?",
+      "options": [
+        "List of installed programs",
+        "List of all devices and their status",
+        "Internet browsing history",
+        "User passwords"
+      ],
+      "correct": 1,
+      "explanation": "Device Manager provides a list of all the devices installed in the computer and their statuses, making it a useful troubleshooting tool.",
+      "difficulty": "easy",
+      "tags": ["Device Manager", "hardware", "troubleshooting"]
+    },
+    {
+      "id": "ch6-q3",
+      "question": "What is the purpose of User Account Control (UAC)?",
+      "options": [
+        "Create user accounts",
+        "Monitor programs and alert on system-threatening actions",
+        "Control internet access",
+        "Manage passwords"
+      ],
+      "correct": 1,
+      "explanation": "UAC monitors programs and issues alerts when applications attempt to make changes that could threaten system security.",
+      "difficulty": "medium",
+      "tags": ["UAC", "security", "Windows"]
+    },
+    {
+      "id": "ch6-q4",
+      "question": "Which tool allows management of multiple aspects of local and remote computers?",
+      "options": [
+        "Device Manager",
+        "Computer Management",
+        "Control Panel",
+        "Task Manager"
+      ],
+      "correct": 1,
+      "explanation": "Computer Management allows for the management of many aspects of the computer and remote computers in one comprehensive tool.",
+      "difficulty": "medium",
+      "tags": ["Computer Management", "administration", "tools"]
+    },
+    {
+      "id": "ch6-q5",
+      "question": "What command opens System Configuration utility?",
+      "options": [
+        "sysconfig",
+        "msconfig",
+        "config",
+        "systemconfig"
+      ],
+      "correct": 1,
+      "explanation": "The msconfig command opens System Configuration, used to identify problems preventing Windows from starting correctly.",
+      "difficulty": "easy",
+      "tags": ["msconfig", "commands", "troubleshooting"]
+    },
+    {
+      "id": "ch6-q6",
+      "question": "Where can you configure all network operations in Windows?",
+      "options": [
+        "Device Manager",
+        "System Properties",
+        "Network and Sharing Center",
+        "Windows Update"
+      ],
+      "correct": 2,
+      "explanation": "Network and Sharing Center allows administrators to configure and review nearly all network operations in a Windows computer.",
+      "difficulty": "easy",
+      "tags": ["networking", "configuration", "Windows"]
+    },
+    {
+      "id": "ch6-q7",
+      "question": "What does Event Viewer log?",
+      "options": [
+        "User passwords",
+        "Application, security, and system events",
+        "Internet browsing history",
+        "File modifications"
+      ],
+      "correct": 1,
+      "explanation": "Event Viewer logs the history of application, security, and system events, which are crucial for troubleshooting.",
+      "difficulty": "medium",
+      "tags": ["Event Viewer", "logs", "troubleshooting"]
+    },
+    {
+      "id": "ch6-q8",
+      "question": "Which tool manages Windows services?",
+      "options": [
+        "Service Manager",
+        "Services console",
+        "Task Manager only",
+        "Device Manager"
+      ],
+      "correct": 1,
+      "explanation": "The Services console (services.msc) allows management of all services on local and remote computers.",
+      "difficulty": "medium",
+      "tags": ["Services", "Windows", "management"]
+    },
+    {
+      "id": "ch6-q9",
+      "question": "What does Windows Firewall do?",
+      "options": [
+        "Speeds up internet",
+        "Prevents malicious attacks by controlling network traffic",
+        "Manages user accounts",
+        "Updates Windows"
+      ],
+      "correct": 1,
+      "explanation": "Windows Firewall prevents malicious attacks by permitting and denying traffic to and from the PC based on security rules.",
+      "difficulty": "easy",
+      "tags": ["firewall", "security", "networking"]
+    },
+    {
+      "id": "ch6-q10",
+      "question": "What is the purpose of Credential Manager?",
+      "options": [
+        "Create new user accounts",
+        "Manage passwords for websites and Windows applications",
+        "Monitor system performance",
+        "Configure network settings"
+      ],
+      "correct": 1,
+      "explanation": "Credential Manager helps manage passwords that are used for websites and Windows applications in a secure location.",
+      "difficulty": "medium",
+      "tags": ["Credential Manager", "passwords", "security"]
+    },
+    {
+      "id": "ch6-q11",
+      "question": "What does Performance Monitor display?",
+      "options": [
+        "Internet speed only",
+        "Real-time info about processors, disks, memory, and network use",
+        "User login times",
+        "Installed programs list"
+      ],
+      "correct": 1,
+      "explanation": "Performance Monitor displays real-time information about processor usage, disk activity, memory consumption, and network utilization.",
+      "difficulty": "medium",
+      "tags": ["Performance Monitor", "monitoring", "system"]
+    },
+    {
+      "id": "ch6-q12",
+      "question": "What is Action Center in Windows 7/8?",
+      "options": [
+        "Game center",
+        "Centralized location for security and maintenance alerts",
+        "Software store",
+        "Update manager"
+      ],
+      "correct": 1,
+      "explanation": "Action Center is a centralized location showing alerts divided into security and maintenance sections.",
+      "difficulty": "easy",
+      "tags": ["Action Center", "alerts", "Windows"]
+    },
+    {
+      "id": "ch6-q13",
+      "question": "Which Administrative Tool schedules automated tasks?",
+      "options": [
+        "Event Viewer",
+        "Task Scheduler",
+        "Services",
+        "Performance Monitor"
+      ],
+      "correct": 1,
+      "explanation": "Task Scheduler allows you to schedule programs and scripts to run automatically at specific times or events.",
+      "difficulty": "easy",
+      "tags": ["Task Scheduler", "automation", "tools"]
+    },
+    {
+      "id": "ch6-q14",
+      "question": "What tabs are available in Internet Options?",
+      "options": [
+        "File, Edit, View, Tools",
+        "General, Security, Privacy, Content, Connections, Programs, Advanced",
+        "Home, Work, Public, Domain",
+        "Basic, Standard, Advanced, Expert"
+      ],
+      "correct": 1,
+      "explanation": "Internet Options contains tabs for General, Security, Privacy, Content, Connections, Programs, and Advanced settings.",
+      "difficulty": "medium",
+      "tags": ["Internet Options", "configuration", "browser"]
+    },
+    {
+      "id": "ch6-q15",
+      "question": "What permission level allows full control including changing permissions?",
+      "options": [
+        "Read",
+        "Write",
+        "Modify",
+        "Full Control"
+      ],
+      "correct": 3,
+      "explanation": "Full Control permission allows all actions including reading, writing, deleting, and changing permissions on files and folders.",
+      "difficulty": "easy",
+      "tags": ["permissions", "security", "NTFS"]
+    },
+    {
+      "id": "ch6-q16",
+      "question": "Which tool shows shared folders on the system?",
+      "options": [
+        "File Explorer",
+        "Shared Folders snap-in",
+        "Network Browser",
+        "Folder Options"
+      ],
+      "correct": 1,
+      "explanation": "The Shared Folders snap-in in Computer Management shows all shared folders, sessions, and open files.",
+      "difficulty": "medium",
+      "tags": ["sharing", "folders", "management"]
+    },
+    {
+      "id": "ch6-q17",
+      "question": "What is the default UAC setting in Windows?",
+      "options": [
+        "Always notify",
+        "Notify only when programs try to make changes",
+        "Never notify",
+        "Disabled"
+      ],
+      "correct": 1,
+      "explanation": "The default UAC setting notifies users only when programs try to make changes to the computer.",
+      "difficulty": "medium",
+      "tags": ["UAC", "security", "defaults"]
+    },
+    {
+      "id": "ch6-q18",
+      "question": "Which account type has unlimited access to the system?",
+      "options": [
+        "Guest",
+        "Standard User",
+        "Administrator",
+        "Power User"
+      ],
+      "correct": 2,
+      "explanation": "Administrator accounts have unlimited access to the system and can make any changes to the computer.",
+      "difficulty": "easy",
+      "tags": ["accounts", "Administrator", "permissions"]
+    },
+    {
+      "id": "ch6-q19",
+      "question": "What Windows feature helps parents control children's computer usage?",
+      "options": [
+        "User Account Control",
+        "Parental Controls/Family Safety",
+        "Windows Defender",
+        "Group Policy"
+      ],
+      "correct": 1,
+      "explanation": "Parental Controls (Family Safety) allows parents to set time limits, control access to games and programs, and monitor activity.",
+      "difficulty": "easy",
+      "tags": ["parental controls", "family safety", "accounts"]
+    },
+    {
+      "id": "ch6-q20",
+      "question": "Where are local user accounts stored in Windows?",
+      "options": [
+        "Active Directory",
+        "SAM database",
+        "Registry only",
+        "System32 folder"
+      ],
+      "correct": 1,
+      "explanation": "Local user accounts are stored in the Security Accounts Manager (SAM) database on the local computer.",
+      "difficulty": "hard",
+      "tags": ["SAM", "accounts", "database"]
+    },
+    {
+      "id": "ch6-q21",
+      "question": "Which Windows component manages automatic updates?",
+      "options": [
+        "Update Manager",
+        "Windows Update",
+        "System Updater",
+        "Patch Manager"
+      ],
+      "correct": 1,
+      "explanation": "Windows Update manages the download and installation of updates, patches, and service packs from Microsoft.",
+      "difficulty": "easy",
+      "tags": ["Windows Update", "updates", "maintenance"]
+    },
+    {
+      "id": "ch6-q22",
+      "question": "What is the purpose of System Restore?",
+      "options": [
+        "Backup all user files",
+        "Restore system files to a previous state",
+        "Reinstall Windows",
+        "Recover deleted files"
+      ],
+      "correct": 1,
+      "explanation": "System Restore creates restore points that allow reverting system files and settings to a previous state without affecting personal files.",
+      "difficulty": "easy",
+      "tags": ["System Restore", "recovery", "backup"]
+    },
+    {
+      "id": "ch6-q23",
+      "question": "Which network location type has the highest security settings?",
+      "options": [
+        "Home",
+        "Work",
+        "Public",
+        "Domain"
+      ],
+      "correct": 2,
+      "explanation": "Public network location has the highest security settings with network discovery and file sharing disabled by default.",
+      "difficulty": "medium",
+      "tags": ["network locations", "security", "settings"]
+    },
+    {
+      "id": "ch6-q24",
+      "question": "What PowerShell command lists all services?",
+      "options": [
+        "List-Services",
+        "Get-Service",
+        "Show-Services",
+        "Display-Services"
+      ],
+      "correct": 1,
+      "explanation": "Get-Service is the PowerShell cmdlet that lists all services on the system with their current status.",
+      "difficulty": "medium",
+      "tags": ["PowerShell", "services", "commands"]
+    },
+    {
+      "id": "ch6-q25",
+      "question": "Which folder contains user profiles in Windows?",
+      "options": [
+        "C:\\Profiles",
+        "C:\\Users",
+        "C:\\Documents and Settings",
+        "C:\\UserProfiles"
+      ],
+      "correct": 1,
+      "explanation": "C:\\Users contains all user profiles in modern Windows versions (Vista and later).",
+      "difficulty": "easy",
+      "tags": ["user profiles", "folders", "Windows"]
+    },
+    {
+      "id": "ch6-q26",
+      "question": "What Windows feature encrypts individual files and folders?",
+      "options": [
+        "BitLocker",
+        "EFS (Encrypting File System)",
+        "Windows Defender",
+        "Secure Boot"
+      ],
+      "correct": 1,
+      "explanation": "EFS (Encrypting File System) encrypts individual files and folders on NTFS drives, while BitLocker encrypts entire drives.",
+      "difficulty": "medium",
+      "tags": ["EFS", "encryption", "security"]
+    },
+    {
+      "id": "ch6-q27",
+      "question": "Which tool manages disk partitions in Windows?",
+      "options": [
+        "Partition Manager",
+        "Disk Management",
+        "Drive Manager",
+        "Volume Control"
+      ],
+      "correct": 1,
+      "explanation": "Disk Management (diskmgmt.msc) is the built-in Windows tool for creating, deleting, and managing disk partitions.",
+      "difficulty": "easy",
+      "tags": ["Disk Management", "partitions", "storage"]
+    },
+    {
+      "id": "ch6-q28",
+      "question": "What is the maximum password length in Windows?",
+      "options": [
+        "14 characters",
+        "32 characters",
+        "127 characters",
+        "256 characters"
+      ],
+      "correct": 2,
+      "explanation": "Windows supports passwords up to 127 characters in length for maximum security.",
+      "difficulty": "hard",
+      "tags": ["passwords", "security", "limits"]
+    },
+    {
+      "id": "ch6-q29",
+      "question": "Which service must be running for file and printer sharing?",
+      "options": [
+        "Workstation",
+        "Server",
+        "Network Location Awareness",
+        "DHCP Client"
+      ],
+      "correct": 1,
+      "explanation": "The Server service must be running to share files and printers on a Windows computer.",
+      "difficulty": "hard",
+      "tags": ["services", "sharing", "networking"]
+    },
+    {
+      "id": "ch6-q30",
+      "question": "What is the purpose of Windows Mobility Center?",
+      "options": [
+        "Manage mobile devices",
+        "Configure laptop-specific settings",
+        "Update mobile apps",
+        "Connect to cellular networks"
+      ],
+      "correct": 1,
+      "explanation": "Windows Mobility Center provides quick access to laptop-specific settings like brightness, volume, battery, and presentation mode.",
+      "difficulty": "medium",
+      "tags": ["Mobility Center", "laptops", "settings"]
+    },
+    {
+      "id": "ch6-q31",
+      "question": "Which policy editor is available in Professional editions?",
+      "options": [
+        "Policy Manager",
+        "Local Group Policy Editor",
+        "Security Editor",
+        "System Policy"
+      ],
+      "correct": 1,
+      "explanation": "Local Group Policy Editor (gpedit.msc) is available in Professional, Enterprise, and Education editions for advanced system configuration.",
+      "difficulty": "medium",
+      "tags": ["Group Policy", "editions", "configuration"]
+    },
+    {
+      "id": "ch6-q32",
+      "question": "What happens to a user's files when their account is deleted?",
+      "options": [
+        "Automatically deleted",
+        "Moved to Recycle Bin",
+        "Prompt to keep or delete",
+        "Always preserved"
+      ],
+      "correct": 2,
+      "explanation": "Windows prompts whether to keep or delete the user's files when deleting a user account.",
+      "difficulty": "medium",
+      "tags": ["user accounts", "deletion", "files"]
+    },
+    {
+      "id": "ch6-q33",
+      "question": "Which Windows feature provides single sign-on in corporate networks?",
+      "options": [
+        "Workgroup",
+        "HomeGroup",
+        "Domain",
+        "Public folder"
+      ],
+      "correct": 2,
+      "explanation": "Domain membership provides single sign-on capabilities and centralized management in corporate networks.",
+      "difficulty": "medium",
+      "tags": ["domain", "authentication", "corporate"]
+    },
+    {
+      "id": "ch6-q34",
+      "question": "What tool monitors real-time system resource usage?",
+      "options": [
+        "System Monitor",
+        "Resource Monitor",
+        "Usage Monitor",
+        "Activity Monitor"
+      ],
+      "correct": 1,
+      "explanation": "Resource Monitor provides real-time monitoring of CPU, memory, disk, and network usage with detailed process information.",
+      "difficulty": "easy",
+      "tags": ["Resource Monitor", "performance", "monitoring"]
+    },
+    {
+      "id": "ch6-q35",
+      "question": "Which Windows component manages driver updates?",
+      "options": [
+        "Driver Manager",
+        "Device Manager and Windows Update",
+        "Control Panel only",
+        "System Configuration"
+      ],
+      "correct": 1,
+      "explanation": "Device Manager allows manual driver updates while Windows Update can automatically download and install driver updates.",
+      "difficulty": "easy",
+      "tags": ["drivers", "updates", "Device Manager"]
+    }
+  ]
+}

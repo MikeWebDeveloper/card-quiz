@@ -1,0 +1,496 @@
+{
+  "chapter": 5,
+  "title": "Windows Installation",
+  "questions": [
+    {
+      "id": "ch5-q1",
+      "question": "What are two functions of an operating system?",
+      "options": [
+        "Managing hardware and providing user interface",
+        "Creating documents and browsing internet",
+        "Installing games and playing media",
+        "Designing graphics and editing photos"
+      ],
+      "correct": 0,
+      "explanation": "The operating system manages hardware resources and provides a user interface for interacting with the computer. It acts as an intermediary between users and hardware.",
+      "difficulty": "easy",
+      "tags": ["OS", "functions", "basics"]
+    },
+    {
+      "id": "ch5-q2",
+      "question": "Where should a technician look to determine if hardware is compatible with Windows?",
+      "options": [
+        "Device manufacturer website",
+        "Windows Hardware Compatibility List (HCL)",
+        "Computer BIOS",
+        "Internet forums"
+      ],
+      "correct": 1,
+      "explanation": "The Windows Hardware Compatibility List (HCL) contains all hardware that has been tested and certified to work with specific Windows versions.",
+      "difficulty": "medium",
+      "tags": ["compatibility", "hardware", "Windows"]
+    },
+    {
+      "id": "ch5-q3",
+      "question": "What must be considered when determining which Windows version to install?",
+      "options": [
+        "Computer color and design",
+        "Hardware specifications and requirements",
+        "Monitor brand",
+        "Keyboard layout"
+      ],
+      "correct": 1,
+      "explanation": "Hardware specifications (CPU, RAM, storage) must meet or exceed the minimum requirements for the Windows version being installed.",
+      "difficulty": "easy",
+      "tags": ["installation", "requirements", "Windows"]
+    },
+    {
+      "id": "ch5-q4",
+      "question": "What are two features of an active partition using MBR?",
+      "options": [
+        "Must be primary partition and used to boot the system",
+        "Can be extended partition and stores user files",
+        "Must be logical partition and contains page file",
+        "Can be any partition type and stores drivers"
+      ],
+      "correct": 0,
+      "explanation": "The active partition must be a primary partition and contains the boot files that the system uses to start the operating system.",
+      "difficulty": "medium",
+      "tags": ["MBR", "partitions", "boot"]
+    },
+    {
+      "id": "ch5-q5",
+      "question": "How do you boot Windows 7 into Safe Mode?",
+      "options": [
+        "Press F2 during startup",
+        "Press and hold F8 during boot",
+        "Press Delete key repeatedly",
+        "Press F12 and select Safe Mode"
+      ],
+      "correct": 1,
+      "explanation": "Press and hold F8 during system boot to access the Advanced Boot Options menu, then select Safe Mode.",
+      "difficulty": "easy",
+      "tags": ["Safe Mode", "boot", "troubleshooting"]
+    },
+    {
+      "id": "ch5-q6",
+      "question": "What technology does RAID 5 use?",
+      "options": [
+        "Mirroring only",
+        "Striping only",
+        "Striping with parity",
+        "Spanning"
+      ],
+      "correct": 2,
+      "explanation": "RAID 5 uses striping with distributed parity across all drives, providing both performance improvement and fault tolerance.",
+      "difficulty": "medium",
+      "tags": ["RAID", "storage", "redundancy"]
+    },
+    {
+      "id": "ch5-q7",
+      "question": "What is the maximum partition size for MBR?",
+      "options": [
+        "1TB",
+        "2TB",
+        "4TB",
+        "Unlimited"
+      ],
+      "correct": 1,
+      "explanation": "MBR (Master Boot Record) supports a maximum partition size of 2TB. For larger drives, GPT must be used.",
+      "difficulty": "medium",
+      "tags": ["MBR", "partitions", "limitations"]
+    },
+    {
+      "id": "ch5-q8",
+      "question": "Which file system is required for drives larger than 32GB in Windows?",
+      "options": [
+        "FAT16",
+        "FAT32",
+        "NTFS",
+        "exFAT"
+      ],
+      "correct": 2,
+      "explanation": "NTFS is required for drives larger than 32GB in Windows and provides better security, compression, and file permissions.",
+      "difficulty": "medium",
+      "tags": ["file system", "NTFS", "storage"]
+    },
+    {
+      "id": "ch5-q9",
+      "question": "What happens when Windows detects a Plug and Play device?",
+      "options": [
+        "System must be restarted",
+        "User must manually install drivers",
+        "OS automatically searches for and installs drivers",
+        "Device is blocked for security"
+      ],
+      "correct": 2,
+      "explanation": "Windows automatically detects PnP devices, searches its driver database, and installs appropriate drivers without user intervention.",
+      "difficulty": "easy",
+      "tags": ["PnP", "drivers", "installation"]
+    },
+    {
+      "id": "ch5-q10",
+      "question": "Which Windows edition is designed for business environments with domain support?",
+      "options": [
+        "Windows Home",
+        "Windows Professional",
+        "Windows Starter",
+        "Windows Basic"
+      ],
+      "correct": 1,
+      "explanation": "Windows Professional edition includes domain join capability, BitLocker, and other business features not found in Home editions.",
+      "difficulty": "easy",
+      "tags": ["Windows editions", "business", "features"]
+    },
+    {
+      "id": "ch5-q11",
+      "question": "What is the minimum RAM requirement for 64-bit Windows 10?",
+      "options": [
+        "1GB",
+        "2GB",
+        "4GB",
+        "8GB"
+      ],
+      "correct": 1,
+      "explanation": "64-bit Windows 10 requires a minimum of 2GB RAM, though 4GB or more is recommended for acceptable performance.",
+      "difficulty": "medium",
+      "tags": ["requirements", "RAM", "Windows 10"]
+    },
+    {
+      "id": "ch5-q12",
+      "question": "Which partitioning scheme supports UEFI boot?",
+      "options": [
+        "MBR only",
+        "GPT only",
+        "Both MBR and GPT",
+        "Neither MBR nor GPT"
+      ],
+      "correct": 1,
+      "explanation": "GPT (GUID Partition Table) is required for UEFI boot mode and supports drives larger than 2TB.",
+      "difficulty": "medium",
+      "tags": ["GPT", "UEFI", "boot"]
+    },
+    {
+      "id": "ch5-q13",
+      "question": "What is the purpose of Windows System Restore?",
+      "options": [
+        "Backup user files",
+        "Return system to previous state",
+        "Increase system speed",
+        "Update drivers"
+      ],
+      "correct": 1,
+      "explanation": "System Restore creates restore points to return Windows to a previous working state without affecting personal files.",
+      "difficulty": "easy",
+      "tags": ["System Restore", "recovery", "Windows"]
+    },
+    {
+      "id": "ch5-q14",
+      "question": "Which command checks Windows file system integrity?",
+      "options": [
+        "CHKDSK",
+        "SFC /SCANNOW",
+        "DEFRAG",
+        "FORMAT"
+      ],
+      "correct": 1,
+      "explanation": "SFC /SCANNOW (System File Checker) scans and repairs corrupted Windows system files.",
+      "difficulty": "medium",
+      "tags": ["commands", "repair", "system files"]
+    },
+    {
+      "id": "ch5-q15",
+      "question": "What is required for BitLocker encryption?",
+      "options": [
+        "Windows Home edition",
+        "TPM chip or USB drive",
+        "32-bit processor",
+        "FAT32 file system"
+      ],
+      "correct": 1,
+      "explanation": "BitLocker requires either a TPM (Trusted Platform Module) chip or a USB drive to store encryption keys.",
+      "difficulty": "medium",
+      "tags": ["BitLocker", "encryption", "security"]
+    },
+    {
+      "id": "ch5-q16",
+      "question": "How many primary partitions can MBR support?",
+      "options": [
+        "1",
+        "2",
+        "4",
+        "Unlimited"
+      ],
+      "correct": 2,
+      "explanation": "MBR supports a maximum of 4 primary partitions, or 3 primary partitions plus 1 extended partition with logical drives.",
+      "difficulty": "medium",
+      "tags": ["MBR", "partitions", "limits"]
+    },
+    {
+      "id": "ch5-q17",
+      "question": "Which Windows tool manages startup programs?",
+      "options": [
+        "Device Manager",
+        "Task Manager",
+        "Control Panel",
+        "Computer Management"
+      ],
+      "correct": 1,
+      "explanation": "Task Manager in Windows 8/10 includes a Startup tab to manage programs that run at system startup.",
+      "difficulty": "easy",
+      "tags": ["Task Manager", "startup", "performance"]
+    },
+    {
+      "id": "ch5-q18",
+      "question": "What is the Windows registry?",
+      "options": [
+        "List of installed programs",
+        "Database of configuration settings",
+        "Collection of driver files",
+        "Backup of system files"
+      ],
+      "correct": 1,
+      "explanation": "The Windows registry is a hierarchical database storing configuration settings for the operating system and applications.",
+      "difficulty": "medium",
+      "tags": ["registry", "configuration", "Windows"]
+    },
+    {
+      "id": "ch5-q19",
+      "question": "Which boot mode is faster: UEFI or Legacy BIOS?",
+      "options": [
+        "Legacy BIOS",
+        "UEFI",
+        "Both are equal",
+        "Depends on hardware"
+      ],
+      "correct": 1,
+      "explanation": "UEFI boot is faster than Legacy BIOS due to parallel initialization and optimized boot processes.",
+      "difficulty": "easy",
+      "tags": ["UEFI", "BIOS", "boot"]
+    },
+    {
+      "id": "ch5-q20",
+      "question": "What Windows feature allows running older programs?",
+      "options": [
+        "Safe Mode",
+        "Compatibility Mode",
+        "Administrator Mode",
+        "Debug Mode"
+      ],
+      "correct": 1,
+      "explanation": "Compatibility Mode allows older programs to run by emulating previous Windows versions' environments.",
+      "difficulty": "easy",
+      "tags": ["compatibility", "legacy software", "Windows"]
+    },
+    {
+      "id": "ch5-q21",
+      "question": "Where are device drivers stored in Windows?",
+      "options": [
+        "C:\\Program Files",
+        "C:\\Windows\\System32\\Drivers",
+        "C:\\Users",
+        "C:\\Temp"
+      ],
+      "correct": 1,
+      "explanation": "Device drivers are typically stored in C:\\Windows\\System32\\Drivers folder in Windows systems.",
+      "difficulty": "medium",
+      "tags": ["drivers", "file locations", "Windows"]
+    },
+    {
+      "id": "ch5-q22",
+      "question": "What is Windows PE used for?",
+      "options": [
+        "Gaming performance",
+        "Deployment and recovery",
+        "Programming environment",
+        "Personal edition"
+      ],
+      "correct": 1,
+      "explanation": "Windows PE (Preinstallation Environment) is a minimal OS used for deployment, recovery, and troubleshooting.",
+      "difficulty": "hard",
+      "tags": ["Windows PE", "deployment", "recovery"]
+    },
+    {
+      "id": "ch5-q23",
+      "question": "Which Windows version introduced the Metro/Modern UI?",
+      "options": [
+        "Windows 7",
+        "Windows 8",
+        "Windows 10",
+        "Windows 11"
+      ],
+      "correct": 1,
+      "explanation": "Windows 8 introduced the Metro (later called Modern) UI with live tiles and touch-optimized interface.",
+      "difficulty": "easy",
+      "tags": ["Windows versions", "UI", "history"]
+    },
+    {
+      "id": "ch5-q24",
+      "question": "What is the purpose of pagefile.sys?",
+      "options": [
+        "Store web pages",
+        "Virtual memory",
+        "System logs",
+        "User profiles"
+      ],
+      "correct": 1,
+      "explanation": "Pagefile.sys is the Windows paging file used for virtual memory when physical RAM is insufficient.",
+      "difficulty": "medium",
+      "tags": ["virtual memory", "pagefile", "performance"]
+    },
+    {
+      "id": "ch5-q25",
+      "question": "Which Windows feature creates a backup of the entire system?",
+      "options": [
+        "System Restore",
+        "File History",
+        "System Image Backup",
+        "Shadow Copy"
+      ],
+      "correct": 2,
+      "explanation": "System Image Backup creates a complete backup of the Windows installation including programs and settings.",
+      "difficulty": "medium",
+      "tags": ["backup", "system image", "recovery"]
+    },
+    {
+      "id": "ch5-q26",
+      "question": "What keyboard shortcut opens Task Manager directly?",
+      "options": [
+        "Ctrl+Alt+Del",
+        "Ctrl+Shift+Esc",
+        "Alt+F4",
+        "Win+X"
+      ],
+      "correct": 1,
+      "explanation": "Ctrl+Shift+Esc opens Task Manager directly, while Ctrl+Alt+Del shows a menu with Task Manager as an option.",
+      "difficulty": "easy",
+      "tags": ["shortcuts", "Task Manager", "Windows"]
+    },
+    {
+      "id": "ch5-q27",
+      "question": "Which Windows component manages hardware devices?",
+      "options": [
+        "Task Manager",
+        "Device Manager",
+        "Disk Management",
+        "Services"
+      ],
+      "correct": 1,
+      "explanation": "Device Manager displays all hardware devices, their status, and allows driver updates and troubleshooting.",
+      "difficulty": "easy",
+      "tags": ["Device Manager", "hardware", "drivers"]
+    },
+    {
+      "id": "ch5-q28",
+      "question": "What is the maximum RAM supported by 32-bit Windows?",
+      "options": [
+        "2GB",
+        "4GB",
+        "8GB",
+        "16GB"
+      ],
+      "correct": 1,
+      "explanation": "32-bit Windows can address a maximum of 4GB RAM due to architectural limitations.",
+      "difficulty": "medium",
+      "tags": ["32-bit", "RAM", "limitations"]
+    },
+    {
+      "id": "ch5-q29",
+      "question": "Which file system feature is exclusive to NTFS?",
+      "options": [
+        "Long filenames",
+        "File permissions and encryption",
+        "Folder creation",
+        "File copying"
+      ],
+      "correct": 1,
+      "explanation": "NTFS supports advanced features like file permissions, encryption (EFS), compression, and disk quotas.",
+      "difficulty": "medium",
+      "tags": ["NTFS", "file system", "features"]
+    },
+    {
+      "id": "ch5-q30",
+      "question": "What Windows tool optimizes hard drive performance?",
+      "options": [
+        "Disk Cleanup",
+        "Disk Defragmenter",
+        "Check Disk",
+        "Format"
+      ],
+      "correct": 1,
+      "explanation": "Disk Defragmenter (or Optimize Drives) reorganizes fragmented data to improve hard drive performance.",
+      "difficulty": "easy",
+      "tags": ["defragmentation", "optimization", "maintenance"]
+    },
+    {
+      "id": "ch5-q31",
+      "question": "What prevents unsigned drivers from installing in 64-bit Windows?",
+      "options": [
+        "UAC",
+        "Driver Signature Enforcement",
+        "Windows Defender",
+        "BitLocker"
+      ],
+      "correct": 1,
+      "explanation": "Driver Signature Enforcement in 64-bit Windows requires all drivers to be digitally signed for security.",
+      "difficulty": "hard",
+      "tags": ["drivers", "security", "64-bit"]
+    },
+    {
+      "id": "ch5-q32",
+      "question": "Which Windows feature provides sandboxed application environment?",
+      "options": [
+        "Hyper-V",
+        "Windows Sandbox",
+        "Virtual Desktop",
+        "Safe Mode"
+      ],
+      "correct": 1,
+      "explanation": "Windows Sandbox provides a temporary, isolated desktop environment for safely running untrusted applications.",
+      "difficulty": "hard",
+      "tags": ["Windows Sandbox", "security", "virtualization"]
+    },
+    {
+      "id": "ch5-q33",
+      "question": "What is the purpose of Windows Update?",
+      "options": [
+        "Update third-party software",
+        "Install security patches and feature updates",
+        "Upgrade to newer Windows version only",
+        "Update hardware firmware"
+      ],
+      "correct": 1,
+      "explanation": "Windows Update delivers security patches, bug fixes, driver updates, and feature improvements from Microsoft.",
+      "difficulty": "easy",
+      "tags": ["Windows Update", "patches", "security"]
+    },
+    {
+      "id": "ch5-q34",
+      "question": "Which partition stores Windows boot files in UEFI systems?",
+      "options": [
+        "System Reserved",
+        "EFI System Partition",
+        "Recovery Partition",
+        "Primary Partition"
+      ],
+      "correct": 1,
+      "explanation": "The EFI System Partition (ESP) stores boot loaders and related files for UEFI systems.",
+      "difficulty": "hard",
+      "tags": ["EFI", "UEFI", "partitions"]
+    },
+    {
+      "id": "ch5-q35",
+      "question": "What Windows feature allows multiple desktops?",
+      "options": [
+        "Task View",
+        "Snap Assist",
+        "Timeline",
+        "Focus Assist"
+      ],
+      "correct": 0,
+      "explanation": "Task View in Windows 10/11 allows creating and switching between multiple virtual desktops for better organization.",
+      "difficulty": "medium",
+      "tags": ["Task View", "virtual desktops", "Windows 10"]
+    }
+  ]
+}

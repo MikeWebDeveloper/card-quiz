@@ -1,0 +1,496 @@
+{
+  "chapter": 4,
+  "title": "Preventive Maintenance and Troubleshooting",
+  "questions": [
+    {
+      "id": "ch4-q1",
+      "question": "What is the first step in the CompTIA A+ six-step troubleshooting process?",
+      "options": [
+        "Test the theory",
+        "Identify the problem",
+        "Establish a plan of action",
+        "Document findings"
+      ],
+      "correct": 1,
+      "explanation": "The first step is to identify the problem by gathering information from the user, identifying user changes, and performing backups before making changes.",
+      "difficulty": "easy",
+      "tags": ["troubleshooting", "process", "CompTIA"]
+    },
+    {
+      "id": "ch4-q2",
+      "question": "What is the recommended temperature range for optimal computer operation?",
+      "options": [
+        "32°F to 95°F (0°C to 35°C)",
+        "45°F to 90°F (7°C to 32°C)",
+        "60°F to 100°F (15°C to 38°C)",
+        "70°F to 74°F (21°C to 23°C)"
+      ],
+      "correct": 1,
+      "explanation": "The recommended temperature range for computer operation is 45°F to 90°F (7°C to 32°C) to prevent overheating and ensure optimal performance.",
+      "difficulty": "medium",
+      "tags": ["environment", "temperature", "maintenance"]
+    },
+    {
+      "id": "ch4-q3",
+      "question": "What should you always do before cleaning internal computer components with compressed air?",
+      "options": [
+        "Remove the power cable",
+        "Hold fans to prevent them from spinning",
+        "Remove all components from the case",
+        "Apply thermal paste"
+      ],
+      "correct": 1,
+      "explanation": "Always hold fans in place when using compressed air to prevent them from spinning too fast, which can damage the bearings or generate harmful voltage.",
+      "difficulty": "medium",
+      "tags": ["cleaning", "maintenance", "safety"]
+    },
+    {
+      "id": "ch4-q4",
+      "question": "What is the recommended humidity range for computer equipment?",
+      "options": [
+        "0% to 20%",
+        "10% to 80%",
+        "50% to 100%",
+        "40% to 60%"
+      ],
+      "correct": 1,
+      "explanation": "The recommended humidity range is 10% to 80%. Too low causes static electricity buildup, while too high can cause corrosion and component damage.",
+      "difficulty": "medium",
+      "tags": ["environment", "humidity", "maintenance"]
+    },
+    {
+      "id": "ch4-q5",
+      "question": "Which troubleshooting approach uses a step-by-step manual to diagnose problems?",
+      "options": [
+        "Top-down approach",
+        "Bottom-up approach",
+        "Follow-the-path approach",
+        "Substitution approach"
+      ],
+      "correct": 2,
+      "explanation": "The follow-the-path approach uses manufacturer documentation or step-by-step diagnostic manuals to systematically troubleshoot issues.",
+      "difficulty": "medium",
+      "tags": ["troubleshooting", "methodology", "diagnosis"]
+    },
+    {
+      "id": "ch4-q6",
+      "question": "When should a computer's internal components be cleaned?",
+      "options": [
+        "Only when problems occur",
+        "According to the environment and manufacturer guidelines",
+        "Every day",
+        "Never, to avoid damage"
+      ],
+      "correct": 1,
+      "explanation": "Cleaning frequency depends on the environment (dusty areas need more frequent cleaning) and manufacturer recommendations, typically every 3-6 months.",
+      "difficulty": "easy",
+      "tags": ["maintenance", "cleaning", "schedule"]
+    },
+    {
+      "id": "ch4-q7",
+      "question": "What type of cloth should be used to clean an LCD screen?",
+      "options": [
+        "Paper towel",
+        "Cotton cloth",
+        "Lint-free microfiber cloth",
+        "Any dry cloth"
+      ],
+      "correct": 2,
+      "explanation": "A lint-free microfiber cloth is recommended for LCD screens as it won't scratch the surface or leave lint behind.",
+      "difficulty": "easy",
+      "tags": ["cleaning", "LCD", "maintenance"]
+    },
+    {
+      "id": "ch4-q8",
+      "question": "What is the most common cause of computer overheating?",
+      "options": [
+        "Faulty power supply",
+        "Bad RAM",
+        "Dust buildup blocking airflow",
+        "Outdated BIOS"
+      ],
+      "correct": 2,
+      "explanation": "Dust buildup in fans, heatsinks, and vents is the most common cause of overheating as it blocks airflow and insulates heat-generating components.",
+      "difficulty": "easy",
+      "tags": ["overheating", "cooling", "maintenance"]
+    },
+    {
+      "id": "ch4-q9",
+      "question": "In the troubleshooting process, what should you do after testing your theory?",
+      "options": [
+        "Document findings",
+        "Implement the solution",
+        "Establish a theory of probable cause",
+        "Verify full system functionality"
+      ],
+      "correct": 1,
+      "explanation": "After testing your theory, if confirmed, you should implement the solution. If the theory is not confirmed, establish a new theory.",
+      "difficulty": "medium",
+      "tags": ["troubleshooting", "process", "steps"]
+    },
+    {
+      "id": "ch4-q10",
+      "question": "What is a sign that a CMOS battery needs replacement?",
+      "options": [
+        "Computer won't power on",
+        "Incorrect system date and time after power loss",
+        "Blue screen errors",
+        "Slow boot times"
+      ],
+      "correct": 1,
+      "explanation": "A failing CMOS battery typically causes the system to lose date/time settings and BIOS configuration when power is removed.",
+      "difficulty": "easy",
+      "tags": ["CMOS", "battery", "troubleshooting"]
+    },
+    {
+      "id": "ch4-q11",
+      "question": "Which tool is best for testing a power supply?",
+      "options": [
+        "Multimeter",
+        "POST card",
+        "Power supply tester",
+        "Loopback plug"
+      ],
+      "correct": 2,
+      "explanation": "A power supply tester is specifically designed to test PSU functionality and voltage outputs quickly and safely.",
+      "difficulty": "medium",
+      "tags": ["tools", "power supply", "testing"]
+    },
+    {
+      "id": "ch4-q12",
+      "question": "What should you do with old batteries and electronic components?",
+      "options": [
+        "Throw them in regular trash",
+        "Burn them",
+        "Recycle according to local regulations",
+        "Store them indefinitely"
+      ],
+      "correct": 2,
+      "explanation": "Batteries and electronic components contain hazardous materials and should be recycled according to local environmental regulations.",
+      "difficulty": "easy",
+      "tags": ["disposal", "environment", "safety"]
+    },
+    {
+      "id": "ch4-q13",
+      "question": "What is the 'divide and conquer' troubleshooting approach?",
+      "options": [
+        "Replacing all components at once",
+        "Starting with the most complex component",
+        "Testing at a middle point and narrowing down from there",
+        "Asking multiple technicians to help"
+      ],
+      "correct": 2,
+      "explanation": "Divide and conquer involves testing at a middle point in the system, then systematically narrowing down the problem area by eliminating working sections.",
+      "difficulty": "medium",
+      "tags": ["troubleshooting", "methodology", "approach"]
+    },
+    {
+      "id": "ch4-q14",
+      "question": "What causes most hard drive failures?",
+      "options": [
+        "Power surges",
+        "Mechanical wear or physical shock",
+        "Software errors",
+        "Overclocking"
+      ],
+      "correct": 1,
+      "explanation": "Most hard drive failures are due to mechanical wear of moving parts or physical shock/vibration damage to the read/write heads or platters.",
+      "difficulty": "medium",
+      "tags": ["hard drive", "failure", "troubleshooting"]
+    },
+    {
+      "id": "ch4-q15",
+      "question": "When documenting a problem, what information is LEAST important?",
+      "options": [
+        "Customer's personal opinions about the cause",
+        "Error messages and codes",
+        "Steps to reproduce the problem",
+        "System configuration"
+      ],
+      "correct": 0,
+      "explanation": "While customer input is valuable, their personal opinions about the cause are less important than factual information like error messages, reproduction steps, and configuration.",
+      "difficulty": "medium",
+      "tags": ["documentation", "troubleshooting", "process"]
+    },
+    {
+      "id": "ch4-q16",
+      "question": "What is the purpose of a POST card?",
+      "options": [
+        "To test network connectivity",
+        "To diagnose boot problems using POST codes",
+        "To test RAM modules",
+        "To monitor temperatures"
+      ],
+      "correct": 1,
+      "explanation": "A POST card displays Power-On Self-Test codes to help diagnose hardware problems that prevent the system from booting properly.",
+      "difficulty": "medium",
+      "tags": ["POST", "diagnostics", "tools"]
+    },
+    {
+      "id": "ch4-q17",
+      "question": "Which cleaning solution should NEVER be used on a computer monitor?",
+      "options": [
+        "Distilled water",
+        "Isopropyl alcohol (diluted)",
+        "Ammonia-based cleaners",
+        "Monitor-specific cleaners"
+      ],
+      "correct": 2,
+      "explanation": "Ammonia-based cleaners can damage anti-reflective coatings on monitors and should never be used. Use water or monitor-specific cleaners instead.",
+      "difficulty": "easy",
+      "tags": ["cleaning", "monitor", "maintenance"]
+    },
+    {
+      "id": "ch4-q18",
+      "question": "What is a common symptom of failing RAM?",
+      "options": [
+        "Loud fan noise",
+        "Random system crashes and blue screens",
+        "Slow internet connection",
+        "Monitor flickering"
+      ],
+      "correct": 1,
+      "explanation": "Failing RAM typically causes random system crashes, blue screen errors, application crashes, and system instability.",
+      "difficulty": "easy",
+      "tags": ["RAM", "symptoms", "troubleshooting"]
+    },
+    {
+      "id": "ch4-q19",
+      "question": "How often should thermal paste be replaced on a CPU?",
+      "options": [
+        "Every month",
+        "Every 6 months",
+        "Every 2-5 years or when experiencing overheating",
+        "Never, it lasts forever"
+      ],
+      "correct": 2,
+      "explanation": "Thermal paste typically needs replacement every 2-5 years, or sooner if the system experiences overheating or the cooler is removed.",
+      "difficulty": "medium",
+      "tags": ["CPU", "thermal paste", "maintenance"]
+    },
+    {
+      "id": "ch4-q20",
+      "question": "What is the best way to discharge static electricity before working on a computer?",
+      "options": [
+        "Touch a painted surface",
+        "Wear rubber gloves",
+        "Touch an unpainted metal part of the case",
+        "Stand on carpet"
+      ],
+      "correct": 2,
+      "explanation": "Touching an unpainted metal part of the computer case while it's plugged in (but powered off) safely discharges static electricity.",
+      "difficulty": "easy",
+      "tags": ["ESD", "safety", "procedure"]
+    },
+    {
+      "id": "ch4-q21",
+      "question": "Which log in Windows Event Viewer contains hardware-related errors?",
+      "options": [
+        "Application Log",
+        "Security Log",
+        "System Log",
+        "Setup Log"
+      ],
+      "correct": 2,
+      "explanation": "The System Log in Event Viewer contains hardware-related errors, driver issues, and system component failures.",
+      "difficulty": "medium",
+      "tags": ["Windows", "logs", "troubleshooting"]
+    },
+    {
+      "id": "ch4-q22",
+      "question": "What should you do if a theory is not confirmed during troubleshooting?",
+      "options": [
+        "Implement the solution anyway",
+        "Document and close the ticket",
+        "Establish a new theory or escalate",
+        "Replace all components"
+      ],
+      "correct": 2,
+      "explanation": "If a theory is not confirmed, you should establish a new theory of probable cause or escalate the problem to a higher level of support.",
+      "difficulty": "medium",
+      "tags": ["troubleshooting", "process", "theory"]
+    },
+    {
+      "id": "ch4-q23",
+      "question": "What is the most important factor when choosing replacement parts?",
+      "options": [
+        "Lowest price",
+        "Fastest shipping",
+        "Compatibility with existing system",
+        "Latest technology"
+      ],
+      "correct": 2,
+      "explanation": "Compatibility with the existing system is crucial to ensure the replacement part will function properly with current hardware and software.",
+      "difficulty": "easy",
+      "tags": ["parts", "compatibility", "replacement"]
+    },
+    {
+      "id": "ch4-q24",
+      "question": "What tool is used to test network cable continuity?",
+      "options": [
+        "Multimeter",
+        "Cable tester",
+        "Crimping tool",
+        "Punch-down tool"
+      ],
+      "correct": 1,
+      "explanation": "A cable tester is specifically designed to test network cable continuity, wiring configuration, and identify faults in cables.",
+      "difficulty": "medium",
+      "tags": ["network", "tools", "testing"]
+    },
+    {
+      "id": "ch4-q25",
+      "question": "Which component failure often causes a 'clicking' sound from the computer?",
+      "options": [
+        "RAM",
+        "CPU",
+        "Hard drive",
+        "Power supply fan"
+      ],
+      "correct": 2,
+      "explanation": "A clicking sound often indicates a failing hard drive, specifically the read/write heads repeatedly trying to access data unsuccessfully.",
+      "difficulty": "easy",
+      "tags": ["hard drive", "symptoms", "failure"]
+    },
+    {
+      "id": "ch4-q26",
+      "question": "What is the purpose of keeping a maintenance log?",
+      "options": [
+        "Legal requirements only",
+        "Track warranty information",
+        "Identify patterns and schedule preventive maintenance",
+        "Impress management"
+      ],
+      "correct": 2,
+      "explanation": "Maintenance logs help identify failure patterns, track component lifespans, and schedule preventive maintenance to reduce downtime.",
+      "difficulty": "medium",
+      "tags": ["documentation", "maintenance", "logs"]
+    },
+    {
+      "id": "ch4-q27",
+      "question": "When should you perform a backup before troubleshooting?",
+      "options": [
+        "Only for server systems",
+        "Never, it wastes time",
+        "Always, before making any changes",
+        "Only if requested by the user"
+      ],
+      "correct": 2,
+      "explanation": "Always perform a backup before making changes during troubleshooting to prevent data loss if something goes wrong.",
+      "difficulty": "easy",
+      "tags": ["backup", "data protection", "troubleshooting"]
+    },
+    {
+      "id": "ch4-q28",
+      "question": "What causes capacitor failure on motherboards?",
+      "options": [
+        "Dust accumulation",
+        "Overheating and age",
+        "Static electricity",
+        "Software errors"
+      ],
+      "correct": 1,
+      "explanation": "Capacitors fail due to overheating, poor ventilation, age, and sometimes poor manufacturing quality, often showing bulging or leaking.",
+      "difficulty": "medium",
+      "tags": ["motherboard", "capacitor", "failure"]
+    },
+    {
+      "id": "ch4-q29",
+      "question": "Which Windows utility can automatically fix disk errors?",
+      "options": [
+        "Disk Defragmenter",
+        "CHKDSK /F",
+        "Format",
+        "Device Manager"
+      ],
+      "correct": 1,
+      "explanation": "CHKDSK with the /F parameter can automatically detect and fix file system errors and bad sectors on hard drives.",
+      "difficulty": "medium",
+      "tags": ["Windows", "disk", "utilities"]
+    },
+    {
+      "id": "ch4-q30",
+      "question": "What is the 'bottom-up' troubleshooting approach?",
+      "options": [
+        "Starting with the most expensive component",
+        "Starting with the most basic components first",
+        "Starting with software before hardware",
+        "Starting with the newest components"
+      ],
+      "correct": 1,
+      "explanation": "Bottom-up troubleshooting starts with the most basic components (power, cables, connections) and works up to more complex components.",
+      "difficulty": "medium",
+      "tags": ["troubleshooting", "methodology", "approach"]
+    },
+    {
+      "id": "ch4-q31",
+      "question": "What should you check first when a computer won't turn on?",
+      "options": [
+        "RAM seating",
+        "BIOS settings",
+        "Power cable and outlet",
+        "Hard drive connections"
+      ],
+      "correct": 2,
+      "explanation": "Always check the most basic elements first - ensure the power cable is connected and the outlet is working before investigating complex issues.",
+      "difficulty": "easy",
+      "tags": ["troubleshooting", "power", "basic"]
+    },
+    {
+      "id": "ch4-q32",
+      "question": "How can you prevent ESD damage when storing components?",
+      "options": [
+        "Wrap in newspaper",
+        "Store in antistatic bags",
+        "Keep in plastic containers",
+        "Leave on metal shelves"
+      ],
+      "correct": 1,
+      "explanation": "Antistatic bags provide protection from electrostatic discharge when storing sensitive electronic components.",
+      "difficulty": "easy",
+      "tags": ["ESD", "storage", "prevention"]
+    },
+    {
+      "id": "ch4-q33",
+      "question": "What is a common cause of intermittent problems?",
+      "options": [
+        "Outdated drivers",
+        "Loose connections or thermal issues",
+        "Wrong BIOS version",
+        "Incorrect user permissions"
+      ],
+      "correct": 1,
+      "explanation": "Intermittent problems are often caused by loose connections that make contact sometimes, or thermal issues that occur only under certain conditions.",
+      "difficulty": "medium",
+      "tags": ["troubleshooting", "intermittent", "diagnosis"]
+    },
+    {
+      "id": "ch4-q34",
+      "question": "What information should be included in troubleshooting documentation?",
+      "options": [
+        "Only the final solution",
+        "Customer complaints only",
+        "Problem description, steps taken, and solution",
+        "Time spent only"
+      ],
+      "correct": 2,
+      "explanation": "Complete documentation includes the problem description, all troubleshooting steps taken, the final solution, and any follow-up recommendations.",
+      "difficulty": "easy",
+      "tags": ["documentation", "troubleshooting", "records"]
+    },
+    {
+      "id": "ch4-q35",
+      "question": "When is it appropriate to escalate a problem?",
+      "options": [
+        "Immediately upon encountering any issue",
+        "Never, to avoid seeming incompetent",
+        "When it exceeds your knowledge or authorization level",
+        "Only at the end of your shift"
+      ],
+      "correct": 2,
+      "explanation": "Escalate problems when they exceed your technical knowledge, require authorization you don't have, or need specialized tools/expertise.",
+      "difficulty": "medium",
+      "tags": ["escalation", "troubleshooting", "process"]
+    }
+  ]
+}

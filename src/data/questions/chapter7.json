@@ -1,0 +1,496 @@
+{
+  "chapter": 7,
+  "title": "Networking Concepts",
+  "questions": [
+    {
+      "id": "ch7-q1",
+      "question": "How many layers are in the OSI model?",
+      "options": [
+        "4",
+        "5",
+        "7",
+        "9"
+      ],
+      "correct": 2,
+      "explanation": "The OSI model has 7 layers: Physical, Data Link, Network, Transport, Session, Presentation, and Application.",
+      "difficulty": "easy",
+      "tags": ["OSI model", "networking", "layers"]
+    },
+    {
+      "id": "ch7-q2",
+      "question": "What does a computer with IP address 169.254.x.x indicate?",
+      "options": [
+        "Static IP configured",
+        "DHCP server not reachable",
+        "Public IP address",
+        "Loopback address"
+      ],
+      "correct": 1,
+      "explanation": "Windows assigns a link-local IP address (169.254.0.0 to 169.254.255.255) when DHCP server cannot be reached.",
+      "difficulty": "medium",
+      "tags": ["IP addressing", "DHCP", "APIPA"]
+    },
+    {
+      "id": "ch7-q3",
+      "question": "Which layer of the OSI model handles data encryption?",
+      "options": [
+        "Transport",
+        "Session",
+        "Presentation",
+        "Application"
+      ],
+      "correct": 2,
+      "explanation": "The Presentation layer (Layer 6) handles data encryption, compression, and format conversion.",
+      "difficulty": "medium",
+      "tags": ["OSI model", "encryption", "layers"]
+    },
+    {
+      "id": "ch7-q4",
+      "question": "How many layers are in the TCP/IP model?",
+      "options": [
+        "4",
+        "5",
+        "7",
+        "9"
+      ],
+      "correct": 0,
+      "explanation": "The TCP/IP model has 4 layers: Network Access, Internet, Transport, and Application.",
+      "difficulty": "easy",
+      "tags": ["TCP/IP", "model", "layers"]
+    },
+    {
+      "id": "ch7-q5",
+      "question": "What technology allows DSL to carry voice and data simultaneously?",
+      "options": [
+        "Multiplexing",
+        "Filters to separate traffic",
+        "Time division",
+        "Packet switching"
+      ],
+      "correct": 1,
+      "explanation": "DSL uses filters to separate voice and data traffic on the same telephone line.",
+      "difficulty": "medium",
+      "tags": ["DSL", "broadband", "technology"]
+    },
+    {
+      "id": "ch7-q6",
+      "question": "What is the maximum cable length for Ethernet (100BASE-TX)?",
+      "options": [
+        "50 meters",
+        "100 meters",
+        "185 meters",
+        "500 meters"
+      ],
+      "correct": 1,
+      "explanation": "The maximum cable length for 100BASE-TX Ethernet is 100 meters (328 feet).",
+      "difficulty": "medium",
+      "tags": ["Ethernet", "cabling", "standards"]
+    },
+    {
+      "id": "ch7-q7",
+      "question": "Which protocol provides secure web browsing?",
+      "options": [
+        "HTTP",
+        "HTTPS",
+        "FTP",
+        "SMTP"
+      ],
+      "correct": 1,
+      "explanation": "HTTPS uses SSL/TLS encryption to provide secure web browsing and must be specified for secure content.",
+      "difficulty": "easy",
+      "tags": ["protocols", "security", "web"]
+    },
+    {
+      "id": "ch7-q8",
+      "question": "What is Power over Ethernet (PoE) used for?",
+      "options": [
+        "Increase network speed",
+        "Power devices through Ethernet cable",
+        "Extend cable length",
+        "Improve signal quality"
+      ],
+      "correct": 1,
+      "explanation": "PoE allows devices like IP phones and wireless access points to receive power through the Ethernet cable.",
+      "difficulty": "easy",
+      "tags": ["PoE", "Ethernet", "power"]
+    },
+    {
+      "id": "ch7-q9",
+      "question": "Which OSI layer is responsible for routing?",
+      "options": [
+        "Physical",
+        "Data Link",
+        "Network",
+        "Transport"
+      ],
+      "correct": 2,
+      "explanation": "The Network layer (Layer 3) handles routing and logical addressing (IP addresses).",
+      "difficulty": "easy",
+      "tags": ["OSI model", "routing", "Network layer"]
+    },
+    {
+      "id": "ch7-q10",
+      "question": "What happens when 802.11b and 802.11g devices are mixed in a WLAN?",
+      "options": [
+        "Network speed increases",
+        "All devices operate at 802.11b speeds",
+        "All devices operate at 802.11g speeds",
+        "Network stops working"
+      ],
+      "correct": 1,
+      "explanation": "When older 802.11b devices are present, the entire network operates at the slower 802.11b speed for compatibility.",
+      "difficulty": "medium",
+      "tags": ["wireless", "802.11", "compatibility"]
+    },
+    {
+      "id": "ch7-q11",
+      "question": "What tool tests serial port communication?",
+      "options": [
+        "Cable tester",
+        "Loopback plug",
+        "Multimeter",
+        "Crimping tool"
+      ],
+      "correct": 1,
+      "explanation": "A loopback plug performs a loopback test to troubleshoot serial communication ports.",
+      "difficulty": "medium",
+      "tags": ["troubleshooting", "tools", "serial"]
+    },
+    {
+      "id": "ch7-q12",
+      "question": "What is the subnet mask for a Class C network?",
+      "options": [
+        "255.0.0.0",
+        "255.255.0.0",
+        "255.255.255.0",
+        "255.255.255.255"
+      ],
+      "correct": 2,
+      "explanation": "Class C networks use a default subnet mask of 255.255.255.0, providing 254 host addresses.",
+      "difficulty": "medium",
+      "tags": ["subnet mask", "Class C", "IP addressing"]
+    },
+    {
+      "id": "ch7-q13",
+      "question": "Which port does HTTP use by default?",
+      "options": [
+        "21",
+        "25",
+        "80",
+        "443"
+      ],
+      "correct": 2,
+      "explanation": "HTTP uses port 80 by default for unencrypted web traffic.",
+      "difficulty": "easy",
+      "tags": ["ports", "HTTP", "protocols"]
+    },
+    {
+      "id": "ch7-q14",
+      "question": "What device operates at Layer 2 of the OSI model?",
+      "options": [
+        "Router",
+        "Switch",
+        "Hub",
+        "Repeater"
+      ],
+      "correct": 1,
+      "explanation": "Switches operate at Layer 2 (Data Link) using MAC addresses to forward frames.",
+      "difficulty": "medium",
+      "tags": ["devices", "OSI model", "switch"]
+    },
+    {
+      "id": "ch7-q15",
+      "question": "Which cable type is immune to electromagnetic interference?",
+      "options": [
+        "UTP",
+        "STP",
+        "Coaxial",
+        "Fiber optic"
+      ],
+      "correct": 3,
+      "explanation": "Fiber optic cables use light instead of electricity, making them immune to electromagnetic interference.",
+      "difficulty": "easy",
+      "tags": ["cabling", "fiber optic", "EMI"]
+    },
+    {
+      "id": "ch7-q16",
+      "question": "What is the purpose of DHCP?",
+      "options": [
+        "Encrypt network traffic",
+        "Automatically assign IP addresses",
+        "Route packets between networks",
+        "Filter network traffic"
+      ],
+      "correct": 1,
+      "explanation": "DHCP (Dynamic Host Configuration Protocol) automatically assigns IP addresses and network configuration to clients.",
+      "difficulty": "easy",
+      "tags": ["DHCP", "IP addressing", "protocols"]
+    },
+    {
+      "id": "ch7-q17",
+      "question": "Which wireless standard operates only in the 5GHz band?",
+      "options": [
+        "802.11b",
+        "802.11g",
+        "802.11a",
+        "802.11n"
+      ],
+      "correct": 2,
+      "explanation": "802.11a operates exclusively in the 5GHz band, while 802.11b/g use 2.4GHz.",
+      "difficulty": "medium",
+      "tags": ["wireless", "802.11a", "frequency"]
+    },
+    {
+      "id": "ch7-q18",
+      "question": "What type of address is used at Layer 2?",
+      "options": [
+        "IP address",
+        "Port number",
+        "MAC address",
+        "URL"
+      ],
+      "correct": 2,
+      "explanation": "MAC (Media Access Control) addresses are used at Layer 2 (Data Link) for local network communication.",
+      "difficulty": "easy",
+      "tags": ["MAC address", "Layer 2", "addressing"]
+    },
+    {
+      "id": "ch7-q19",
+      "question": "Which protocol is connectionless at the Transport layer?",
+      "options": [
+        "TCP",
+        "UDP",
+        "FTP",
+        "HTTP"
+      ],
+      "correct": 1,
+      "explanation": "UDP (User Datagram Protocol) is connectionless and doesn't guarantee delivery, unlike TCP.",
+      "difficulty": "medium",
+      "tags": ["UDP", "Transport layer", "protocols"]
+    },
+    {
+      "id": "ch7-q20",
+      "question": "What is the private IP address range for Class A?",
+      "options": [
+        "10.0.0.0 to 10.255.255.255",
+        "172.16.0.0 to 172.31.255.255",
+        "192.168.0.0 to 192.168.255.255",
+        "169.254.0.0 to 169.254.255.255"
+      ],
+      "correct": 0,
+      "explanation": "Class A private IP addresses range from 10.0.0.0 to 10.255.255.255.",
+      "difficulty": "medium",
+      "tags": ["IP addressing", "private IP", "Class A"]
+    },
+    {
+      "id": "ch7-q21",
+      "question": "Which device connects multiple network segments at Layer 1?",
+      "options": [
+        "Switch",
+        "Router",
+        "Hub",
+        "Bridge"
+      ],
+      "correct": 2,
+      "explanation": "A hub operates at Layer 1 (Physical) and broadcasts all data to all connected devices.",
+      "difficulty": "easy",
+      "tags": ["hub", "Layer 1", "devices"]
+    },
+    {
+      "id": "ch7-q22",
+      "question": "What does NAT stand for?",
+      "options": [
+        "Network Access Technology",
+        "Network Address Translation",
+        "Network Authentication Token",
+        "Network Allocation Table"
+      ],
+      "correct": 1,
+      "explanation": "NAT (Network Address Translation) allows multiple devices to share a single public IP address.",
+      "difficulty": "easy",
+      "tags": ["NAT", "networking", "acronyms"]
+    },
+    {
+      "id": "ch7-q23",
+      "question": "Which port does SSH use?",
+      "options": [
+        "21",
+        "22",
+        "23",
+        "25"
+      ],
+      "correct": 1,
+      "explanation": "SSH (Secure Shell) uses port 22 for encrypted remote access.",
+      "difficulty": "medium",
+      "tags": ["SSH", "ports", "security"]
+    },
+    {
+      "id": "ch7-q24",
+      "question": "What is the maximum speed of 802.11g?",
+      "options": [
+        "11 Mbps",
+        "54 Mbps",
+        "150 Mbps",
+        "300 Mbps"
+      ],
+      "correct": 1,
+      "explanation": "802.11g has a maximum theoretical speed of 54 Mbps operating in the 2.4GHz band.",
+      "difficulty": "medium",
+      "tags": ["802.11g", "wireless", "speed"]
+    },
+    {
+      "id": "ch7-q25",
+      "question": "Which command displays the IP configuration in Windows?",
+      "options": [
+        "ifconfig",
+        "ipconfig",
+        "netstat",
+        "nslookup"
+      ],
+      "correct": 1,
+      "explanation": "ipconfig displays IP configuration information in Windows, while ifconfig is used in Linux/Unix.",
+      "difficulty": "easy",
+      "tags": ["commands", "Windows", "networking"]
+    },
+    {
+      "id": "ch7-q26",
+      "question": "What does DNS resolve?",
+      "options": [
+        "MAC addresses to IP addresses",
+        "Domain names to IP addresses",
+        "IP addresses to MAC addresses",
+        "Port numbers to services"
+      ],
+      "correct": 1,
+      "explanation": "DNS (Domain Name System) resolves human-readable domain names to IP addresses.",
+      "difficulty": "easy",
+      "tags": ["DNS", "resolution", "networking"]
+    },
+    {
+      "id": "ch7-q27",
+      "question": "Which cable category supports Gigabit Ethernet?",
+      "options": [
+        "Cat 3",
+        "Cat 5",
+        "Cat 5e",
+        "All of the above"
+      ],
+      "correct": 2,
+      "explanation": "Cat 5e (enhanced) and higher support Gigabit Ethernet speeds up to 1000 Mbps.",
+      "difficulty": "medium",
+      "tags": ["cabling", "Ethernet", "categories"]
+    },
+    {
+      "id": "ch7-q28",
+      "question": "What is the purpose of ARP?",
+      "options": [
+        "Assign IP addresses",
+        "Resolve IP addresses to MAC addresses",
+        "Route packets",
+        "Encrypt data"
+      ],
+      "correct": 1,
+      "explanation": "ARP (Address Resolution Protocol) resolves IP addresses to MAC addresses for local network communication.",
+      "difficulty": "medium",
+      "tags": ["ARP", "protocols", "addressing"]
+    },
+    {
+      "id": "ch7-q29",
+      "question": "Which topology has a single point of failure?",
+      "options": [
+        "Mesh",
+        "Ring",
+        "Star",
+        "Hybrid"
+      ],
+      "correct": 2,
+      "explanation": "Star topology has a single point of failure at the central device (hub/switch).",
+      "difficulty": "medium",
+      "tags": ["topology", "star", "networking"]
+    },
+    {
+      "id": "ch7-q30",
+      "question": "What is the range of well-known ports?",
+      "options": [
+        "0-1023",
+        "1024-49151",
+        "49152-65535",
+        "0-65535"
+      ],
+      "correct": 0,
+      "explanation": "Well-known ports range from 0 to 1023 and are reserved for standard services.",
+      "difficulty": "hard",
+      "tags": ["ports", "ranges", "networking"]
+    },
+    {
+      "id": "ch7-q31",
+      "question": "Which protocol is used for email retrieval?",
+      "options": [
+        "SMTP",
+        "POP3/IMAP",
+        "HTTP",
+        "FTP"
+      ],
+      "correct": 1,
+      "explanation": "POP3 and IMAP are used for email retrieval, while SMTP is used for sending email.",
+      "difficulty": "medium",
+      "tags": ["email", "protocols", "POP3/IMAP"]
+    },
+    {
+      "id": "ch7-q32",
+      "question": "What does a /24 subnet mask represent?",
+      "options": [
+        "255.0.0.0",
+        "255.255.0.0",
+        "255.255.255.0",
+        "255.255.255.255"
+      ],
+      "correct": 2,
+      "explanation": "A /24 (CIDR notation) represents 24 network bits, equivalent to subnet mask 255.255.255.0.",
+      "difficulty": "medium",
+      "tags": ["CIDR", "subnet mask", "notation"]
+    },
+    {
+      "id": "ch7-q33",
+      "question": "Which layer provides flow control and error correction?",
+      "options": [
+        "Physical",
+        "Data Link",
+        "Network",
+        "Transport"
+      ],
+      "correct": 3,
+      "explanation": "The Transport layer (Layer 4) provides flow control, error correction, and reliable data delivery.",
+      "difficulty": "medium",
+      "tags": ["Transport layer", "OSI model", "functions"]
+    },
+    {
+      "id": "ch7-q34",
+      "question": "What is the maximum distance for multimode fiber?",
+      "options": [
+        "100 meters",
+        "550 meters",
+        "2 kilometers",
+        "40 kilometers"
+      ],
+      "correct": 1,
+      "explanation": "Multimode fiber typically supports distances up to 550 meters for Gigabit Ethernet.",
+      "difficulty": "hard",
+      "tags": ["fiber optic", "multimode", "distance"]
+    },
+    {
+      "id": "ch7-q35",
+      "question": "Which wireless security protocol is most secure?",
+      "options": [
+        "WEP",
+        "WPA",
+        "WPA2",
+        "Open"
+      ],
+      "correct": 2,
+      "explanation": "WPA2 (Wi-Fi Protected Access 2) provides the strongest security with AES encryption.",
+      "difficulty": "easy",
+      "tags": ["wireless security", "WPA2", "encryption"]
+    }
+  ]
+}

@@ -1,0 +1,496 @@
+{
+  "chapter": 14,
+  "title": "The IT Professional",
+  "questions": [
+    {
+      "id": "ch14-q1",
+      "question": "What is troubleshooting as much about as knowing how to fix computers?",
+      "options": [
+        "Speed",
+        "Communicating with the customer",
+        "Using tools",
+        "Following procedures"
+      ],
+      "correct": 1,
+      "explanation": "Troubleshooting is as much about communicating with the customer as it is about knowing how to fix a computer.",
+      "difficulty": "easy",
+      "tags": ["communication", "troubleshooting", "customer service"]
+    },
+    {
+      "id": "ch14-q2",
+      "question": "What enhances credibility with customers?",
+      "options": [
+        "Fast typing",
+        "Expensive tools",
+        "Good communication skills",
+        "Technical jargon"
+      ],
+      "correct": 2,
+      "explanation": "Having good communication skills enhances credibility with the customer and builds trust.",
+      "difficulty": "easy",
+      "tags": ["communication", "credibility", "professionalism"]
+    },
+    {
+      "id": "ch14-q3",
+      "question": "What should you use to show customers you're listening?",
+      "options": [
+        "Ignore them",
+        "Active listening with interjections like 'I see'",
+        "Talk over them",
+        "Type loudly"
+      ],
+      "correct": 1,
+      "explanation": "Use active listening with occasional interjections such as 'I see' or 'I understand' to show you're listening.",
+      "difficulty": "easy",
+      "tags": ["active listening", "communication", "customer service"]
+    },
+    {
+      "id": "ch14-q4",
+      "question": "What should a technician do when a customer tells their story?",
+      "options": [
+        "Interrupt to save time",
+        "Allow the customer to tell the whole story",
+        "Walk away",
+        "Start fixing immediately"
+      ],
+      "correct": 1,
+      "explanation": "A technician should allow the customer to tell the whole story without interrupting, as interruptions can be perceived as rude.",
+      "difficulty": "easy",
+      "tags": ["customer service", "listening", "professionalism"]
+    },
+    {
+      "id": "ch14-q5",
+      "question": "What increases customer confidence?",
+      "options": [
+        "Technical jargon",
+        "Professional behavior",
+        "Working quickly",
+        "Expensive equipment"
+      ],
+      "correct": 1,
+      "explanation": "Professional behavior increases customer confidence and enhances your credibility as a technician.",
+      "difficulty": "easy",
+      "tags": ["professionalism", "behavior", "customer confidence"]
+    },
+    {
+      "id": "ch14-q6",
+      "question": "What should technicians create for all their work?",
+      "options": [
+        "Videos",
+        "Detailed documentation",
+        "Social media posts",
+        "Personal notes only"
+      ],
+      "correct": 1,
+      "explanation": "It is a good habit to create detailed documentation of all the work that you do, even if not a system administrator.",
+      "difficulty": "easy",
+      "tags": ["documentation", "best practices", "record keeping"]
+    },
+    {
+      "id": "ch14-q7",
+      "question": "What type of emails must technicians NOT send to customers?",
+      "options": [
+        "Solicited emails",
+        "Work updates",
+        "Unsolicited, chain, and forged emails",
+        "Invoice emails"
+      ],
+      "correct": 2,
+      "explanation": "Unsolicited, chain, and forged emails are unethical and maybe illegal, and must not be sent by technicians.",
+      "difficulty": "medium",
+      "tags": ["ethics", "email", "legal"]
+    },
+    {
+      "id": "ch14-q8",
+      "question": "What must technicians consider during every customer encounter?",
+      "options": [
+        "Sales opportunities",
+        "Privacy and confidentiality concerns",
+        "Upgrade possibilities",
+        "Personal interests"
+      ],
+      "correct": 1,
+      "explanation": "Privacy and confidentiality concerns must be taken into consideration during every customer encounter.",
+      "difficulty": "easy",
+      "tags": ["privacy", "confidentiality", "ethics"]
+    },
+    {
+      "id": "ch14-q9",
+      "question": "What should you do if a problem falls outside the SLA?",
+      "options": [
+        "Refuse to help",
+        "Find positive ways to tell customer what you can do",
+        "Ignore the issue",
+        "Pass to management only"
+      ],
+      "correct": 1,
+      "explanation": "If the problem falls outside SLA parameters, find positive ways of telling the customer what you can do to help.",
+      "difficulty": "medium",
+      "tags": ["SLA", "customer service", "communication"]
+    },
+    {
+      "id": "ch14-q10",
+      "question": "What is considered top priority in call prioritization?",
+      "options": [
+        "Easy problems",
+        "New customers",
+        "Failure that stops company operations",
+        "Oldest tickets"
+      ],
+      "correct": 2,
+      "explanation": "A failure that stops company operations should be considered a top priority in call prioritization.",
+      "difficulty": "easy",
+      "tags": ["call center", "prioritization", "operations"]
+    },
+    {
+      "id": "ch14-q11",
+      "question": "How do call center technicians work with customers?",
+      "options": [
+        "In person only",
+        "Exclusively over the phone",
+        "Through email only",
+        "Via chat only"
+      ],
+      "correct": 1,
+      "explanation": "Call center technicians work exclusively over the phone with customers.",
+      "difficulty": "easy",
+      "tags": ["call center", "communication", "support"]
+    },
+    {
+      "id": "ch14-q12",
+      "question": "What improves as hardware, software, and OS knowledge increases?",
+      "options": [
+        "Typing speed",
+        "Ability to quickly determine problems and find solutions",
+        "Sales skills",
+        "Management abilities"
+      ],
+      "correct": 1,
+      "explanation": "As your hardware, software, and OS knowledge increases, your ability to quickly determine problems and find solutions improves.",
+      "difficulty": "medium",
+      "tags": ["skills", "knowledge", "troubleshooting"]
+    },
+    {
+      "id": "ch14-q13",
+      "question": "What should you be aware of regarding your company?",
+      "options": [
+        "Stock price",
+        "Lunch menu",
+        "Policies and practices",
+        "Competitor names"
+      ],
+      "correct": 2,
+      "explanation": "You should be aware of your company's policies and practices regarding ethics and legal aspects.",
+      "difficulty": "easy",
+      "tags": ["company policy", "ethics", "compliance"]
+    },
+    {
+      "id": "ch14-q14",
+      "question": "What might you need to familiarize yourself with locally?",
+      "options": [
+        "Restaurant locations",
+        "Trademark and copyright laws",
+        "Weather patterns",
+        "Traffic rules"
+      ],
+      "correct": 1,
+      "explanation": "You might need to familiarize yourself with your local or country's trademark and copyright laws.",
+      "difficulty": "medium",
+      "tags": ["legal", "copyright", "trademark"]
+    },
+    {
+      "id": "ch14-q15",
+      "question": "What will always be in demand in the job market?",
+      "options": [
+        "Fast workers",
+        "Cheap technicians",
+        "Knowledgeable technicians with good communication skills",
+        "Silent workers"
+      ],
+      "correct": 2,
+      "explanation": "A knowledgeable technician who uses good communication skills will always be in demand in the job market.",
+      "difficulty": "easy",
+      "tags": ["job market", "skills", "communication"]
+    },
+    {
+      "id": "ch14-q16",
+      "question": "What does clarifying customer statements show?",
+      "options": [
+        "Impatience",
+        "That you are listening",
+        "Technical superiority",
+        "Boredom"
+      ],
+      "correct": 1,
+      "explanation": "Clarifying what customers say after they finish their explanations shows that you are actively listening.",
+      "difficulty": "easy",
+      "tags": ["active listening", "communication", "clarification"]
+    },
+    {
+      "id": "ch14-q17",
+      "question": "What access do bench technicians have?",
+      "options": [
+        "No customer access",
+        "Access to private and confidential customer data",
+        "Only hardware access",
+        "Management systems only"
+      ],
+      "correct": 1,
+      "explanation": "Even bench technicians who don't interact directly with customers have access to their private and confidential data.",
+      "difficulty": "medium",
+      "tags": ["bench technician", "privacy", "data access"]
+    },
+    {
+      "id": "ch14-q18",
+      "question": "What saves time in a call center?",
+      "options": [
+        "Rushing calls",
+        "Call prioritization",
+        "Avoiding difficult issues",
+        "Random selection"
+      ],
+      "correct": 1,
+      "explanation": "Call prioritization saves time by solving the most important issues first.",
+      "difficulty": "easy",
+      "tags": ["call center", "efficiency", "prioritization"]
+    },
+    {
+      "id": "ch14-q19",
+      "question": "What should you do instead of telling customers what you cannot do?",
+      "options": [
+        "Lie about capabilities",
+        "Find positive ways to tell what you can do",
+        "Transfer the call",
+        "End the conversation"
+      ],
+      "correct": 1,
+      "explanation": "Find positive ways of telling the customer what you can do to help, rather than what you cannot do.",
+      "difficulty": "medium",
+      "tags": ["communication", "positive language", "customer service"]
+    },
+    {
+      "id": "ch14-q20",
+      "question": "What happens with more practice of communication skills?",
+      "options": [
+        "Skills deteriorate",
+        "No change occurs",
+        "You become more effective with customers",
+        "Technical skills decrease"
+      ],
+      "correct": 2,
+      "explanation": "The more you practice good communication skills, the more effective you will become when working with customers.",
+      "difficulty": "easy",
+      "tags": ["practice", "communication", "improvement"]
+    },
+    {
+      "id": "ch14-q21",
+      "question": "What is paraphrasing the problem back to customers used for?",
+      "options": [
+        "Wasting time",
+        "Showing you are listening",
+        "Confusing them",
+        "Testing their knowledge"
+      ],
+      "correct": 1,
+      "explanation": "Paraphrasing the problem back to customers shows that you are actively listening and understanding their issue.",
+      "difficulty": "easy",
+      "tags": ["paraphrasing", "active listening", "communication"]
+    },
+    {
+      "id": "ch14-q22",
+      "question": "When should a technician be professional on the phone?",
+      "options": [
+        "Only with managers",
+        "Only during business hours",
+        "Always when talking with customers",
+        "Only on recorded calls"
+      ],
+      "correct": 2,
+      "explanation": "It is important for a technician to always be professional when talking by phone with a customer.",
+      "difficulty": "easy",
+      "tags": ["phone etiquette", "professionalism", "communication"]
+    },
+    {
+      "id": "ch14-q23",
+      "question": "What develops over time with experience?",
+      "options": [
+        "Bad habits",
+        "Good communication and troubleshooting skills",
+        "Impatience",
+        "Shortcuts only"
+      ],
+      "correct": 1,
+      "explanation": "It takes time and experience to develop good communication and troubleshooting skills.",
+      "difficulty": "easy",
+      "tags": ["experience", "skills development", "growth"]
+    },
+    {
+      "id": "ch14-q24",
+      "question": "How should interrupting a customer be perceived?",
+      "options": [
+        "Efficient",
+        "Helpful",
+        "Rude and disrespectful",
+        "Professional"
+      ],
+      "correct": 2,
+      "explanation": "Interrupting a customer can be perceived as rude and disrespectful and may create tension.",
+      "difficulty": "easy",
+      "tags": ["interrupting", "customer service", "behavior"]
+    },
+    {
+      "id": "ch14-q25",
+      "question": "What type of emails can technicians send?",
+      "options": [
+        "Any emails",
+        "Only solicited emails",
+        "Marketing emails",
+        "Chain emails"
+      ],
+      "correct": 1,
+      "explanation": "A technician must only send solicited emails that customers have requested or agreed to receive.",
+      "difficulty": "medium",
+      "tags": ["email", "ethics", "solicited"]
+    },
+    {
+      "id": "ch14-q26",
+      "question": "What must you understand and comply with?",
+      "options": [
+        "Competitor policies",
+        "Customer's SLA",
+        "Personal preferences",
+        "Industry gossip"
+      ],
+      "correct": 1,
+      "explanation": "You must understand and comply with your customer's Service Level Agreement (SLA).",
+      "difficulty": "easy",
+      "tags": ["SLA", "compliance", "agreements"]
+    },
+    {
+      "id": "ch14-q27",
+      "question": "What kind of interjections show active listening?",
+      "options": [
+        "\"Hurry up\"",
+        "\"I see\" or \"I understand\"",
+        "\"That's wrong\"",
+        "\"Stop talking\""
+      ],
+      "correct": 1,
+      "explanation": "Interjections like 'I see' or 'I understand' show customers that you are actively listening.",
+      "difficulty": "easy",
+      "tags": ["active listening", "interjections", "communication"]
+    },
+    {
+      "id": "ch14-q28",
+      "question": "What creates tension between customer and technician?",
+      "options": [
+        "Good communication",
+        "Active listening",
+        "Interrupting behavior",
+        "Documentation"
+      ],
+      "correct": 2,
+      "explanation": "Interrupting behavior can create tension between the customer and the technician.",
+      "difficulty": "easy",
+      "tags": ["tension", "behavior", "customer relations"]
+    },
+    {
+      "id": "ch14-q29",
+      "question": "What is important to make customers feel?",
+      "options": [
+        "Rushed",
+        "Ignored",
+        "That they are being listened to",
+        "Technically inferior"
+      ],
+      "correct": 2,
+      "explanation": "It is very important to make customers feel that they are being listened to.",
+      "difficulty": "easy",
+      "tags": ["customer feelings", "listening", "empathy"]
+    },
+    {
+      "id": "ch14-q30",
+      "question": "What should guide your ethical behavior?",
+      "options": [
+        "Personal gain",
+        "Company policies and local laws",
+        "Customer demands only",
+        "Convenience"
+      ],
+      "correct": 1,
+      "explanation": "Your ethical behavior should be guided by company policies and practices, as well as local laws.",
+      "difficulty": "medium",
+      "tags": ["ethics", "policies", "legal"]
+    },
+    {
+      "id": "ch14-q31",
+      "question": "What is a benefit of good documentation?",
+      "options": [
+        "Takes too much time",
+        "Helps track work and solutions",
+        "Impresses customers only",
+        "Not necessary"
+      ],
+      "correct": 1,
+      "explanation": "Good documentation helps track work performed, solutions implemented, and provides reference for future issues.",
+      "difficulty": "easy",
+      "tags": ["documentation", "benefits", "tracking"]
+    },
+    {
+      "id": "ch14-q32",
+      "question": "What should technicians avoid using with customers?",
+      "options": [
+        "Simple language",
+        "Technical jargon",
+        "Clear explanations",
+        "Examples"
+      ],
+      "correct": 1,
+      "explanation": "Technicians should avoid using technical jargon that customers may not understand.",
+      "difficulty": "easy",
+      "tags": ["jargon", "communication", "clarity"]
+    },
+    {
+      "id": "ch14-q33",
+      "question": "What is the goal of professional behavior?",
+      "options": [
+        "Show superiority",
+        "Increase customer confidence and credibility",
+        "Finish quickly",
+        "Avoid responsibility"
+      ],
+      "correct": 1,
+      "explanation": "Professional behavior increases customer confidence and enhances your credibility as a technician.",
+      "difficulty": "easy",
+      "tags": ["professionalism", "goals", "customer confidence"]
+    },
+    {
+      "id": "ch14-q34",
+      "question": "What should you do when dealing with customer property?",
+      "options": [
+        "Use it freely",
+        "Respect privacy and handle ethically",
+        "Share interesting findings",
+        "Copy personal data"
+      ],
+      "correct": 1,
+      "explanation": "You must respect customer privacy and handle their property ethically and legally.",
+      "difficulty": "easy",
+      "tags": ["ethics", "privacy", "customer property"]
+    },
+    {
+      "id": "ch14-q35",
+      "question": "What makes a technician valuable in the job market?",
+      "options": [
+        "Low rates only",
+        "Speed only",
+        "Knowledge combined with communication skills",
+        "Availability only"
+      ],
+      "correct": 2,
+      "explanation": "A knowledgeable technician who uses good communication skills will always be in demand in the job market.",
+      "difficulty": "easy",
+      "tags": ["job market", "value", "skills combination"]
+    }
+  ]
+}

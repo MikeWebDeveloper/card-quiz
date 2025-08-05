@@ -1,0 +1,496 @@
+{
+  "chapter": 3,
+  "title": "Advanced Computer Hardware",
+  "questions": [
+    {
+      "id": "ch3-q1",
+      "question": "What happens to BIOS settings if the CMOS battery fails?",
+      "options": [
+        "Settings are saved to the hard drive",
+        "Settings may be lost",
+        "Computer won't start",
+        "Settings are backed up automatically"
+      ],
+      "correct": 1,
+      "explanation": "BIOS information is maintained through the CMOS battery. If the battery no longer provides power, configuration settings may be lost.",
+      "difficulty": "easy",
+      "tags": ["BIOS", "CMOS", "troubleshooting"]
+    },
+    {
+      "id": "ch3-q2",
+      "question": "Which RAID level provides data striping without redundancy?",
+      "options": [
+        "RAID 0",
+        "RAID 1",
+        "RAID 5",
+        "RAID 10"
+      ],
+      "correct": 0,
+      "explanation": "RAID 0 provides data striping across multiple disks for improved performance but offers no redundancy or fault tolerance.",
+      "difficulty": "medium",
+      "tags": ["RAID", "storage", "performance"]
+    },
+    {
+      "id": "ch3-q3",
+      "question": "What is the main advantage of UEFI over traditional BIOS?",
+      "options": [
+        "Lower cost",
+        "Smaller size",
+        "Support for larger boot drives and secure boot",
+        "Faster POST process only"
+      ],
+      "correct": 2,
+      "explanation": "UEFI supports larger boot drives (over 2TB), secure boot, faster startup, and can run on both 32-bit and 64-bit systems.",
+      "difficulty": "medium",
+      "tags": ["UEFI", "BIOS", "boot"]
+    },
+    {
+      "id": "ch3-q4",
+      "question": "What does CPU virtualization enable?",
+      "options": [
+        "Faster clock speeds",
+        "Lower power consumption",
+        "A single processor to act as multiple processors",
+        "Better graphics performance"
+      ],
+      "correct": 2,
+      "explanation": "CPU virtualization is a hardware feature that enables a single processor to act as multiple processors, allowing multiple VMs to run in parallel.",
+      "difficulty": "medium",
+      "tags": ["CPU", "virtualization", "architecture"]
+    },
+    {
+      "id": "ch3-q5",
+      "question": "Which three features can be configured in BIOS to secure a computer?",
+      "options": [
+        "Passwords, drive encryption, TPM",
+        "Firewall, antivirus, passwords",
+        "User accounts, permissions, encryption",
+        "MAC filtering, WPA2, passwords"
+      ],
+      "correct": 0,
+      "explanation": "BIOS security features include passwords, drive encryption settings, and TPM (Trusted Platform Module) configuration.",
+      "difficulty": "medium",
+      "tags": ["BIOS", "security", "configuration"]
+    },
+    {
+      "id": "ch3-q6",
+      "question": "What is overclocking?",
+      "options": [
+        "Running the CPU at lower speeds to save power",
+        "Increasing the CPU clock speed beyond manufacturer specifications",
+        "Adding more RAM to the system",
+        "Installing multiple CPUs"
+      ],
+      "correct": 1,
+      "explanation": "Overclocking is increasing the CPU clock speed beyond manufacturer specifications to make the computer run faster, but it generates more heat.",
+      "difficulty": "easy",
+      "tags": ["CPU", "overclocking", "performance"]
+    },
+    {
+      "id": "ch3-q7",
+      "question": "Which two considerations are most important when building a workstation for multiple VMs?",
+      "options": [
+        "Large amounts of RAM and powerful CPU",
+        "Multiple monitors and graphics cards",
+        "Fast internet and wireless capability",
+        "Compact case and quiet operation"
+      ],
+      "correct": 0,
+      "explanation": "Virtual machines require substantial RAM and CPU processing power as each VM needs its own allocated resources.",
+      "difficulty": "medium",
+      "tags": ["virtualization", "hardware requirements", "VM"]
+    },
+    {
+      "id": "ch3-q8",
+      "question": "What indicates a hardware failure during POST?",
+      "options": [
+        "Blue screen of death",
+        "Pattern of beep codes",
+        "No video output",
+        "Continuous restarting"
+      ],
+      "correct": 1,
+      "explanation": "During POST, the BIOS uses beep codes (patterns of beeps) to indicate specific hardware failures when the system cannot display error messages.",
+      "difficulty": "easy",
+      "tags": ["POST", "troubleshooting", "BIOS"]
+    },
+    {
+      "id": "ch3-q9",
+      "question": "What is a multicore processor?",
+      "options": [
+        "Multiple separate CPUs on the motherboard",
+        "A CPU that can run multiple operating systems",
+        "Two or more processors on the same integrated circuit",
+        "A processor with multiple cache levels"
+      ],
+      "correct": 2,
+      "explanation": "Multicore processors have two or more processor cores on the same integrated circuit, allowing parallel processing.",
+      "difficulty": "easy",
+      "tags": ["CPU", "multicore", "architecture"]
+    },
+    {
+      "id": "ch3-q10",
+      "question": "After a power outage, a server displays 'RAID not found'. What is a possible cause?",
+      "options": [
+        "Operating system corruption",
+        "RAM failure",
+        "RAID controller not receiving power or failed",
+        "Network connection lost"
+      ],
+      "correct": 2,
+      "explanation": "RAID not found errors can be caused by the RAID controller not receiving power, controller failure, or incorrect BIOS settings.",
+      "difficulty": "medium",
+      "tags": ["RAID", "troubleshooting", "server"]
+    },
+    {
+      "id": "ch3-q11",
+      "question": "Which RAID level requires a minimum of 3 drives and provides redundancy?",
+      "options": [
+        "RAID 0",
+        "RAID 1",
+        "RAID 5",
+        "RAID 10"
+      ],
+      "correct": 2,
+      "explanation": "RAID 5 requires a minimum of 3 drives and provides data striping with distributed parity for redundancy.",
+      "difficulty": "medium",
+      "tags": ["RAID", "storage", "redundancy"]
+    },
+    {
+      "id": "ch3-q12",
+      "question": "What is the purpose of Secure Boot in UEFI?",
+      "options": [
+        "Encrypt the hard drive",
+        "Speed up boot time",
+        "Ensure only trusted operating systems can boot",
+        "Protect BIOS settings"
+      ],
+      "correct": 2,
+      "explanation": "Secure Boot ensures that devices will only boot a trusted operating system by verifying digital signatures.",
+      "difficulty": "medium",
+      "tags": ["UEFI", "security", "boot"]
+    },
+    {
+      "id": "ch3-q13",
+      "question": "Which power state allows a computer to return to work quickly while consuming almost no power?",
+      "options": [
+        "S0 - Working",
+        "S3 - Sleep/Standby",
+        "S4 - Hibernate",
+        "S5 - Soft Off"
+      ],
+      "correct": 1,
+      "explanation": "S3 (Sleep/Standby) maintains RAM contents while most components are powered down, allowing quick resume with minimal power consumption.",
+      "difficulty": "medium",
+      "tags": ["power states", "ACPI", "power management"]
+    },
+    {
+      "id": "ch3-q14",
+      "question": "What technology allows the CPU to adjust its clock speed based on workload?",
+      "options": [
+        "Overclocking",
+        "Turbo Boost/Turbo Core",
+        "Hyper-Threading",
+        "Virtualization"
+      ],
+      "correct": 1,
+      "explanation": "Turbo Boost (Intel) and Turbo Core (AMD) dynamically increase CPU clock speed when needed for demanding tasks.",
+      "difficulty": "medium",
+      "tags": ["CPU", "performance", "technology"]
+    },
+    {
+      "id": "ch3-q15",
+      "question": "Which component determines the maximum amount of RAM a system can support?",
+      "options": [
+        "Power supply",
+        "CPU",
+        "Motherboard chipset",
+        "Operating system only"
+      ],
+      "correct": 2,
+      "explanation": "The motherboard chipset determines the maximum RAM capacity, types supported, and number of memory slots available.",
+      "difficulty": "medium",
+      "tags": ["motherboard", "chipset", "RAM"]
+    },
+    {
+      "id": "ch3-q16",
+      "question": "What is the primary purpose of the TPM (Trusted Platform Module)?",
+      "options": [
+        "Increase processing speed",
+        "Store encryption keys and passwords securely",
+        "Manage power consumption",
+        "Control fan speeds"
+      ],
+      "correct": 1,
+      "explanation": "TPM is a hardware security chip that stores encryption keys, passwords, and digital certificates securely.",
+      "difficulty": "medium",
+      "tags": ["TPM", "security", "hardware"]
+    },
+    {
+      "id": "ch3-q17",
+      "question": "Which RAID level provides mirroring for redundancy?",
+      "options": [
+        "RAID 0",
+        "RAID 1",
+        "RAID 5",
+        "RAID 6"
+      ],
+      "correct": 1,
+      "explanation": "RAID 1 provides mirroring, where data is duplicated on two drives for redundancy and fault tolerance.",
+      "difficulty": "easy",
+      "tags": ["RAID", "mirroring", "redundancy"]
+    },
+    {
+      "id": "ch3-q18",
+      "question": "What happens in ACPI power state S4?",
+      "options": [
+        "System is fully operational",
+        "RAM contents saved to disk, system powered off",
+        "System in standby mode",
+        "Complete shutdown"
+      ],
+      "correct": 1,
+      "explanation": "S4 (Hibernate) saves RAM contents to disk and powers off the system, allowing full state restoration on next boot.",
+      "difficulty": "medium",
+      "tags": ["ACPI", "power states", "hibernate"]
+    },
+    {
+      "id": "ch3-q19",
+      "question": "Which technology allows a single physical CPU core to handle two threads simultaneously?",
+      "options": [
+        "Dual-core processing",
+        "Turbo Boost",
+        "Hyper-Threading (Intel) / SMT (AMD)",
+        "Virtualization"
+      ],
+      "correct": 2,
+      "explanation": "Hyper-Threading (Intel) and Simultaneous Multithreading (AMD) allow a single CPU core to process two threads simultaneously.",
+      "difficulty": "medium",
+      "tags": ["CPU", "threading", "performance"]
+    },
+    {
+      "id": "ch3-q20",
+      "question": "What is required to enter UEFI/BIOS setup on most modern systems?",
+      "options": [
+        "Windows administrative password",
+        "Pressing a specific key during POST (like F2, Del, or Esc)",
+        "Special software from manufacturer",
+        "Removing the CMOS battery"
+      ],
+      "correct": 1,
+      "explanation": "Accessing UEFI/BIOS typically requires pressing a specific key (F2, Delete, Esc, etc.) during the POST process.",
+      "difficulty": "easy",
+      "tags": ["BIOS", "UEFI", "setup"]
+    },
+    {
+      "id": "ch3-q21",
+      "question": "Which bus connects the CPU to high-speed components like RAM and graphics cards?",
+      "options": [
+        "South Bridge",
+        "Front Side Bus (FSB)",
+        "PCI bus",
+        "USB bus"
+      ],
+      "correct": 1,
+      "explanation": "The Front Side Bus (FSB) or modern equivalents connect the CPU to high-speed components like RAM and the graphics card slot.",
+      "difficulty": "hard",
+      "tags": ["motherboard", "architecture", "bus"]
+    },
+    {
+      "id": "ch3-q22",
+      "question": "What is the main disadvantage of RAID 0?",
+      "options": [
+        "Slow performance",
+        "High cost",
+        "No fault tolerance - if one drive fails, all data is lost",
+        "Requires many drives"
+      ],
+      "correct": 2,
+      "explanation": "RAID 0 provides no redundancy - if any drive in the array fails, all data across all drives is lost.",
+      "difficulty": "medium",
+      "tags": ["RAID", "storage", "risks"]
+    },
+    {
+      "id": "ch3-q23",
+      "question": "Which feature must be enabled in BIOS/UEFI to run virtual machines efficiently?",
+      "options": [
+        "Secure Boot",
+        "Hardware virtualization (VT-x/AMD-V)",
+        "Fast Boot",
+        "Legacy Support"
+      ],
+      "correct": 1,
+      "explanation": "Hardware virtualization extensions (Intel VT-x or AMD-V) must be enabled in BIOS/UEFI for efficient VM performance.",
+      "difficulty": "medium",
+      "tags": ["virtualization", "BIOS", "CPU"]
+    },
+    {
+      "id": "ch3-q24",
+      "question": "What is the maximum partition size supported by MBR?",
+      "options": [
+        "1TB",
+        "2TB",
+        "4TB",
+        "No limit"
+      ],
+      "correct": 1,
+      "explanation": "MBR (Master Boot Record) supports a maximum partition size of 2TB, while GPT supports much larger partitions.",
+      "difficulty": "hard",
+      "tags": ["storage", "partitioning", "MBR"]
+    },
+    {
+      "id": "ch3-q25",
+      "question": "Which component is responsible for controlling data flow between CPU, RAM, and peripheral devices?",
+      "options": [
+        "Power supply",
+        "Chipset",
+        "BIOS",
+        "Cache"
+      ],
+      "correct": 1,
+      "explanation": "The chipset manages data flow between the CPU, memory, and peripheral devices on the motherboard.",
+      "difficulty": "medium",
+      "tags": ["chipset", "motherboard", "architecture"]
+    },
+    {
+      "id": "ch3-q26",
+      "question": "What type of cooling is recommended for overclocked CPUs?",
+      "options": [
+        "Stock air cooler",
+        "Case fans only",
+        "High-performance air or liquid cooling",
+        "Passive cooling"
+      ],
+      "correct": 2,
+      "explanation": "Overclocked CPUs generate significantly more heat and require high-performance air coolers or liquid cooling solutions.",
+      "difficulty": "medium",
+      "tags": ["cooling", "overclocking", "CPU"]
+    },
+    {
+      "id": "ch3-q27",
+      "question": "Which RAID level combines mirroring and striping?",
+      "options": [
+        "RAID 5",
+        "RAID 6",
+        "RAID 10 (1+0)",
+        "RAID 0"
+      ],
+      "correct": 2,
+      "explanation": "RAID 10 (or 1+0) combines RAID 1 mirroring with RAID 0 striping for both performance and redundancy.",
+      "difficulty": "medium",
+      "tags": ["RAID", "storage", "redundancy"]
+    },
+    {
+      "id": "ch3-q28",
+      "question": "What is the purpose of CPU cache?",
+      "options": [
+        "Store BIOS settings",
+        "Provide fast access to frequently used data",
+        "Cool the processor",
+        "Connect to peripherals"
+      ],
+      "correct": 1,
+      "explanation": "CPU cache provides extremely fast access to frequently used data and instructions, reducing memory access latency.",
+      "difficulty": "easy",
+      "tags": ["CPU", "cache", "performance"]
+    },
+    {
+      "id": "ch3-q29",
+      "question": "Which boot mode is required for drives larger than 2TB?",
+      "options": [
+        "Legacy BIOS",
+        "UEFI with GPT",
+        "MBR mode",
+        "Safe mode"
+      ],
+      "correct": 1,
+      "explanation": "UEFI boot mode with GPT (GUID Partition Table) is required to boot from drives larger than 2TB.",
+      "difficulty": "medium",
+      "tags": ["UEFI", "GPT", "boot"]
+    },
+    {
+      "id": "ch3-q30",
+      "question": "What does enabling XMP/DOCP in BIOS do?",
+      "options": [
+        "Overclock the CPU",
+        "Enable virtualization",
+        "Apply RAM manufacturer's tested overclocking profiles",
+        "Increase storage speed"
+      ],
+      "correct": 2,
+      "explanation": "XMP (Intel) and DOCP (AMD) enable pre-tested RAM overclocking profiles for optimal memory performance.",
+      "difficulty": "hard",
+      "tags": ["RAM", "overclocking", "BIOS"]
+    },
+    {
+      "id": "ch3-q31",
+      "question": "Which technology provides out-of-band management for servers?",
+      "options": [
+        "RAID controller",
+        "IPMI/iLO/iDRAC",
+        "TPM chip",
+        "Virtualization"
+      ],
+      "correct": 1,
+      "explanation": "IPMI, iLO (HP), and iDRAC (Dell) provide out-of-band management, allowing remote access even when the OS is down.",
+      "difficulty": "hard",
+      "tags": ["server", "management", "remote access"]
+    },
+    {
+      "id": "ch3-q32",
+      "question": "What happens when you clear CMOS?",
+      "options": [
+        "Hard drive is erased",
+        "BIOS settings return to factory defaults",
+        "Operating system is reinstalled",
+        "RAM is cleared"
+      ],
+      "correct": 1,
+      "explanation": "Clearing CMOS resets all BIOS/UEFI settings to factory defaults, useful for troubleshooting configuration issues.",
+      "difficulty": "easy",
+      "tags": ["CMOS", "BIOS", "troubleshooting"]
+    },
+    {
+      "id": "ch3-q33",
+      "question": "Which CPU feature helps prevent malicious code execution?",
+      "options": [
+        "Turbo Boost",
+        "Hyper-Threading",
+        "NX bit (No-Execute bit)",
+        "Multiple cores"
+      ],
+      "correct": 2,
+      "explanation": "The NX bit (No-Execute bit) marks memory pages as non-executable, preventing malicious code from running in data areas.",
+      "difficulty": "hard",
+      "tags": ["CPU", "security", "features"]
+    },
+    {
+      "id": "ch3-q34",
+      "question": "What is the minimum number of drives required for RAID 10?",
+      "options": [
+        "2 drives",
+        "3 drives",
+        "4 drives",
+        "5 drives"
+      ],
+      "correct": 2,
+      "explanation": "RAID 10 requires a minimum of 4 drives - pairs of drives are mirrored, then the mirrors are striped.",
+      "difficulty": "medium",
+      "tags": ["RAID", "storage", "requirements"]
+    },
+    {
+      "id": "ch3-q35",
+      "question": "Which voltage is primarily used by modern DDR4 RAM?",
+      "options": [
+        "3.3V",
+        "2.5V",
+        "1.5V",
+        "1.2V"
+      ],
+      "correct": 3,
+      "explanation": "DDR4 RAM operates at 1.2V standard voltage, lower than DDR3's 1.5V, improving power efficiency.",
+      "difficulty": "hard",
+      "tags": ["RAM", "voltage", "specifications"]
+    }
+  ]
+}

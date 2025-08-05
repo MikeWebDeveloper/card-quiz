@@ -1,0 +1,496 @@
+{
+  "chapter": 13,
+  "title": "Virtualization and Cloud Computing",
+  "questions": [
+    {
+      "id": "ch13-q1",
+      "question": "What does virtualization enable?",
+      "options": [
+        "Faster internet speeds",
+        "A single computer to host multiple independent virtual computers",
+        "Better graphics performance",
+        "Increased storage capacity"
+      ],
+      "correct": 1,
+      "explanation": "Virtualization enables a single computer to host multiple independent virtual computers that share the host computer hardware.",
+      "difficulty": "easy",
+      "tags": ["virtualization", "VM", "basics"]
+    },
+    {
+      "id": "ch13-q2",
+      "question": "What is another name for a hypervisor?",
+      "options": [
+        "Virtual Machine Manager (VMM)",
+        "Cloud Controller",
+        "System Administrator",
+        "Network Manager"
+      ],
+      "correct": 0,
+      "explanation": "The hypervisor is also called the Virtual Machine Manager (VMM) and is the brain of virtualization.",
+      "difficulty": "easy",
+      "tags": ["hypervisor", "VMM", "virtualization"]
+    },
+    {
+      "id": "ch13-q3",
+      "question": "What type of hypervisor installs directly on host hardware?",
+      "options": [
+        "Type 0",
+        "Type 1 (Bare Metal)",
+        "Type 2 (Hosted)",
+        "Type 3"
+      ],
+      "correct": 1,
+      "explanation": "Type 1 or bare metal hypervisors install directly on host hardware with direct access to resources.",
+      "difficulty": "medium",
+      "tags": ["hypervisor", "Type 1", "bare metal"]
+    },
+    {
+      "id": "ch13-q4",
+      "question": "Which are examples of Type 1 hypervisors?",
+      "options": [
+        "VMware Workstation and VirtualBox",
+        "VMware vSphere and Oracle VM Server",
+        "Windows 10 Hyper-V and Virtual PC",
+        "Docker and Kubernetes"
+      ],
+      "correct": 1,
+      "explanation": "VMware vSphere and Oracle VM Server are examples of Type 1 (bare metal) hypervisors.",
+      "difficulty": "medium",
+      "tags": ["Type 1", "VMware", "hypervisor"]
+    },
+    {
+      "id": "ch13-q5",
+      "question": "What characteristic defines Type 2 hypervisors?",
+      "options": [
+        "Install on bare metal",
+        "Hosted by an operating system",
+        "No OS required",
+        "Hardware-only solution"
+      ],
+      "correct": 1,
+      "explanation": "Type 2 hypervisors are hosted by an operating system rather than installing directly on hardware.",
+      "difficulty": "medium",
+      "tags": ["Type 2", "hypervisor", "hosted"]
+    },
+    {
+      "id": "ch13-q6",
+      "question": "What does IaaS stand for?",
+      "options": [
+        "Internet as a Service",
+        "Infrastructure as a Service",
+        "Information as a Service",
+        "Integration as a Service"
+      ],
+      "correct": 1,
+      "explanation": "IaaS stands for Infrastructure as a Service, providing on-demand access to cloud-hosted compute, storage, and networking.",
+      "difficulty": "easy",
+      "tags": ["IaaS", "cloud computing", "service models"]
+    },
+    {
+      "id": "ch13-q7",
+      "question": "What does PaaS provide to developers?",
+      "options": [
+        "Only storage",
+        "Operating systems, development tools, and programming languages",
+        "Only networking",
+        "Email services only"
+      ],
+      "correct": 1,
+      "explanation": "PaaS provides access to operating systems, development tools, programming languages, and libraries for developing applications.",
+      "difficulty": "medium",
+      "tags": ["PaaS", "platform", "development"]
+    },
+    {
+      "id": "ch13-q8",
+      "question": "Which is an example of SaaS?",
+      "options": [
+        "VMware vSphere",
+        "Amazon EC2",
+        "Microsoft Office 365",
+        "Oracle VM Server"
+      ],
+      "correct": 2,
+      "explanation": "Microsoft Office 365 is a SaaS offering that provides office tools over the Internet on a subscription basis.",
+      "difficulty": "easy",
+      "tags": ["SaaS", "Office 365", "cloud services"]
+    },
+    {
+      "id": "ch13-q9",
+      "question": "What is the main difference between cloud computing and virtualization?",
+      "options": [
+        "They are the same thing",
+        "Cloud computing separates application from hardware, virtualization separates OS from hardware",
+        "Cloud computing is faster",
+        "Virtualization is more expensive"
+      ],
+      "correct": 1,
+      "explanation": "Cloud computing separates the application from hardware while virtualization separates the OS from underlying hardware.",
+      "difficulty": "hard",
+      "tags": ["cloud computing", "virtualization", "differences"]
+    },
+    {
+      "id": "ch13-q10",
+      "question": "Which hypervisor is more efficient?",
+      "options": [
+        "Type 2 because it has more features",
+        "Type 1 because it has direct hardware access",
+        "Both are equally efficient",
+        "Efficiency depends on the OS"
+      ],
+      "correct": 1,
+      "explanation": "Type 1 hypervisors are more efficient because they have direct access to host hardware with fewer layers of abstraction.",
+      "difficulty": "medium",
+      "tags": ["hypervisor", "efficiency", "Type 1"]
+    },
+    {
+      "id": "ch13-q11",
+      "question": "What does a virtual machine run?",
+      "options": [
+        "Only applications",
+        "Its own operating system",
+        "Only one program",
+        "Shared OS with host"
+      ],
+      "correct": 1,
+      "explanation": "A virtual machine runs its own operating system independently from the host and other VMs.",
+      "difficulty": "easy",
+      "tags": ["VM", "operating system", "virtualization"]
+    },
+    {
+      "id": "ch13-q12",
+      "question": "Which are examples of Type 2 hypervisors?",
+      "options": [
+        "VMware vSphere and ESXi",
+        "VMware Workstation, VirtualBox, and Windows 10 Hyper-V",
+        "Docker and Kubernetes",
+        "AWS and Azure"
+      ],
+      "correct": 1,
+      "explanation": "VMware Workstation, Oracle VM VirtualBox, and Windows 10 Hyper-V are examples of Type 2 (hosted) hypervisors.",
+      "difficulty": "medium",
+      "tags": ["Type 2", "hypervisor", "examples"]
+    },
+    {
+      "id": "ch13-q13",
+      "question": "What keeps VMs isolated from each other?",
+      "options": [
+        "Physical barriers",
+        "Network switches",
+        "Hypervisors",
+        "Antivirus software"
+      ],
+      "correct": 2,
+      "explanation": "Hypervisors (VMMs) manage and keep virtual machines isolated from each other.",
+      "difficulty": "easy",
+      "tags": ["hypervisor", "isolation", "VM"]
+    },
+    {
+      "id": "ch13-q14",
+      "question": "What does cloud computing provide users?",
+      "options": [
+        "Free hardware",
+        "On-demand delivery of computer services over the Internet",
+        "Unlimited storage",
+        "Faster processors"
+      ],
+      "correct": 1,
+      "explanation": "Cloud computing provides users with on-demand delivery of computer services over the Internet.",
+      "difficulty": "easy",
+      "tags": ["cloud computing", "on-demand", "services"]
+    },
+    {
+      "id": "ch13-q15",
+      "question": "Which cloud providers offer PaaS?",
+      "options": [
+        "Only Amazon",
+        "Only Microsoft",
+        "Amazon AWS, Oracle Cloud, Google Cloud Platform, Microsoft Azure",
+        "Only Google"
+      ],
+      "correct": 2,
+      "explanation": "Major PaaS providers include Amazon Web Service, Oracle Cloud, Google Cloud Platform, and Microsoft Azure.",
+      "difficulty": "medium",
+      "tags": ["PaaS", "providers", "cloud platforms"]
+    },
+    {
+      "id": "ch13-q16",
+      "question": "What is Salesforce CRM an example of?",
+      "options": [
+        "IaaS",
+        "PaaS",
+        "SaaS",
+        "Virtualization software"
+      ],
+      "correct": 2,
+      "explanation": "Salesforce CRM is a SaaS (Software as a Service) offering for customer relationship management.",
+      "difficulty": "easy",
+      "tags": ["SaaS", "Salesforce", "CRM"]
+    },
+    {
+      "id": "ch13-q17",
+      "question": "What payment model do cloud services typically use?",
+      "options": [
+        "One-time purchase only",
+        "Subscription-based or pay-per-use",
+        "Free forever",
+        "Annual payment only"
+      ],
+      "correct": 1,
+      "explanation": "Cloud users access resources through subscription-based or pay-per-use services.",
+      "difficulty": "easy",
+      "tags": ["cloud computing", "payment", "subscription"]
+    },
+    {
+      "id": "ch13-q18",
+      "question": "What is required to access cloud services?",
+      "options": [
+        "Special hardware",
+        "Expensive software",
+        "Nothing more than a web browser",
+        "Physical servers"
+      ],
+      "correct": 2,
+      "explanation": "Cloud services can be accessed in real time using nothing more than a web browser.",
+      "difficulty": "easy",
+      "tags": ["cloud access", "web browser", "requirements"]
+    },
+    {
+      "id": "ch13-q19",
+      "question": "What does IaaS provide to organizations?",
+      "options": [
+        "Only email services",
+        "Access to network equipment, virtualized services, storage, and infrastructure",
+        "Only software applications",
+        "Only development tools"
+      ],
+      "correct": 1,
+      "explanation": "IaaS provides organizations access to network equipment, virtualized network services, storage, software, and supporting infrastructure.",
+      "difficulty": "medium",
+      "tags": ["IaaS", "infrastructure", "services"]
+    },
+    {
+      "id": "ch13-q20",
+      "question": "Who benefits most from PaaS?",
+      "options": [
+        "End users only",
+        "Application developers",
+        "Network administrators only",
+        "Hardware manufacturers"
+      ],
+      "correct": 1,
+      "explanation": "PaaS is particularly useful to application developers who need development tools and platforms.",
+      "difficulty": "easy",
+      "tags": ["PaaS", "developers", "target audience"]
+    },
+    {
+      "id": "ch13-q21",
+      "question": "What separates physical hardware from virtual machines?",
+      "options": [
+        "Network cables",
+        "Virtualization software",
+        "Operating system",
+        "Applications"
+      ],
+      "correct": 1,
+      "explanation": "Virtualization software separates the actual physical hardware from the virtual machine instances.",
+      "difficulty": "easy",
+      "tags": ["virtualization", "software", "separation"]
+    },
+    {
+      "id": "ch13-q22",
+      "question": "What is Microsoft Virtual PC an example of?",
+      "options": [
+        "Type 1 hypervisor",
+        "Type 2 hypervisor",
+        "Cloud service",
+        "Operating system"
+      ],
+      "correct": 1,
+      "explanation": "Microsoft Virtual PC is an example of a Type 2 (hosted) hypervisor.",
+      "difficulty": "medium",
+      "tags": ["Virtual PC", "Type 2", "Microsoft"]
+    },
+    {
+      "id": "ch13-q23",
+      "question": "What advantage does cloud computing offer for backups?",
+      "options": [
+        "Faster hard drives",
+        "No need for additional software or servers",
+        "Free unlimited storage",
+        "Automatic encryption"
+      ],
+      "correct": 1,
+      "explanation": "Cloud computing allows users to back up and store files without needing additional software or servers.",
+      "difficulty": "medium",
+      "tags": ["cloud computing", "backup", "advantages"]
+    },
+    {
+      "id": "ch13-q24",
+      "question": "What is the difference between a data center and cloud computing?",
+      "options": [
+        "No difference",
+        "Cloud provides shared resources, data center is a facility",
+        "Data centers are virtual",
+        "Cloud computing requires physical presence"
+      ],
+      "correct": 1,
+      "explanation": "Cloud computing provides access to shared computing resources, while a data center is a facility that stores and processes data.",
+      "difficulty": "medium",
+      "tags": ["cloud computing", "data center", "differences"]
+    },
+    {
+      "id": "ch13-q25",
+      "question": "What can each VM operate with independently?",
+      "options": [
+        "Only shared resources",
+        "Its own OS, applications, memory, and storage",
+        "Only borrowed resources",
+        "Same specifications as host"
+      ],
+      "correct": 1,
+      "explanation": "Each VM operates independently with its own operating system, applications, memory, and storage specifications.",
+      "difficulty": "medium",
+      "tags": ["VM", "independence", "resources"]
+    },
+    {
+      "id": "ch13-q26",
+      "question": "What is Google G Suite an example of?",
+      "options": [
+        "IaaS",
+        "PaaS",
+        "SaaS",
+        "Type 1 hypervisor"
+      ],
+      "correct": 2,
+      "explanation": "Google G Suite is a SaaS offering providing productivity and collaboration tools.",
+      "difficulty": "easy",
+      "tags": ["SaaS", "Google", "G Suite"]
+    },
+    {
+      "id": "ch13-q27",
+      "question": "What makes Type 1 hypervisors 'bare metal'?",
+      "options": [
+        "They are made of metal",
+        "They install directly on hardware without an OS",
+        "They are very basic",
+        "They require metal cases"
+      ],
+      "correct": 1,
+      "explanation": "Type 1 hypervisors are called 'bare metal' because they install directly on hardware without needing a host OS.",
+      "difficulty": "medium",
+      "tags": ["Type 1", "bare metal", "hypervisor"]
+    },
+    {
+      "id": "ch13-q28",
+      "question": "What technology do IaaS tools rely on?",
+      "options": [
+        "Physical servers only",
+        "Virtualization technology",
+        "Wireless networks",
+        "Quantum computing"
+      ],
+      "correct": 1,
+      "explanation": "IaaS tools rely on virtualization technology, enabling multiple VMs to run on a single physical server.",
+      "difficulty": "medium",
+      "tags": ["IaaS", "virtualization", "technology"]
+    },
+    {
+      "id": "ch13-q29",
+      "question": "What services does SaaS typically provide?",
+      "options": [
+        "Hardware only",
+        "Email, calendar, communication, and office tools",
+        "Network cables",
+        "Physical servers"
+      ],
+      "correct": 1,
+      "explanation": "SaaS provides access to services like email, calendar, communication, and office tools over the Internet.",
+      "difficulty": "easy",
+      "tags": ["SaaS", "services", "applications"]
+    },
+    {
+      "id": "ch13-q30",
+      "question": "What is SharePoint an example of?",
+      "options": [
+        "Operating system",
+        "Hypervisor",
+        "SaaS provider",
+        "Hardware"
+      ],
+      "correct": 2,
+      "explanation": "Microsoft SharePoint is a SaaS offering for collaboration and document management.",
+      "difficulty": "easy",
+      "tags": ["SharePoint", "SaaS", "Microsoft"]
+    },
+    {
+      "id": "ch13-q31",
+      "question": "What advantage do Type 1 hypervisors have?",
+      "options": [
+        "Cheaper to implement",
+        "Easier to install",
+        "Fewer layers of abstraction",
+        "Better graphics"
+      ],
+      "correct": 2,
+      "explanation": "Type 1 hypervisors have fewer layers of abstraction due to direct hardware access, making them more efficient.",
+      "difficulty": "hard",
+      "tags": ["Type 1", "advantages", "efficiency"]
+    },
+    {
+      "id": "ch13-q32",
+      "question": "What enables multiple VMs on one physical server?",
+      "options": [
+        "Multiple CPUs required",
+        "Virtualization and hypervisors",
+        "Special hardware only",
+        "Cloud connection"
+      ],
+      "correct": 1,
+      "explanation": "Virtualization technology and hypervisors enable multiple VMs to run on a single physical server.",
+      "difficulty": "medium",
+      "tags": ["virtualization", "VM", "hypervisor"]
+    },
+    {
+      "id": "ch13-q33",
+      "question": "What is Oracle VM VirtualBox?",
+      "options": [
+        "Type 1 hypervisor",
+        "Type 2 hypervisor",
+        "Cloud service",
+        "Operating system"
+      ],
+      "correct": 1,
+      "explanation": "Oracle VM VirtualBox is a Type 2 (hosted) hypervisor that runs on top of an existing OS.",
+      "difficulty": "medium",
+      "tags": ["VirtualBox", "Type 2", "Oracle"]
+    },
+    {
+      "id": "ch13-q34",
+      "question": "What do cloud services eliminate the need for?",
+      "options": [
+        "Internet connection",
+        "Additional software or servers for users",
+        "Web browsers",
+        "User accounts"
+      ],
+      "correct": 1,
+      "explanation": "Cloud computing allows users to perform tasks without needing additional software or servers.",
+      "difficulty": "easy",
+      "tags": ["cloud computing", "advantages", "resources"]
+    },
+    {
+      "id": "ch13-q35",
+      "question": "What is Windows 10 Hyper-V?",
+      "options": [
+        "Type 1 hypervisor",
+        "Type 2 hypervisor",
+        "Cloud service",
+        "Antivirus software"
+      ],
+      "correct": 1,
+      "explanation": "Windows 10 Hyper-V is a Type 2 hypervisor included with Windows 10 Pro and Enterprise editions.",
+      "difficulty": "medium",
+      "tags": ["Hyper-V", "Windows 10", "Type 2"]
+    }
+  ]
+}

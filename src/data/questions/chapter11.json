@@ -1,0 +1,496 @@
+{
+  "chapter": 11,
+  "title": "Mobile Operating Systems",
+  "questions": [
+    {
+      "id": "ch11-q1",
+      "question": "When was Android first released and on which device?",
+      "options": [
+        "2007 on iPhone",
+        "2008 on HTC Dream",
+        "2010 on Samsung Galaxy",
+        "2009 on Motorola Droid"
+      ],
+      "correct": 1,
+      "explanation": "Android was released in 2008 on the HTC Dream as an open and customizable operating system.",
+      "difficulty": "medium",
+      "tags": ["Android", "history", "mobile OS"]
+    },
+    {
+      "id": "ch11-q2",
+      "question": "What type of operating system is iOS?",
+      "options": [
+        "Open source Linux-based",
+        "Open source Windows-based",
+        "Closed source Unix-based",
+        "Closed source Android-based"
+      ],
+      "correct": 2,
+      "explanation": "iOS is a closed source Unix-based operating system developed by Apple for iPhone and iPad.",
+      "difficulty": "easy",
+      "tags": ["iOS", "Apple", "operating system"]
+    },
+    {
+      "id": "ch11-q3",
+      "question": "What happens when you delete an app icon in iOS?",
+      "options": [
+        "Only the shortcut is deleted",
+        "The app itself is deleted",
+        "The app moves to trash",
+        "Nothing happens"
+      ],
+      "correct": 1,
+      "explanation": "In iOS, the icon represents the app itself. Deleting the icon deletes the entire app.",
+      "difficulty": "medium",
+      "tags": ["iOS", "apps", "interface"]
+    },
+    {
+      "id": "ch11-q4",
+      "question": "What happens when you delete an app icon on Android Home screen?",
+      "options": [
+        "The app is completely deleted",
+        "Only the shortcut is removed",
+        "The app moves to SD card",
+        "The app is disabled"
+      ],
+      "correct": 1,
+      "explanation": "In Android, the icon on the Home screen is just a shortcut to the app, not the app itself.",
+      "difficulty": "medium",
+      "tags": ["Android", "apps", "interface"]
+    },
+    {
+      "id": "ch11-q5",
+      "question": "What security feature do Android apps use?",
+      "options": [
+        "Firewall",
+        "Antivirus",
+        "Sandbox",
+        "VPN"
+      ],
+      "correct": 2,
+      "explanation": "Android apps run in a sandbox, an isolated location that makes it difficult for malicious programs to infect the device.",
+      "difficulty": "easy",
+      "tags": ["Android", "security", "sandbox"]
+    },
+    {
+      "id": "ch11-q6",
+      "question": "What is a passcode lock?",
+      "options": [
+        "A pattern drawn on screen",
+        "A four or six-digit numeric code",
+        "A fingerprint scan",
+        "A swipe gesture"
+      ],
+      "correct": 1,
+      "explanation": "Passcode lock requires a four or six-digit numeric code to unlock the mobile device.",
+      "difficulty": "easy",
+      "tags": ["security", "passcode", "screen lock"]
+    },
+    {
+      "id": "ch11-q7",
+      "question": "What is required for remote lock and wipe to function?",
+      "options": [
+        "Device must be turned off",
+        "Device must be powered on and connected to network",
+        "Device must be in airplane mode",
+        "Device must have low battery"
+      ],
+      "correct": 1,
+      "explanation": "For remote lock and remote wipe to function, the device must be powered on and connected to a network.",
+      "difficulty": "medium",
+      "tags": ["security", "remote wipe", "remote lock"]
+    },
+    {
+      "id": "ch11-q8",
+      "question": "What app model does iOS use?",
+      "options": [
+        "Open garden model",
+        "Sandbox model",
+        "Walled garden model",
+        "Free distribution model"
+      ],
+      "correct": 2,
+      "explanation": "iOS uses a walled garden model for apps, where all apps must be approved by Apple.",
+      "difficulty": "medium",
+      "tags": ["iOS", "apps", "distribution"]
+    },
+    {
+      "id": "ch11-q9",
+      "question": "What is the trusted source for Android apps?",
+      "options": [
+        "App Store",
+        "Google Play",
+        "Microsoft Store",
+        "Amazon Appstore"
+      ],
+      "correct": 1,
+      "explanation": "Google Play is the trusted source for Android apps, ensuring compatibility and security.",
+      "difficulty": "easy",
+      "tags": ["Android", "Google Play", "apps"]
+    },
+    {
+      "id": "ch11-q10",
+      "question": "What happens if you forget your iOS passcode?",
+      "options": [
+        "Apple can recover it",
+        "Use fingerprint instead",
+        "Must perform full restore from backup",
+        "Passcode resets automatically"
+      ],
+      "correct": 2,
+      "explanation": "A forgotten iOS passcode renders data unreachable, forcing a full restore from iTunes or iCloud backup.",
+      "difficulty": "hard",
+      "tags": ["iOS", "passcode", "security"]
+    },
+    {
+      "id": "ch11-q11",
+      "question": "What does 'rooting' refer to in Android?",
+      "options": [
+        "Installing apps",
+        "Unlocking full file system access",
+        "Updating the OS",
+        "Factory reset"
+      ],
+      "correct": 1,
+      "explanation": "Rooting is unlocking Android devices to grant users full access to the file system and kernel modules.",
+      "difficulty": "medium",
+      "tags": ["Android", "rooting", "security"]
+    },
+    {
+      "id": "ch11-q12",
+      "question": "What is the iOS equivalent of 'rooting'?",
+      "options": [
+        "Unlocking",
+        "Jailbreaking",
+        "Sideloading",
+        "Debugging"
+      ],
+      "correct": 1,
+      "explanation": "Jailbreaking is the iOS equivalent of rooting, granting full access to the iOS file system.",
+      "difficulty": "medium",
+      "tags": ["iOS", "jailbreaking", "security"]
+    },
+    {
+      "id": "ch11-q13",
+      "question": "How is the iOS passcode used for security?",
+      "options": [
+        "Only for screen unlock",
+        "As part of the encryption key",
+        "For app purchases only",
+        "For iCloud access only"
+      ],
+      "correct": 1,
+      "explanation": "On iOS devices, the passcode is used as part of the encryption key for the entire system.",
+      "difficulty": "hard",
+      "tags": ["iOS", "encryption", "passcode"]
+    },
+    {
+      "id": "ch11-q14",
+      "question": "What cloud service is linked to iOS devices?",
+      "options": [
+        "Google Drive",
+        "OneDrive",
+        "iCloud",
+        "Dropbox"
+      ],
+      "correct": 2,
+      "explanation": "iCloud is Apple's cloud service linked to iOS devices for backup and synchronization.",
+      "difficulty": "easy",
+      "tags": ["iOS", "iCloud", "cloud services"]
+    },
+    {
+      "id": "ch11-q15",
+      "question": "What cloud service is linked to Android devices?",
+      "options": [
+        "iCloud",
+        "Google Sync",
+        "OneDrive",
+        "Amazon Cloud"
+      ],
+      "correct": 1,
+      "explanation": "Google Sync is the cloud service linked to Android devices for backup and synchronization.",
+      "difficulty": "easy",
+      "tags": ["Android", "Google Sync", "cloud services"]
+    },
+    {
+      "id": "ch11-q16",
+      "question": "Where do you enable Wi-Fi calling on Android?",
+      "options": [
+        "Phone app settings",
+        "Settings > More > Wi-Fi Calling",
+        "Wi-Fi settings only",
+        "Google Play settings"
+      ],
+      "correct": 1,
+      "explanation": "Wi-Fi calling on Android is enabled via Settings > More (under Wireless & networks) > Wi-Fi Calling.",
+      "difficulty": "medium",
+      "tags": ["Android", "Wi-Fi calling", "settings"]
+    },
+    {
+      "id": "ch11-q17",
+      "question": "What happens with too many failed login attempts on mobile devices?",
+      "options": [
+        "Device restarts",
+        "Access is disabled",
+        "Password resets",
+        "Nothing happens"
+      ],
+      "correct": 1,
+      "explanation": "Mobile OSs can be configured to disable access after too many failed login attempts for security.",
+      "difficulty": "easy",
+      "tags": ["security", "login", "protection"]
+    },
+    {
+      "id": "ch11-q18",
+      "question": "What advantage does pattern lock provide?",
+      "options": [
+        "More secure than passcode",
+        "Eliminates time to type passwords",
+        "Cannot be guessed",
+        "Works offline only"
+      ],
+      "correct": 1,
+      "explanation": "Pattern locks eliminate the time it takes to type passwords or PIN numbers.",
+      "difficulty": "easy",
+      "tags": ["security", "pattern lock", "convenience"]
+    },
+    {
+      "id": "ch11-q19",
+      "question": "What makes Android customizable?",
+      "options": [
+        "Closed source code",
+        "Open source nature",
+        "Apple's permission",
+        "Google restrictions"
+      ],
+      "correct": 1,
+      "explanation": "Android is open source and customizable, allowing programmers to use it for various devices.",
+      "difficulty": "easy",
+      "tags": ["Android", "open source", "customization"]
+    },
+    {
+      "id": "ch11-q20",
+      "question": "What devices can run Android besides phones?",
+      "options": [
+        "Only tablets",
+        "Only smartwatches",
+        "Laptops, smart TVs, and e-readers",
+        "Only Google devices"
+      ],
+      "correct": 2,
+      "explanation": "Because Android is open and customizable, it can operate devices like laptops, smart TVs, and e-book readers.",
+      "difficulty": "medium",
+      "tags": ["Android", "devices", "versatility"]
+    },
+    {
+      "id": "ch11-q21",
+      "question": "What is required to modify iOS?",
+      "options": [
+        "Developer account",
+        "Permission from Apple",
+        "Jailbreak",
+        "Nothing"
+      ],
+      "correct": 1,
+      "explanation": "To copy, modify, or redistribute iOS requires permission from Apple due to its closed source nature.",
+      "difficulty": "medium",
+      "tags": ["iOS", "licensing", "closed source"]
+    },
+    {
+      "id": "ch11-q22",
+      "question": "How do you add a VPN on Android?",
+      "options": [
+        "Download VPN app only",
+        "Settings > More > VPN > + sign",
+        "Google Play settings",
+        "Developer options"
+      ],
+      "correct": 1,
+      "explanation": "Create a new VPN connection on Android via Settings > More > VPN > Tap + sign.",
+      "difficulty": "medium",
+      "tags": ["Android", "VPN", "configuration"]
+    },
+    {
+      "id": "ch11-q23",
+      "question": "What type of lock requires a swipe in a pre-defined direction?",
+      "options": [
+        "Pattern lock",
+        "Swipe lock",
+        "Passcode lock",
+        "Biometric lock"
+      ],
+      "correct": 1,
+      "explanation": "Swipe lock requires the user to simply swipe the device screen in a pre-defined direction.",
+      "difficulty": "easy",
+      "tags": ["security", "swipe lock", "screen lock"]
+    },
+    {
+      "id": "ch11-q24",
+      "question": "What makes mobile devices at risk for theft?",
+      "options": [
+        "High price",
+        "Portable nature",
+        "Internet connectivity",
+        "App installation"
+      ],
+      "correct": 1,
+      "explanation": "The portable nature of mobile devices makes them at risk for theft and loss.",
+      "difficulty": "easy",
+      "tags": ["security", "theft", "portability"]
+    },
+    {
+      "id": "ch11-q25",
+      "question": "What is biometric authentication?",
+      "options": [
+        "Password-based security",
+        "Pattern recognition",
+        "Fingerprint or face recognition",
+        "Two-factor authentication"
+      ],
+      "correct": 2,
+      "explanation": "Biometric authentication uses physical characteristics like fingerprints or face recognition for security.",
+      "difficulty": "easy",
+      "tags": ["biometric", "security", "authentication"]
+    },
+    {
+      "id": "ch11-q26",
+      "question": "When was iOS first released?",
+      "options": [
+        "2005",
+        "2006",
+        "2007",
+        "2008"
+      ],
+      "correct": 2,
+      "explanation": "iOS was released in 2007 as Apple's operating system for iPhone.",
+      "difficulty": "medium",
+      "tags": ["iOS", "history", "Apple"]
+    },
+    {
+      "id": "ch11-q27",
+      "question": "What is the purpose of mobile device patches?",
+      "options": [
+        "Add new features only",
+        "Fix security vulnerabilities",
+        "Improve battery life only",
+        "Change interface only"
+      ],
+      "correct": 1,
+      "explanation": "Patches and upgrades primarily fix security vulnerabilities and bugs in mobile operating systems.",
+      "difficulty": "easy",
+      "tags": ["updates", "security", "patches"]
+    },
+    {
+      "id": "ch11-q28",
+      "question": "What OS architecture does iOS use?",
+      "options": [
+        "Linux",
+        "Windows",
+        "Unix",
+        "DOS"
+      ],
+      "correct": 2,
+      "explanation": "iOS is based on Unix architecture, making it stable and secure.",
+      "difficulty": "medium",
+      "tags": ["iOS", "Unix", "architecture"]
+    },
+    {
+      "id": "ch11-q29",
+      "question": "What happens to data when remote wipe is activated?",
+      "options": [
+        "Data is backed up first",
+        "Data is encrypted",
+        "Data is permanently deleted",
+        "Data is moved to cloud"
+      ],
+      "correct": 2,
+      "explanation": "Remote wipe permanently deletes all data from the device to protect sensitive information.",
+      "difficulty": "easy",
+      "tags": ["remote wipe", "security", "data protection"]
+    },
+    {
+      "id": "ch11-q30",
+      "question": "What is the main security benefit of sandboxing?",
+      "options": [
+        "Faster app performance",
+        "Prevents malicious programs from spreading",
+        "Reduces battery usage",
+        "Improves network speed"
+      ],
+      "correct": 1,
+      "explanation": "Sandboxing isolates apps, making it difficult for malicious programs to infect the device or access other apps' data.",
+      "difficulty": "medium",
+      "tags": ["sandbox", "security", "isolation"]
+    },
+    {
+      "id": "ch11-q31",
+      "question": "Which mobile OS allows sideloading apps by default?",
+      "options": [
+        "iOS",
+        "Android",
+        "Windows Phone",
+        "BlackBerry OS"
+      ],
+      "correct": 1,
+      "explanation": "Android allows sideloading apps from sources other than Google Play, while iOS restricts this.",
+      "difficulty": "medium",
+      "tags": ["Android", "sideloading", "apps"]
+    },
+    {
+      "id": "ch11-q32",
+      "question": "What is required for iOS app distribution?",
+      "options": [
+        "Google approval",
+        "Apple approval",
+        "User permission only",
+        "No approval needed"
+      ],
+      "correct": 1,
+      "explanation": "iOS uses a walled garden model where all apps must be approved by Apple before distribution.",
+      "difficulty": "easy",
+      "tags": ["iOS", "App Store", "distribution"]
+    },
+    {
+      "id": "ch11-q33",
+      "question": "What security feature requires physical characteristics?",
+      "options": [
+        "Passcode",
+        "Pattern lock",
+        "Biometric authentication",
+        "Remote lock"
+      ],
+      "correct": 2,
+      "explanation": "Biometric authentication uses physical characteristics like fingerprints, face, or iris for security.",
+      "difficulty": "easy",
+      "tags": ["biometric", "security", "authentication"]
+    },
+    {
+      "id": "ch11-q34",
+      "question": "What is the risk of rooting or jailbreaking?",
+      "options": [
+        "Better performance",
+        "Voiding warranty and security vulnerabilities",
+        "Improved battery life",
+        "Faster updates"
+      ],
+      "correct": 1,
+      "explanation": "Rooting or jailbreaking voids warranty and can expose devices to security vulnerabilities.",
+      "difficulty": "medium",
+      "tags": ["rooting", "jailbreaking", "risks"]
+    },
+    {
+      "id": "ch11-q35",
+      "question": "What feature allows finding a lost mobile device?",
+      "options": [
+        "Remote wipe only",
+        "GPS tracking/Find My Device",
+        "Airplane mode",
+        "Factory reset"
+      ],
+      "correct": 1,
+      "explanation": "GPS tracking features like Find My Device (Android) or Find My (iOS) help locate lost devices.",
+      "difficulty": "easy",
+      "tags": ["GPS", "tracking", "security"]
+    }
+  ]
+}

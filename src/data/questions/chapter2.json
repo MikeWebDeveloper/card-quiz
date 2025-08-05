@@ -1,0 +1,496 @@
+{
+  "chapter": 2,
+  "title": "PC Assembly",
+  "questions": [
+    {
+      "id": "ch2-q1",
+      "question": "What does the 'A' in P-A-S-S remind a person to do when using a fire extinguisher?",
+      "options": [
+        "Alert others in the area",
+        "Aim at the base of the fire",
+        "Activate the fire alarm",
+        "Assess the fire size"
+      ],
+      "correct": 1,
+      "explanation": "The 'A' in P-A-S-S stands for 'Aim at the base of the fire,' not at the flames. This is the most effective way to extinguish a fire.",
+      "difficulty": "easy",
+      "tags": ["safety", "fire", "procedures"]
+    },
+    {
+      "id": "ch2-q2",
+      "question": "Which class of fire extinguisher is used for electrical fires?",
+      "options": [
+        "Class A",
+        "Class B",
+        "Class C",
+        "Class D"
+      ],
+      "correct": 2,
+      "explanation": "Class C fire extinguishers are specifically designed for electrical fires. They use non-conductive agents to safely extinguish electrical equipment fires.",
+      "difficulty": "medium",
+      "tags": ["safety", "fire", "electrical"]
+    },
+    {
+      "id": "ch2-q3",
+      "question": "What is a good safety precaution when opening a computer case?",
+      "options": [
+        "Wear rubber gloves",
+        "Place tape over sharp case edges",
+        "Work in a cold room",
+        "Use plastic tools only"
+      ],
+      "correct": 1,
+      "explanation": "Placing tape over sharp case edges prevents cuts and injuries when working inside the computer case.",
+      "difficulty": "easy",
+      "tags": ["safety", "assembly", "precautions"]
+    },
+    {
+      "id": "ch2-q4",
+      "question": "How is a power supply typically attached to a tower case?",
+      "options": [
+        "Clips",
+        "Adhesive",
+        "Screws",
+        "Magnets"
+      ],
+      "correct": 2,
+      "explanation": "Power supplies are typically attached using four screws from outside the case through case holes into screw holes on the power supply.",
+      "difficulty": "easy",
+      "tags": ["power supply", "installation", "hardware"]
+    },
+    {
+      "id": "ch2-q5",
+      "question": "What is the first step when assembling a computer?",
+      "options": [
+        "Install the CPU",
+        "Install the power supply",
+        "Open the case and install standoffs",
+        "Connect all cables"
+      ],
+      "correct": 2,
+      "explanation": "The first step is to open the case and install standoffs in the correct positions for the motherboard form factor being used.",
+      "difficulty": "medium",
+      "tags": ["assembly", "procedures", "motherboard"]
+    },
+    {
+      "id": "ch2-q6",
+      "question": "When should thermal paste be applied during assembly?",
+      "options": [
+        "Before installing the motherboard",
+        "After installing RAM",
+        "Between the CPU and heat sink",
+        "On the motherboard chipset"
+      ],
+      "correct": 2,
+      "explanation": "Thermal paste should be applied between the CPU and heat sink to ensure proper heat transfer from the processor to the cooling system.",
+      "difficulty": "easy",
+      "tags": ["CPU", "cooling", "thermal paste"]
+    },
+    {
+      "id": "ch2-q7",
+      "question": "What P-A-S-S stands for in fire extinguisher use?",
+      "options": [
+        "Pull, Aim, Squeeze, Sweep",
+        "Push, Alert, Stop, Save",
+        "Prepare, Activate, Spray, Stop",
+        "Pull, Activate, Squeeze, Stop"
+      ],
+      "correct": 0,
+      "explanation": "P-A-S-S stands for Pull the pin, Aim at the base, Squeeze the handle, and Sweep from side to side.",
+      "difficulty": "medium",
+      "tags": ["safety", "fire", "procedures"]
+    },
+    {
+      "id": "ch2-q8",
+      "question": "Which component should be installed on the motherboard before placing it in the case?",
+      "options": [
+        "Graphics card",
+        "Power supply cables",
+        "CPU and RAM",
+        "Hard drives"
+      ],
+      "correct": 2,
+      "explanation": "The CPU and RAM should be installed on the motherboard before placing it in the case, as they're easier to install outside the case.",
+      "difficulty": "medium",
+      "tags": ["assembly", "motherboard", "installation order"]
+    },
+    {
+      "id": "ch2-q9",
+      "question": "What tool is recommended for retrieving small parts in tight spaces during assembly?",
+      "options": [
+        "Pliers",
+        "Part retriever",
+        "Tweezers",
+        "Magnetic screwdriver"
+      ],
+      "correct": 1,
+      "explanation": "A part retriever (3-prong or claw tool) is ideal for retrieving small parts and connecting cables in tight spaces within the computer case.",
+      "difficulty": "medium",
+      "tags": ["tools", "assembly", "hardware"]
+    },
+    {
+      "id": "ch2-q10",
+      "question": "What is the purpose of the 4-pin or 8-pin ATX12V connector?",
+      "options": [
+        "Power for case fans",
+        "Additional power for the CPU",
+        "Power for PCIe slots",
+        "Power for SATA drives"
+      ],
+      "correct": 1,
+      "explanation": "The 4-pin or 8-pin ATX12V connector provides additional 12V power specifically for the CPU, separate from the main motherboard power.",
+      "difficulty": "medium",
+      "tags": ["power", "connectors", "CPU"]
+    },
+    {
+      "id": "ch2-q11",
+      "question": "In what order should drive cables typically be connected?",
+      "options": [
+        "Power first, then data",
+        "Data first, then power",
+        "Both simultaneously",
+        "Order doesn't matter"
+      ],
+      "correct": 0,
+      "explanation": "It's recommended to connect power cables first, then data cables, to ensure proper cable management and avoid accidentally disconnecting power while working.",
+      "difficulty": "medium",
+      "tags": ["cables", "installation", "drives"]
+    },
+    {
+      "id": "ch2-q12",
+      "question": "What safety equipment should be worn when handling fiberglass insulation inside older cases?",
+      "options": [
+        "Safety goggles only",
+        "Gloves only",
+        "Safety goggles and gloves",
+        "Full face shield"
+      ],
+      "correct": 2,
+      "explanation": "Both safety goggles and gloves should be worn when handling fiberglass insulation to protect eyes and skin from irritation.",
+      "difficulty": "easy",
+      "tags": ["safety", "PPE", "hazards"]
+    },
+    {
+      "id": "ch2-q13",
+      "question": "What is the recommended workspace for computer assembly?",
+      "options": [
+        "Carpeted floor",
+        "Metal workbench",
+        "Antistatic mat on a flat surface",
+        "Wooden desk"
+      ],
+      "correct": 2,
+      "explanation": "An antistatic mat on a flat, stable surface provides the best workspace for computer assembly, protecting components from ESD.",
+      "difficulty": "easy",
+      "tags": ["workspace", "ESD", "safety"]
+    },
+    {
+      "id": "ch2-q14",
+      "question": "Which components are most sensitive to ESD during installation?",
+      "options": [
+        "Case and power supply",
+        "CPU and RAM",
+        "Cables and connectors",
+        "Cooling fans"
+      ],
+      "correct": 1,
+      "explanation": "CPU and RAM are semiconductor components that are extremely sensitive to electrostatic discharge and require careful handling.",
+      "difficulty": "easy",
+      "tags": ["ESD", "components", "safety"]
+    },
+    {
+      "id": "ch2-q15",
+      "question": "What should be done before working inside a computer case?",
+      "options": [
+        "Only unplug the power cable",
+        "Turn off the computer and unplug all cables",
+        "Just flip the power switch off",
+        "Leave it plugged in for grounding"
+      ],
+      "correct": 1,
+      "explanation": "Always turn off the computer and unplug all cables before working inside to prevent electrical shock and component damage.",
+      "difficulty": "easy",
+      "tags": ["safety", "procedures", "power"]
+    },
+    {
+      "id": "ch2-q16",
+      "question": "How many standoffs should be installed?",
+      "options": [
+        "As many as possible",
+        "Only in the corners",
+        "One for each motherboard mounting hole",
+        "Minimum of four"
+      ],
+      "correct": 2,
+      "explanation": "Install exactly one standoff for each motherboard mounting hole to provide proper support and prevent shorts.",
+      "difficulty": "medium",
+      "tags": ["motherboard", "standoffs", "installation"]
+    },
+    {
+      "id": "ch2-q17",
+      "question": "What is the purpose of the I/O shield?",
+      "options": [
+        "Protect against EMI and provide port labeling",
+        "Cool the motherboard",
+        "Support the motherboard weight",
+        "Connect to ground"
+      ],
+      "correct": 0,
+      "explanation": "The I/O shield protects against electromagnetic interference (EMI) and provides proper port alignment and labeling at the back of the case.",
+      "difficulty": "medium",
+      "tags": ["motherboard", "I/O shield", "assembly"]
+    },
+    {
+      "id": "ch2-q18",
+      "question": "When installing RAM modules for dual-channel operation, which slots should be used?",
+      "options": [
+        "Any two adjacent slots",
+        "Slots 1 and 2",
+        "Color-matched slots (typically alternating)",
+        "It doesn't matter"
+      ],
+      "correct": 2,
+      "explanation": "For dual-channel operation, install RAM in color-matched slots, which are typically alternating slots (e.g., slots 1 and 3 or 2 and 4).",
+      "difficulty": "medium",
+      "tags": ["RAM", "dual-channel", "installation"]
+    },
+    {
+      "id": "ch2-q19",
+      "question": "What indicates that a RAM module is properly seated?",
+      "options": [
+        "It stays in place when touched",
+        "The retention clips snap into place",
+        "You hear a beep",
+        "The module is flush with the slot"
+      ],
+      "correct": 1,
+      "explanation": "When a RAM module is properly seated, the retention clips on both ends will automatically snap into place, locking the module securely.",
+      "difficulty": "easy",
+      "tags": ["RAM", "installation", "hardware"]
+    },
+    {
+      "id": "ch2-q20",
+      "question": "What cable management practice improves airflow in a case?",
+      "options": [
+        "Using the shortest cables possible",
+        "Bundling all cables together tightly",
+        "Routing cables away from airflow paths",
+        "Leaving cables loose"
+      ],
+      "correct": 2,
+      "explanation": "Routing cables away from airflow paths and securing them to the case improves airflow and cooling efficiency.",
+      "difficulty": "medium",
+      "tags": ["cable management", "airflow", "cooling"]
+    },
+    {
+      "id": "ch2-q21",
+      "question": "What should be connected to the motherboard's front panel connectors?",
+      "options": [
+        "Monitor cable",
+        "Power LED, HDD LED, power button, reset button",
+        "USB devices",
+        "Speaker system"
+      ],
+      "correct": 1,
+      "explanation": "Front panel connectors include power LED, HDD activity LED, power button, reset button, and sometimes a speaker for POST beeps.",
+      "difficulty": "medium",
+      "tags": ["motherboard", "connectors", "front panel"]
+    },
+    {
+      "id": "ch2-q22",
+      "question": "Which expansion card should typically be installed last?",
+      "options": [
+        "Sound card",
+        "Network card",
+        "Graphics card",
+        "USB expansion card"
+      ],
+      "correct": 2,
+      "explanation": "Graphics cards should typically be installed last because they're large and can block access to other components and connectors.",
+      "difficulty": "medium",
+      "tags": ["installation order", "graphics card", "assembly"]
+    },
+    {
+      "id": "ch2-q23",
+      "question": "What is the first thing to check if a newly assembled PC won't power on?",
+      "options": [
+        "RAM is seated properly",
+        "Power supply switch is on and power cable is connected",
+        "CPU is installed correctly",
+        "All fans are connected"
+      ],
+      "correct": 1,
+      "explanation": "First check that the power supply switch is in the ON position (|) and the power cable is properly connected to both the PSU and wall outlet.",
+      "difficulty": "easy",
+      "tags": ["troubleshooting", "power", "assembly"]
+    },
+    {
+      "id": "ch2-q24",
+      "question": "How should excess cable length be managed inside the case?",
+      "options": [
+        "Cut cables to size",
+        "Let them hang loose",
+        "Use cable ties or Velcro straps",
+        "Wrap them around components"
+      ],
+      "correct": 2,
+      "explanation": "Use cable ties or Velcro straps to secure excess cable length to the case, keeping them organized and away from components and airflow.",
+      "difficulty": "easy",
+      "tags": ["cable management", "organization", "assembly"]
+    },
+    {
+      "id": "ch2-q25",
+      "question": "What type of screws are used to secure the motherboard to standoffs?",
+      "options": [
+        "Coarse thread screws",
+        "Fine thread screws",
+        "Self-tapping screws",
+        "Wood screws"
+      ],
+      "correct": 1,
+      "explanation": "Fine thread screws are used to secure the motherboard to standoffs, as they match the threading in the brass standoffs.",
+      "difficulty": "hard",
+      "tags": ["hardware", "screws", "motherboard"]
+    },
+    {
+      "id": "ch2-q26",
+      "question": "What is the correct sequence for the boot process after assembly?",
+      "options": [
+        "Install OS immediately",
+        "Enter BIOS/UEFI first to check hardware detection",
+        "Run stress tests",
+        "Install all drivers"
+      ],
+      "correct": 1,
+      "explanation": "After assembly, enter BIOS/UEFI first to verify all hardware is detected correctly before proceeding with OS installation.",
+      "difficulty": "medium",
+      "tags": ["boot process", "BIOS", "verification"]
+    },
+    {
+      "id": "ch2-q27",
+      "question": "Which component requires the most careful handling due to fragile pins?",
+      "options": [
+        "RAM modules",
+        "Graphics card",
+        "CPU",
+        "Hard drive"
+      ],
+      "correct": 2,
+      "explanation": "CPUs have extremely fragile pins (Intel LGA sockets) or contacts (AMD PGA) that can be easily bent or damaged if mishandled.",
+      "difficulty": "easy",
+      "tags": ["CPU", "handling", "safety"]
+    },
+    {
+      "id": "ch2-q28",
+      "question": "What should be done with the antistatic bag after removing a component?",
+      "options": [
+        "Throw it away immediately",
+        "Save it for potential returns or storage",
+        "Use it as a work surface",
+        "Cut it up for cable ties"
+      ],
+      "correct": 1,
+      "explanation": "Save antistatic bags for potential returns, RMA processes, or future storage of components to protect them from ESD.",
+      "difficulty": "easy",
+      "tags": ["ESD", "storage", "best practices"]
+    },
+    {
+      "id": "ch2-q29",
+      "question": "How tight should motherboard screws be fastened?",
+      "options": [
+        "As tight as possible",
+        "Finger tight only",
+        "Snug but not overtightened",
+        "Loose enough to adjust"
+      ],
+      "correct": 2,
+      "explanation": "Motherboard screws should be snug but not overtightened to avoid cracking the PCB or stripping the standoff threads.",
+      "difficulty": "medium",
+      "tags": ["motherboard", "installation", "best practices"]
+    },
+    {
+      "id": "ch2-q30",
+      "question": "What is the purpose of the clear CMOS jumper?",
+      "options": [
+        "Reset BIOS settings to default",
+        "Overclock the CPU",
+        "Test the power supply",
+        "Enable dual BIOS"
+      ],
+      "correct": 0,
+      "explanation": "The clear CMOS jumper resets BIOS/UEFI settings to factory defaults, useful when troubleshooting or after failed overclocking attempts.",
+      "difficulty": "medium",
+      "tags": ["CMOS", "troubleshooting", "BIOS"]
+    },
+    {
+      "id": "ch2-q31",
+      "question": "When should you install the operating system?",
+      "options": [
+        "Before assembling the PC",
+        "After verifying all hardware in BIOS",
+        "Before installing drivers",
+        "Immediately after assembly"
+      ],
+      "correct": 1,
+      "explanation": "Install the operating system only after verifying all hardware is properly detected in BIOS/UEFI to ensure a stable installation.",
+      "difficulty": "medium",
+      "tags": ["OS installation", "procedures", "boot"]
+    },
+    {
+      "id": "ch2-q32",
+      "question": "What is the minimum recommended clearance around air vents?",
+      "options": [
+        "1 inch",
+        "2 inches",
+        "3 inches",
+        "No clearance needed"
+      ],
+      "correct": 1,
+      "explanation": "Maintain at least 2 inches of clearance around air vents to ensure proper airflow and prevent overheating.",
+      "difficulty": "medium",
+      "tags": ["airflow", "cooling", "placement"]
+    },
+    {
+      "id": "ch2-q33",
+      "question": "Which fire extinguisher type should NOT be used on electrical fires?",
+      "options": [
+        "Class C",
+        "CO2",
+        "Water-based (Class A)",
+        "Dry chemical"
+      ],
+      "correct": 2,
+      "explanation": "Water-based (Class A) extinguishers should never be used on electrical fires as water conducts electricity and can cause electrocution.",
+      "difficulty": "medium",
+      "tags": ["fire safety", "electrical", "safety"]
+    },
+    {
+      "id": "ch2-q34",
+      "question": "What documentation should be kept after PC assembly?",
+      "options": [
+        "Only the receipts",
+        "Component manuals, driver CDs, and warranty information",
+        "Just the motherboard manual",
+        "No documentation needed"
+      ],
+      "correct": 1,
+      "explanation": "Keep all component manuals, driver CDs, warranty information, and receipts for future reference, troubleshooting, and warranty claims.",
+      "difficulty": "easy",
+      "tags": ["documentation", "warranty", "best practices"]
+    },
+    {
+      "id": "ch2-q35",
+      "question": "What indicates proper case grounding?",
+      "options": [
+        "The case feels warm",
+        "All standoffs are installed",
+        "The power supply is properly mounted with metal-to-metal contact",
+        "The I/O shield is installed"
+      ],
+      "correct": 2,
+      "explanation": "Proper case grounding requires the power supply to be securely mounted with direct metal-to-metal contact with the case.",
+      "difficulty": "hard",
+      "tags": ["grounding", "safety", "electrical"]
+    }
+  ]
+}

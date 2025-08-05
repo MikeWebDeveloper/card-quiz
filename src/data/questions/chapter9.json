@@ -1,0 +1,496 @@
+{
+  "chapter": 9,
+  "title": "Printers",
+  "questions": [
+    {
+      "id": "ch9-q1",
+      "question": "What are the primary components of an inkjet printer?",
+      "options": [
+        "Laser, drum, toner, fuser",
+        "Ink cartridges, print head, roller, and feeder",
+        "Ribbon, impact head, platen",
+        "Thermal head, special paper"
+      ],
+      "correct": 1,
+      "explanation": "The primary components of an inkjet printer are ink cartridges, print head, roller, and feeder.",
+      "difficulty": "easy",
+      "tags": ["inkjet", "components", "printer"]
+    },
+    {
+      "id": "ch9-q2",
+      "question": "How do thermal inkjet nozzles work?",
+      "options": [
+        "Vibration of crystals",
+        "Heat creating steam bubbles",
+        "Mechanical pressure",
+        "Electrical discharge"
+      ],
+      "correct": 1,
+      "explanation": "Thermal inkjet nozzles work by using heat to create steam bubbles that force ink onto the paper.",
+      "difficulty": "medium",
+      "tags": ["inkjet", "thermal", "technology"]
+    },
+    {
+      "id": "ch9-q3",
+      "question": "What are the central parts of a laser printer?",
+      "options": [
+        "Ink cartridges and print head",
+        "Ribbon and impact head",
+        "Imaging drum, toner cartridge, fuser assembly, and rollers",
+        "Thermal head and special paper"
+      ],
+      "correct": 2,
+      "explanation": "The central parts of a laser printer are the imaging drum, toner cartridge, fuser assembly, and rollers.",
+      "difficulty": "easy",
+      "tags": ["laser printer", "components", "hardware"]
+    },
+    {
+      "id": "ch9-q4",
+      "question": "During which laser printing process is toner melted to the paper?",
+      "options": [
+        "Charging",
+        "Developing",
+        "Transferring",
+        "Fusing"
+      ],
+      "correct": 3,
+      "explanation": "During the fusing process, heat and pressure melt the toner permanently onto the paper.",
+      "difficulty": "medium",
+      "tags": ["laser printer", "fusing", "process"]
+    },
+    {
+      "id": "ch9-q5",
+      "question": "What is an advantage of impact printers?",
+      "options": [
+        "High-quality graphics",
+        "Silent operation",
+        "Can print carbon copies",
+        "Fast printing speed"
+      ],
+      "correct": 2,
+      "explanation": "Impact printers can print through multiple sheets to create carbon copies, making them useful for forms.",
+      "difficulty": "medium",
+      "tags": ["impact printer", "advantages", "carbon copy"]
+    },
+    {
+      "id": "ch9-q6",
+      "question": "What type of paper do thermal printers use?",
+      "options": [
+        "Standard copy paper",
+        "Special thermal paper that becomes black when heated",
+        "Glossy photo paper",
+        "Carbon paper"
+      ],
+      "correct": 1,
+      "explanation": "Thermal printers use special thermal paper that turns black when heated by the print head.",
+      "difficulty": "easy",
+      "tags": ["thermal printer", "paper", "technology"]
+    },
+    {
+      "id": "ch9-q7",
+      "question": "How do piezoelectric inkjet nozzles work?",
+      "options": [
+        "Heat creating bubbles",
+        "Vibration of crystals",
+        "Mechanical gears",
+        "Air pressure"
+      ],
+      "correct": 1,
+      "explanation": "Piezoelectric inkjet nozzles work based on the vibration of crystals to propel ink onto paper.",
+      "difficulty": "medium",
+      "tags": ["inkjet", "piezoelectric", "technology"]
+    },
+    {
+      "id": "ch9-q8",
+      "question": "What indicates low toner in a laser printer?",
+      "options": [
+        "Paper jams",
+        "Faded or light print output",
+        "Printer won't turn on",
+        "Loud grinding noise"
+      ],
+      "correct": 1,
+      "explanation": "Faded images or light print output indicates that either the toner is low or the toner cartridge is defective.",
+      "difficulty": "easy",
+      "tags": ["troubleshooting", "toner", "print quality"]
+    },
+    {
+      "id": "ch9-q9",
+      "question": "How should thermal printer heads be cleaned?",
+      "options": [
+        "With water",
+        "With compressed air only",
+        "With isopropyl alcohol",
+        "They should never be cleaned"
+      ],
+      "correct": 2,
+      "explanation": "Clean thermal printer heating elements regularly with isopropyl alcohol to extend printer life.",
+      "difficulty": "medium",
+      "tags": ["maintenance", "thermal printer", "cleaning"]
+    },
+    {
+      "id": "ch9-q10",
+      "question": "What causes print spooler errors?",
+      "options": [
+        "Low toner",
+        "Paper jam",
+        "Printer service stopped or not working",
+        "Wrong paper size"
+      ],
+      "correct": 2,
+      "explanation": "Print spooler errors occur when the printer service is stopped or not working properly.",
+      "difficulty": "medium",
+      "tags": ["print spooler", "troubleshooting", "service"]
+    },
+    {
+      "id": "ch9-q11",
+      "question": "What are two types of impact printers?",
+      "options": [
+        "Laser and inkjet",
+        "Dot matrix and daisy wheel",
+        "Thermal and 3D",
+        "LED and bubble jet"
+      ],
+      "correct": 1,
+      "explanation": "Dot matrix and daisy wheel are examples of impact printers that strike an inked ribbon.",
+      "difficulty": "easy",
+      "tags": ["impact printer", "types", "dot matrix"]
+    },
+    {
+      "id": "ch9-q12",
+      "question": "What happens during the 'developing' stage of laser printing?",
+      "options": [
+        "Drum gets charged",
+        "Toner is applied to the latent image",
+        "Image is transferred to paper",
+        "Toner is fused to paper"
+      ],
+      "correct": 1,
+      "explanation": "During developing, toner is applied to the latent image on the drum created by the laser.",
+      "difficulty": "medium",
+      "tags": ["laser printing", "developing", "process"]
+    },
+    {
+      "id": "ch9-q13",
+      "question": "Why do computers respond slowly when printing high-resolution photos?",
+      "options": [
+        "Printer is overheating",
+        "Network cable is damaged",
+        "Printer doesn't have enough memory",
+        "Wrong driver installed"
+      ],
+      "correct": 2,
+      "explanation": "The printer doesn't have enough memory to buffer entire high-resolution photographs.",
+      "difficulty": "medium",
+      "tags": ["memory", "performance", "troubleshooting"]
+    },
+    {
+      "id": "ch9-q14",
+      "question": "What is the first step to fix print spooler errors?",
+      "options": [
+        "Replace printer",
+        "Restart the print spooler service",
+        "Update drivers",
+        "Clear paper jam"
+      ],
+      "correct": 1,
+      "explanation": "The first corrective action for print spooler errors is to restart the print spooler service.",
+      "difficulty": "easy",
+      "tags": ["print spooler", "troubleshooting", "service"]
+    },
+    {
+      "id": "ch9-q15",
+      "question": "What causes toner not to fuse to paper?",
+      "options": [
+        "Low ink levels",
+        "Defective toner cartridge or incompatible paper",
+        "Network issues",
+        "Wrong print settings"
+      ],
+      "correct": 1,
+      "explanation": "Toner not fusing can be caused by a defective toner cartridge or paper incompatible with the printer.",
+      "difficulty": "medium",
+      "tags": ["fusing", "troubleshooting", "toner"]
+    },
+    {
+      "id": "ch9-q16",
+      "question": "What printer type is best for multipart forms?",
+      "options": [
+        "Laser printer",
+        "Inkjet printer",
+        "Impact printer",
+        "3D printer"
+      ],
+      "correct": 2,
+      "explanation": "Impact printers are best for multipart forms as they can print through carbon copies.",
+      "difficulty": "easy",
+      "tags": ["impact printer", "forms", "carbon copy"]
+    },
+    {
+      "id": "ch9-q17",
+      "question": "What creates the latent image on a laser printer drum?",
+      "options": [
+        "Toner",
+        "Laser beam",
+        "Heat",
+        "Pressure"
+      ],
+      "correct": 1,
+      "explanation": "A laser beam creates the latent electrostatic image on the drum by changing charge patterns.",
+      "difficulty": "medium",
+      "tags": ["laser printer", "imaging", "drum"]
+    },
+    {
+      "id": "ch9-q18",
+      "question": "What is a disadvantage of impact printers?",
+      "options": [
+        "Cannot print text",
+        "Very expensive ribbons",
+        "Noisy operation",
+        "Require special paper"
+      ],
+      "correct": 2,
+      "explanation": "Impact printers are noisy due to the print head physically striking the ribbon and paper.",
+      "difficulty": "easy",
+      "tags": ["impact printer", "disadvantages", "noise"]
+    },
+    {
+      "id": "ch9-q19",
+      "question": "When should printer page counters be reset?",
+      "options": [
+        "Never",
+        "After maintenance to track usage",
+        "Every print job",
+        "When out of paper"
+      ],
+      "correct": 1,
+      "explanation": "Resetting page counters after maintenance helps document printer usage and plan future maintenance.",
+      "difficulty": "medium",
+      "tags": ["maintenance", "page counter", "preventive"]
+    },
+    {
+      "id": "ch9-q20",
+      "question": "What indicates an empty inkjet cartridge?",
+      "options": [
+        "Printer makes grinding noise",
+        "Printer fails to print",
+        "Paper jams frequently",
+        "Printer overheats"
+      ],
+      "correct": 1,
+      "explanation": "An inkjet printer will commonly fail to print when the inkjet cartridge is empty.",
+      "difficulty": "easy",
+      "tags": ["inkjet", "cartridge", "troubleshooting"]
+    },
+    {
+      "id": "ch9-q21",
+      "question": "During which laser printing stage does the drum get a uniform charge?",
+      "options": [
+        "Cleaning",
+        "Charging",
+        "Writing",
+        "Developing"
+      ],
+      "correct": 1,
+      "explanation": "During the charging stage, the drum receives a uniform negative charge to prepare for imaging.",
+      "difficulty": "medium",
+      "tags": ["laser printing", "charging", "process"]
+    },
+    {
+      "id": "ch9-q22",
+      "question": "What printer component transfers toner from drum to paper?",
+      "options": [
+        "Fuser assembly",
+        "Transfer roller/belt",
+        "Developer unit",
+        "Laser"
+      ],
+      "correct": 1,
+      "explanation": "The transfer roller or belt transfers toner from the drum to the paper using electrical charge.",
+      "difficulty": "hard",
+      "tags": ["laser printer", "transfer", "components"]
+    },
+    {
+      "id": "ch9-q23",
+      "question": "What media do 3D printers use?",
+      "options": [
+        "Paper only",
+        "Ink cartridges",
+        "Various materials like plastic filament",
+        "Toner powder"
+      ],
+      "correct": 2,
+      "explanation": "3D printers use various media including plastic filaments, resins, and other materials to create objects.",
+      "difficulty": "easy",
+      "tags": ["3D printer", "media", "materials"]
+    },
+    {
+      "id": "ch9-q24",
+      "question": "What should be checked if a printer LCD is blank?",
+      "options": [
+        "Paper tray",
+        "Network connection",
+        "If printer is powered on",
+        "Print queue"
+      ],
+      "correct": 2,
+      "explanation": "If the printer LCD is blank and unlit, the most likely problem is the printer is not turned on.",
+      "difficulty": "easy",
+      "tags": ["troubleshooting", "power", "LCD"]
+    },
+    {
+      "id": "ch9-q25",
+      "question": "What type of printer uses a laser beam to create images?",
+      "options": [
+        "Impact printer",
+        "Inkjet printer",
+        "Laser printer",
+        "Thermal printer"
+      ],
+      "correct": 2,
+      "explanation": "A laser printer uses a laser beam to create an electrostatic image on the drum.",
+      "difficulty": "easy",
+      "tags": ["laser printer", "technology", "imaging"]
+    },
+    {
+      "id": "ch9-q26",
+      "question": "What happens during the transfer stage of laser printing?",
+      "options": [
+        "Toner is applied to drum",
+        "Toner moves from drum to paper",
+        "Toner is fused to paper",
+        "Drum is cleaned"
+      ],
+      "correct": 1,
+      "explanation": "During transfer, toner attached to the latent image is transferred from the drum to the paper.",
+      "difficulty": "medium",
+      "tags": ["laser printing", "transfer", "process"]
+    },
+    {
+      "id": "ch9-q27",
+      "question": "What printer type has the lowest cost per page?",
+      "options": [
+        "Inkjet",
+        "Laser",
+        "Impact",
+        "Thermal"
+      ],
+      "correct": 1,
+      "explanation": "Laser printers typically have the lowest cost per page due to high-yield toner cartridges.",
+      "difficulty": "medium",
+      "tags": ["cost", "laser printer", "economics"]
+    },
+    {
+      "id": "ch9-q28",
+      "question": "What causes 'ghosting' in laser printers?",
+      "options": [
+        "Low toner",
+        "Worn drum or fuser",
+        "Paper jam",
+        "Wrong driver"
+      ],
+      "correct": 1,
+      "explanation": "Ghosting (faint repeated images) is typically caused by a worn drum unit or fuser assembly.",
+      "difficulty": "hard",
+      "tags": ["ghosting", "troubleshooting", "laser printer"]
+    },
+    {
+      "id": "ch9-q29",
+      "question": "Which printer type is best for receipts?",
+      "options": [
+        "Laser printer",
+        "Inkjet printer",
+        "Thermal printer",
+        "3D printer"
+      ],
+      "correct": 2,
+      "explanation": "Thermal printers are commonly used for receipts due to speed, reliability, and low maintenance.",
+      "difficulty": "easy",
+      "tags": ["thermal printer", "receipts", "applications"]
+    },
+    {
+      "id": "ch9-q30",
+      "question": "What component heats toner to fuse it to paper?",
+      "options": [
+        "Transfer roller",
+        "Fuser assembly",
+        "Imaging drum",
+        "Developer unit"
+      ],
+      "correct": 1,
+      "explanation": "The fuser assembly uses heat and pressure to permanently bond toner to the paper.",
+      "difficulty": "easy",
+      "tags": ["fuser", "laser printer", "components"]
+    },
+    {
+      "id": "ch9-q31",
+      "question": "What is the typical temperature of a laser printer fuser?",
+      "options": [
+        "100°F (38°C)",
+        "200°F (93°C)",
+        "350-400°F (177-204°C)",
+        "500°F (260°C)"
+      ],
+      "correct": 2,
+      "explanation": "Laser printer fusers typically operate at 350-400°F (177-204°C) to melt toner onto paper.",
+      "difficulty": "hard",
+      "tags": ["fuser", "temperature", "specifications"]
+    },
+    {
+      "id": "ch9-q32",
+      "question": "What printer feature allows printing on both sides automatically?",
+      "options": [
+        "Collating",
+        "Duplexing",
+        "Stapling",
+        "Sorting"
+      ],
+      "correct": 1,
+      "explanation": "Automatic duplexing allows the printer to print on both sides of the paper without manual intervention.",
+      "difficulty": "easy",
+      "tags": ["duplexing", "features", "printing"]
+    },
+    {
+      "id": "ch9-q33",
+      "question": "What causes horizontal lines across laser printer output?",
+      "options": [
+        "Low toner",
+        "Dirty or damaged drum",
+        "Network issues",
+        "Wrong paper size"
+      ],
+      "correct": 1,
+      "explanation": "Horizontal lines across pages typically indicate a dirty or damaged imaging drum.",
+      "difficulty": "medium",
+      "tags": ["troubleshooting", "drum", "print quality"]
+    },
+    {
+      "id": "ch9-q34",
+      "question": "Which printer language is commonly used by HP printers?",
+      "options": [
+        "PostScript",
+        "PCL (Printer Command Language)",
+        "PDF",
+        "HTML"
+      ],
+      "correct": 1,
+      "explanation": "PCL (Printer Command Language) is commonly used by HP printers for formatting print jobs.",
+      "difficulty": "hard",
+      "tags": ["PCL", "printer language", "HP"]
+    },
+    {
+      "id": "ch9-q35",
+      "question": "What maintenance extends inkjet printer life?",
+      "options": [
+        "Never turning it off",
+        "Regular print head cleaning",
+        "Using only black ink",
+        "Printing at highest quality always"
+      ],
+      "correct": 1,
+      "explanation": "Regular print head cleaning prevents clogs and extends the life of inkjet printers.",
+      "difficulty": "medium",
+      "tags": ["maintenance", "inkjet", "print head"]
+    }
+  ]
+}

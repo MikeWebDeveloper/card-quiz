@@ -1,0 +1,496 @@
+{
+  "chapter": 8,
+  "title": "Applied Networking",
+  "questions": [
+    {
+      "id": "ch8-q1",
+      "question": "What must be configured on a NIC after installation?",
+      "options": [
+        "BIOS settings",
+        "IP settings",
+        "Power settings",
+        "Display settings"
+      ],
+      "correct": 1,
+      "explanation": "After NIC installation, IP settings must be configured either manually (static) or dynamically (DHCP).",
+      "difficulty": "easy",
+      "tags": ["NIC", "configuration", "IP settings"]
+    },
+    {
+      "id": "ch8-q2",
+      "question": "What does SSID stand for in wireless networking?",
+      "options": [
+        "Secure System ID",
+        "Service Set Identifier",
+        "System Security ID",
+        "Signal Strength ID"
+      ],
+      "correct": 1,
+      "explanation": "SSID (Service Set Identifier) is the name of a wireless network that devices use to identify and connect to it.",
+      "difficulty": "easy",
+      "tags": ["wireless", "SSID", "networking"]
+    },
+    {
+      "id": "ch8-q3",
+      "question": "Which protocol dynamically assigns IP addresses to hosts?",
+      "options": [
+        "DNS",
+        "DHCP",
+        "ARP",
+        "ICMP"
+      ],
+      "correct": 1,
+      "explanation": "DHCP (Dynamic Host Configuration Protocol) dynamically assigns IP addressing information to hosts.",
+      "difficulty": "easy",
+      "tags": ["DHCP", "IP addressing", "protocols"]
+    },
+    {
+      "id": "ch8-q4",
+      "question": "What does DNS translate?",
+      "options": [
+        "MAC addresses to IP addresses",
+        "Domain names to IP addresses",
+        "IP addresses to port numbers",
+        "Hostnames to MAC addresses"
+      ],
+      "correct": 1,
+      "explanation": "DNS (Domain Name Service) translates human-readable domain names into IP addresses.",
+      "difficulty": "easy",
+      "tags": ["DNS", "networking", "translation"]
+    },
+    {
+      "id": "ch8-q5",
+      "question": "Which cable type connects a PC directly to a router?",
+      "options": [
+        "Crossover cable",
+        "Straight-through cable",
+        "Rollover cable",
+        "Serial cable"
+      ],
+      "correct": 1,
+      "explanation": "A straight-through Ethernet cable connects different device types like PC to router or switch.",
+      "difficulty": "medium",
+      "tags": ["cabling", "Ethernet", "connections"]
+    },
+    {
+      "id": "ch8-q6",
+      "question": "What is a common cause of network connectivity issues?",
+      "options": [
+        "Monitor brightness",
+        "Damaged or unplugged network cables",
+        "Keyboard layout",
+        "Screen resolution"
+      ],
+      "correct": 1,
+      "explanation": "Network cables that are damaged or unplugged are a common cause of connectivity problems.",
+      "difficulty": "easy",
+      "tags": ["troubleshooting", "cables", "connectivity"]
+    },
+    {
+      "id": "ch8-q7",
+      "question": "What advanced NIC setting controls power-saving features?",
+      "options": [
+        "Speed and Duplex",
+        "Wake on LAN",
+        "QoS",
+        "VLAN"
+      ],
+      "correct": 1,
+      "explanation": "Wake on LAN allows a network signal to wake a computer from sleep or hibernation mode.",
+      "difficulty": "medium",
+      "tags": ["NIC", "Wake on LAN", "power"]
+    },
+    {
+      "id": "ch8-q8",
+      "question": "Which wireless security is weakest?",
+      "options": [
+        "WPA2",
+        "WPA3",
+        "WEP",
+        "WPA"
+      ],
+      "correct": 2,
+      "explanation": "WEP (Wired Equivalent Privacy) is the oldest and weakest wireless security protocol, easily cracked.",
+      "difficulty": "easy",
+      "tags": ["wireless security", "WEP", "encryption"]
+    },
+    {
+      "id": "ch8-q9",
+      "question": "What must Windows computers share to access resources?",
+      "options": [
+        "Same IP range",
+        "Same domain or workgroup name",
+        "Same password",
+        "Same hardware"
+      ],
+      "correct": 1,
+      "explanation": "Windows computers must be part of the same domain or workgroup to share resources.",
+      "difficulty": "medium",
+      "tags": ["Windows", "workgroup", "sharing"]
+    },
+    {
+      "id": "ch8-q10",
+      "question": "Which broadband technology uses coaxial cable?",
+      "options": [
+        "DSL",
+        "Cable Internet",
+        "Fiber",
+        "Satellite"
+      ],
+      "correct": 1,
+      "explanation": "Cable Internet uses coaxial cable lines originally designed for cable television.",
+      "difficulty": "easy",
+      "tags": ["broadband", "cable", "Internet"]
+    },
+    {
+      "id": "ch8-q11",
+      "question": "What is line-of-sight wireless Internet?",
+      "options": [
+        "Satellite connection",
+        "Radio signal Internet requiring clear path",
+        "Fiber optic connection",
+        "Mobile hotspot"
+      ],
+      "correct": 1,
+      "explanation": "Line-of-sight wireless Internet uses radio signals and requires a clear path between transmitter and receiver.",
+      "difficulty": "medium",
+      "tags": ["wireless", "Internet", "line-of-sight"]
+    },
+    {
+      "id": "ch8-q12",
+      "question": "What feature allows filtering wireless connections by hardware address?",
+      "options": [
+        "IP filtering",
+        "MAC address filtering",
+        "Port filtering",
+        "Content filtering"
+      ],
+      "correct": 1,
+      "explanation": "MAC address filtering allows or denies wireless connections based on device MAC addresses.",
+      "difficulty": "medium",
+      "tags": ["MAC filtering", "wireless", "security"]
+    },
+    {
+      "id": "ch8-q13",
+      "question": "Which tool tests network connectivity between devices?",
+      "options": [
+        "ipconfig",
+        "ping",
+        "netstat",
+        "msconfig"
+      ],
+      "correct": 1,
+      "explanation": "The ping command tests network connectivity by sending ICMP packets to a target device.",
+      "difficulty": "easy",
+      "tags": ["ping", "troubleshooting", "commands"]
+    },
+    {
+      "id": "ch8-q14",
+      "question": "What is cloud computing?",
+      "options": [
+        "Local storage solution",
+        "Off-premise shared computing resources",
+        "Weather prediction system",
+        "Backup software"
+      ],
+      "correct": 1,
+      "explanation": "Cloud computing provides on-demand access to a shared pool of configurable computing resources off-premise.",
+      "difficulty": "easy",
+      "tags": ["cloud computing", "services", "infrastructure"]
+    },
+    {
+      "id": "ch8-q15",
+      "question": "What should be documented after network troubleshooting?",
+      "options": [
+        "Only the solution",
+        "Findings, repairs, and notes",
+        "Customer complaints only",
+        "Time spent only"
+      ],
+      "correct": 1,
+      "explanation": "Document all findings, repairs performed, and notes for future reference and troubleshooting.",
+      "difficulty": "easy",
+      "tags": ["documentation", "troubleshooting", "best practices"]
+    },
+    {
+      "id": "ch8-q16",
+      "question": "What NIC setting adjusts for network congestion?",
+      "options": [
+        "Speed/Duplex",
+        "QoS (Quality of Service)",
+        "Wake on LAN",
+        "Power Management"
+      ],
+      "correct": 1,
+      "explanation": "QoS (Quality of Service) prioritizes network traffic to manage congestion and ensure performance.",
+      "difficulty": "medium",
+      "tags": ["QoS", "NIC", "network performance"]
+    },
+    {
+      "id": "ch8-q17",
+      "question": "Which wireless channel is recommended to avoid interference?",
+      "options": [
+        "Channel 1",
+        "Channel 6",
+        "Channel 11",
+        "Any of 1, 6, or 11"
+      ],
+      "correct": 3,
+      "explanation": "Channels 1, 6, and 11 are non-overlapping channels in 2.4GHz band, minimizing interference.",
+      "difficulty": "medium",
+      "tags": ["wireless", "channels", "interference"]
+    },
+    {
+      "id": "ch8-q18",
+      "question": "What is the purpose of port forwarding on a router?",
+      "options": [
+        "Increase speed",
+        "Direct traffic to specific internal devices",
+        "Block websites",
+        "Save power"
+      ],
+      "correct": 1,
+      "explanation": "Port forwarding directs incoming traffic on specific ports to designated devices on the internal network.",
+      "difficulty": "medium",
+      "tags": ["port forwarding", "router", "networking"]
+    },
+    {
+      "id": "ch8-q19",
+      "question": "Which command shows current network connections?",
+      "options": [
+        "ipconfig",
+        "netstat",
+        "ping",
+        "tracert"
+      ],
+      "correct": 1,
+      "explanation": "Netstat displays current network connections, listening ports, and network statistics.",
+      "difficulty": "medium",
+      "tags": ["netstat", "commands", "troubleshooting"]
+    },
+    {
+      "id": "ch8-q20",
+      "question": "What provides fastest Internet connection speeds?",
+      "options": [
+        "DSL",
+        "Cable",
+        "Fiber broadband",
+        "Satellite"
+      ],
+      "correct": 2,
+      "explanation": "Fiber broadband provides faster connection speeds and bandwidth than cable, DSL, or satellite.",
+      "difficulty": "easy",
+      "tags": ["broadband", "fiber", "speed"]
+    },
+    {
+      "id": "ch8-q21",
+      "question": "What does 'mapping a drive' mean in Windows?",
+      "options": [
+        "Formatting a drive",
+        "Assigning a drive letter to a network location",
+        "Creating a backup",
+        "Defragmenting a drive"
+      ],
+      "correct": 1,
+      "explanation": "Mapping a drive assigns a local drive letter to a network folder or share for easy access.",
+      "difficulty": "medium",
+      "tags": ["drive mapping", "Windows", "networking"]
+    },
+    {
+      "id": "ch8-q22",
+      "question": "Which setting determines how fast a NIC operates?",
+      "options": [
+        "MTU size",
+        "Speed and Duplex",
+        "Buffer size",
+        "Packet size"
+      ],
+      "correct": 1,
+      "explanation": "Speed and Duplex settings control the NIC's operating speed (10/100/1000 Mbps) and communication mode.",
+      "difficulty": "medium",
+      "tags": ["NIC", "speed", "duplex"]
+    },
+    {
+      "id": "ch8-q23",
+      "question": "What is required for satellite Internet?",
+      "options": [
+        "Phone line",
+        "Clear view of southern sky",
+        "Cable connection",
+        "Fiber optic line"
+      ],
+      "correct": 1,
+      "explanation": "Satellite Internet requires a clear view of the southern sky (in Northern Hemisphere) for dish alignment.",
+      "difficulty": "medium",
+      "tags": ["satellite", "Internet", "requirements"]
+    },
+    {
+      "id": "ch8-q24",
+      "question": "Which protocol helps prevent IP address conflicts?",
+      "options": [
+        "DNS",
+        "DHCP with reservations",
+        "ARP",
+        "ICMP"
+      ],
+      "correct": 1,
+      "explanation": "DHCP with reservations ensures specific devices always receive the same IP address, preventing conflicts.",
+      "difficulty": "hard",
+      "tags": ["DHCP", "IP conflicts", "networking"]
+    },
+    {
+      "id": "ch8-q25",
+      "question": "What should be checked first for wireless connection issues?",
+      "options": [
+        "Router firmware",
+        "SSID and password",
+        "Channel width",
+        "Antenna type"
+      ],
+      "correct": 1,
+      "explanation": "First verify the correct SSID is selected and the password is entered correctly for wireless issues.",
+      "difficulty": "easy",
+      "tags": ["wireless", "troubleshooting", "SSID"]
+    },
+    {
+      "id": "ch8-q26",
+      "question": "What is the difference between half and full duplex?",
+      "options": [
+        "Speed only",
+        "Half sends or receives, full does both simultaneously",
+        "Cable type required",
+        "Distance supported"
+      ],
+      "correct": 1,
+      "explanation": "Half duplex can either send or receive at one time, while full duplex can do both simultaneously.",
+      "difficulty": "medium",
+      "tags": ["duplex", "networking", "communication"]
+    },
+    {
+      "id": "ch8-q27",
+      "question": "Which command releases and renews DHCP IP address?",
+      "options": [
+        "ipconfig /all",
+        "ipconfig /release and /renew",
+        "ipconfig /flushdns",
+        "ipconfig /displaydns"
+      ],
+      "correct": 1,
+      "explanation": "ipconfig /release releases the current IP, and ipconfig /renew requests a new IP from DHCP.",
+      "difficulty": "medium",
+      "tags": ["ipconfig", "DHCP", "commands"]
+    },
+    {
+      "id": "ch8-q28",
+      "question": "What limits wireless range and signal strength?",
+      "options": [
+        "Cable quality",
+        "Physical obstacles and interference",
+        "Switch configuration",
+        "DNS settings"
+      ],
+      "correct": 1,
+      "explanation": "Physical obstacles (walls, metal) and interference from other devices limit wireless range and signal.",
+      "difficulty": "easy",
+      "tags": ["wireless", "signal", "interference"]
+    },
+    {
+      "id": "ch8-q29",
+      "question": "What is a data center?",
+      "options": [
+        "Internet cafe",
+        "Data storage and processing facility",
+        "Network cable junction",
+        "Computer store"
+      ],
+      "correct": 1,
+      "explanation": "A data center is a facility for data storage and processing, run in-house or leased offsite.",
+      "difficulty": "easy",
+      "tags": ["data center", "infrastructure", "storage"]
+    },
+    {
+      "id": "ch8-q30",
+      "question": "Which tool traces the path packets take to a destination?",
+      "options": [
+        "ping",
+        "tracert/traceroute",
+        "netstat",
+        "nslookup"
+      ],
+      "correct": 1,
+      "explanation": "Tracert (Windows) or traceroute (Linux) shows each hop packets take to reach their destination.",
+      "difficulty": "medium",
+      "tags": ["tracert", "troubleshooting", "routing"]
+    },
+    {
+      "id": "ch8-q31",
+      "question": "What prevents unauthorized wireless access besides passwords?",
+      "options": [
+        "Hiding SSID",
+        "MAC filtering and WPA2",
+        "Changing channels",
+        "Reducing power"
+      ],
+      "correct": 1,
+      "explanation": "MAC address filtering combined with WPA2 encryption provides additional security beyond passwords.",
+      "difficulty": "medium",
+      "tags": ["wireless security", "MAC filtering", "WPA2"]
+    },
+    {
+      "id": "ch8-q32",
+      "question": "What Windows feature allows folder sharing?",
+      "options": [
+        "Network Discovery",
+        "File and Printer Sharing",
+        "Windows Firewall",
+        "Remote Desktop"
+      ],
+      "correct": 1,
+      "explanation": "File and Printer Sharing must be enabled in Windows to share folders across the network.",
+      "difficulty": "easy",
+      "tags": ["sharing", "Windows", "folders"]
+    },
+    {
+      "id": "ch8-q33",
+      "question": "Which command shows DNS cache contents?",
+      "options": [
+        "ipconfig /all",
+        "ipconfig /displaydns",
+        "nslookup",
+        "dns /show"
+      ],
+      "correct": 1,
+      "explanation": "ipconfig /displaydns shows the contents of the local DNS resolver cache.",
+      "difficulty": "hard",
+      "tags": ["DNS", "cache", "commands"]
+    },
+    {
+      "id": "ch8-q34",
+      "question": "What is the default subnet mask for a home router?",
+      "options": [
+        "255.0.0.0",
+        "255.255.0.0",
+        "255.255.255.0",
+        "255.255.255.255"
+      ],
+      "correct": 2,
+      "explanation": "Most home routers use 255.255.255.0 (/24) subnet mask for the local network.",
+      "difficulty": "medium",
+      "tags": ["subnet mask", "router", "home network"]
+    },
+    {
+      "id": "ch8-q35",
+      "question": "What indicates a successful ping response?",
+      "options": [
+        "Request timed out",
+        "Reply from [IP]: bytes=32",
+        "Destination unreachable",
+        "General failure"
+      ],
+      "correct": 1,
+      "explanation": "A successful ping shows 'Reply from' with the IP address and response details like bytes and time.",
+      "difficulty": "easy",
+      "tags": ["ping", "troubleshooting", "response"]
+    }
+  ]
+}

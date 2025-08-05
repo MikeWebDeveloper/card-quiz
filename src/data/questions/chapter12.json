@@ -1,0 +1,496 @@
+{
+  "chapter": 12,
+  "title": "Security",
+  "questions": [
+    {
+      "id": "ch12-q1",
+      "question": "What are viruses, Trojans, and worms examples of?",
+      "options": [
+        "Antivirus software",
+        "Malware",
+        "Firewalls",
+        "Operating systems"
+      ],
+      "correct": 1,
+      "explanation": "Viruses, Trojans, and worms are all examples of malware (malicious software).",
+      "difficulty": "easy",
+      "tags": ["malware", "threats", "security"]
+    },
+    {
+      "id": "ch12-q2",
+      "question": "What is phishing designed to do?",
+      "options": [
+        "Speed up computer",
+        "Block spam emails",
+        "Trick users into providing personal/financial information",
+        "Update software"
+      ],
+      "correct": 2,
+      "explanation": "Phishing is designed to trick users into providing personal or financial information through deceptive emails or websites.",
+      "difficulty": "easy",
+      "tags": ["phishing", "social engineering", "threats"]
+    },
+    {
+      "id": "ch12-q3",
+      "question": "What is a Zero-Day attack?",
+      "options": [
+        "Attack that happens at midnight",
+        "First attack on a system",
+        "Attack exploiting unknown software vulnerabilities",
+        "Attack lasting zero days"
+      ],
+      "correct": 2,
+      "explanation": "Zero-Day attacks attempt to exploit software vulnerabilities that are unknown or undisclosed by the software vendor.",
+      "difficulty": "medium",
+      "tags": ["zero-day", "vulnerabilities", "attacks"]
+    },
+    {
+      "id": "ch12-q4",
+      "question": "What is the goal of a Denial of Service (DoS) attack?",
+      "options": [
+        "Steal passwords",
+        "Install malware",
+        "Overwhelm device with traffic so it can't respond to legitimate users",
+        "Delete files"
+      ],
+      "correct": 2,
+      "explanation": "DoS attacks send abnormally large amounts of traffic to overwhelm the target device, preventing it from responding to legitimate users.",
+      "difficulty": "medium",
+      "tags": ["DoS", "attacks", "network security"]
+    },
+    {
+      "id": "ch12-q5",
+      "question": "What type of firewall do most wireless routers include?",
+      "options": [
+        "Software firewall",
+        "Stateful packet inspection firewall",
+        "Hardware-only firewall",
+        "Cloud firewall"
+      ],
+      "correct": 1,
+      "explanation": "Most wireless routers today include a stateful packet inspection firewall for network protection.",
+      "difficulty": "medium",
+      "tags": ["firewall", "router", "network security"]
+    },
+    {
+      "id": "ch12-q6",
+      "question": "What does a VPN provide?",
+      "options": [
+        "Faster internet speed",
+        "Free Wi-Fi access",
+        "Encrypted tunnel for data communications",
+        "Virus protection"
+      ],
+      "correct": 2,
+      "explanation": "A VPN (Virtual Private Network) provides an encrypted tunnel for data communications across the Internet.",
+      "difficulty": "easy",
+      "tags": ["VPN", "encryption", "network security"]
+    },
+    {
+      "id": "ch12-q7",
+      "question": "What Windows feature encrypts an entire hard drive?",
+      "options": [
+        "Windows Defender",
+        "BitLocker",
+        "Windows Firewall",
+        "File History"
+      ],
+      "correct": 1,
+      "explanation": "Windows BitLocker can encrypt an entire hard drive to protect data from unauthorized access.",
+      "difficulty": "medium",
+      "tags": ["BitLocker", "encryption", "Windows"]
+    },
+    {
+      "id": "ch12-q8",
+      "question": "What is biometric security?",
+      "options": [
+        "Password-based security",
+        "Comparing physical characteristics against stored profiles",
+        "Smart card authentication",
+        "Network firewall"
+      ],
+      "correct": 1,
+      "explanation": "Biometric security compares physical characteristics (fingerprints, face, iris) against stored profiles to authenticate users.",
+      "difficulty": "easy",
+      "tags": ["biometric", "authentication", "physical security"]
+    },
+    {
+      "id": "ch12-q9",
+      "question": "What is a smart card?",
+      "options": [
+        "Credit card with rewards",
+        "Plastic card with chip for authentication and encryption",
+        "Memory card for phones",
+        "Business card with QR code"
+      ],
+      "correct": 1,
+      "explanation": "A smart card is a small plastic card with a chip that processes, stores, and safeguards data with authentication and encryption.",
+      "difficulty": "medium",
+      "tags": ["smart card", "authentication", "physical security"]
+    },
+    {
+      "id": "ch12-q10",
+      "question": "What is a key fob used for?",
+      "options": [
+        "Unlocking doors only",
+        "Two-factor authentication",
+        "Starting cars",
+        "USB storage"
+      ],
+      "correct": 1,
+      "explanation": "A key fob is a device for two-factor authentication - user enters PIN, then fob displays a number used to log on.",
+      "difficulty": "medium",
+      "tags": ["key fob", "two-factor", "authentication"]
+    },
+    {
+      "id": "ch12-q11",
+      "question": "What is the current strongest wireless security mode?",
+      "options": [
+        "WEP",
+        "WPA",
+        "WPA2",
+        "Open network"
+      ],
+      "correct": 2,
+      "explanation": "WPA2 is currently the strongest security mode for securing wireless networks.",
+      "difficulty": "easy",
+      "tags": ["wireless", "WPA2", "network security"]
+    },
+    {
+      "id": "ch12-q12",
+      "question": "What is spam often used for?",
+      "options": [
+        "System updates",
+        "Phishing attacks or delivering malware",
+        "Free offers only",
+        "Newsletter subscriptions"
+      ],
+      "correct": 1,
+      "explanation": "Spam (unsolicited email) is often used for phishing attacks or to deliver malware to victims.",
+      "difficulty": "easy",
+      "tags": ["spam", "email", "threats"]
+    },
+    {
+      "id": "ch12-q13",
+      "question": "What is a mantrap used for?",
+      "options": [
+        "Catching intruders",
+        "Preventing tailgating",
+        "Network security",
+        "Password protection"
+      ],
+      "correct": 1,
+      "explanation": "A mantrap is a physical security measure used to prevent tailgating (unauthorized persons following authorized users).",
+      "difficulty": "medium",
+      "tags": ["mantrap", "physical security", "tailgating"]
+    },
+    {
+      "id": "ch12-q14",
+      "question": "What should be done with hard drives before disposal?",
+      "options": [
+        "Format them",
+        "Break them in half",
+        "Data wipe with software or degaussing",
+        "Throw in regular trash"
+      ],
+      "correct": 2,
+      "explanation": "Hard drives should be data wiped with software tools or degaussing device before disposal to prevent data recovery.",
+      "difficulty": "medium",
+      "tags": ["data destruction", "disposal", "security"]
+    },
+    {
+      "id": "ch12-q15",
+      "question": "What type of Trojan allows unauthorized remote access?",
+      "options": [
+        "Data-sending Trojan",
+        "Remote access Trojan",
+        "Destructive Trojan",
+        "Proxy Trojan"
+      ],
+      "correct": 1,
+      "explanation": "Remote access Trojans allow cybercriminals to gain unauthorized control over infected computers.",
+      "difficulty": "easy",
+      "tags": ["Trojan", "remote access", "malware"]
+    },
+    {
+      "id": "ch12-q16",
+      "question": "What does antimalware software typically include?",
+      "options": [
+        "Only antivirus protection",
+        "Antivirus, adware, phishing, and spyware protection",
+        "Firewall only",
+        "Password manager only"
+      ],
+      "correct": 1,
+      "explanation": "Modern antimalware programs include antivirus, adware, phishing, and spyware protection in comprehensive packages.",
+      "difficulty": "easy",
+      "tags": ["antimalware", "protection", "software"]
+    },
+    {
+      "id": "ch12-q17",
+      "question": "How is malware typically installed?",
+      "options": [
+        "Always with user permission",
+        "Through Windows Update",
+        "Without user knowledge",
+        "Only through USB drives"
+      ],
+      "correct": 2,
+      "explanation": "Malware is typically installed on a computer without user knowledge through various deceptive methods.",
+      "difficulty": "easy",
+      "tags": ["malware", "installation", "threats"]
+    },
+    {
+      "id": "ch12-q18",
+      "question": "What web browser tools can make computers vulnerable?",
+      "options": [
+        "Bookmarks and history",
+        "Java and Adobe Flash",
+        "Password managers",
+        "Pop-up blockers"
+      ],
+      "correct": 1,
+      "explanation": "Web browser tools like Java and Adobe Flash can make computers more vulnerable to attacks due to security flaws.",
+      "difficulty": "medium",
+      "tags": ["browser", "vulnerabilities", "plugins"]
+    },
+    {
+      "id": "ch12-q19",
+      "question": "What is public key encryption?",
+      "options": [
+        "Everyone has the same key",
+        "Public key widely distributed, private key only recipient has",
+        "No keys are used",
+        "Only government has keys"
+      ],
+      "correct": 1,
+      "explanation": "In public key encryption, the public key is widely distributed while the private key is kept secret by the recipient.",
+      "difficulty": "medium",
+      "tags": ["encryption", "public key", "cryptography"]
+    },
+    {
+      "id": "ch12-q20",
+      "question": "What is a security policy?",
+      "options": [
+        "Insurance for computers",
+        "Set of security objectives ensuring network/data security",
+        "Government regulation",
+        "Antivirus software"
+      ],
+      "correct": 1,
+      "explanation": "A security policy is a set of security objectives that ensure the security of a network, data, and computer systems.",
+      "difficulty": "medium",
+      "tags": ["security policy", "organization", "planning"]
+    },
+    {
+      "id": "ch12-q21",
+      "question": "What does a Security Software Disabler Trojan do?",
+      "options": [
+        "Speeds up antivirus",
+        "Updates security software",
+        "Stops antivirus or firewalls from working",
+        "Installs new security"
+      ],
+      "correct": 2,
+      "explanation": "Security Software Disabler Trojans stop antivirus programs or firewalls from working, leaving systems vulnerable.",
+      "difficulty": "medium",
+      "tags": ["Trojan", "malware", "security software"]
+    },
+    {
+      "id": "ch12-q22",
+      "question": "What characteristic do worms have?",
+      "options": [
+        "Cannot spread on their own",
+        "Self-replicating to slow/disrupt networks",
+        "Only affect one computer",
+        "Require user action to spread"
+      ],
+      "correct": 1,
+      "explanation": "Worms are self-replicating malware that spread automatically to slow or disrupt networks.",
+      "difficulty": "medium",
+      "tags": ["worm", "malware", "self-replicating"]
+    },
+    {
+      "id": "ch12-q23",
+      "question": "Where is Windows Firewall configured?",
+      "options": [
+        "Device Manager",
+        "Control Panel > Windows Firewall > Advanced Settings",
+        "System Properties",
+        "Network Connections"
+      ],
+      "correct": 1,
+      "explanation": "Windows Firewall is configured through Control Panel > Windows Firewall > Advanced Settings.",
+      "difficulty": "easy",
+      "tags": ["Windows Firewall", "configuration", "settings"]
+    },
+    {
+      "id": "ch12-q24",
+      "question": "What does a Proxy Trojan do?",
+      "options": [
+        "Speeds up internet",
+        "Victim PC becomes launcher for attacks",
+        "Improves security",
+        "Blocks websites"
+      ],
+      "correct": 1,
+      "explanation": "Proxy Trojans turn victim computers into launchers for attacks on other systems, hiding the attacker's identity.",
+      "difficulty": "medium",
+      "tags": ["Proxy Trojan", "malware", "attacks"]
+    },
+    {
+      "id": "ch12-q25",
+      "question": "What is the purpose of Windows Backup and Restore?",
+      "options": [
+        "Speed up computer",
+        "Install updates",
+        "Back up data in case of theft/loss/damage",
+        "Remove viruses"
+      ],
+      "correct": 2,
+      "explanation": "Windows Backup and Restore backs up data to protect against theft, loss, or damage.",
+      "difficulty": "easy",
+      "tags": ["backup", "data protection", "Windows"]
+    },
+    {
+      "id": "ch12-q26",
+      "question": "What do file and folder permissions prevent?",
+      "options": [
+        "Viruses only",
+        "Unauthorized users from viewing/modifying data",
+        "System crashes",
+        "Network attacks"
+      ],
+      "correct": 1,
+      "explanation": "File and folder permissions prevent unauthorized users from viewing or modifying data.",
+      "difficulty": "easy",
+      "tags": ["permissions", "access control", "security"]
+    },
+    {
+      "id": "ch12-q27",
+      "question": "What is a destructive Trojan designed to do?",
+      "options": [
+        "Steal passwords",
+        "Send spam",
+        "Destroy files",
+        "Mine cryptocurrency"
+      ],
+      "correct": 2,
+      "explanation": "Destructive Trojans are designed to destroy files and damage systems.",
+      "difficulty": "easy",
+      "tags": ["Trojan", "malware", "destructive"]
+    },
+    {
+      "id": "ch12-q28",
+      "question": "What is degaussing used for?",
+      "options": [
+        "Cleaning monitors",
+        "Data wiping magnetic media",
+        "Improving performance",
+        "Testing hardware"
+      ],
+      "correct": 1,
+      "explanation": "Degaussing uses strong magnetic fields to erase data from magnetic storage media like hard drives.",
+      "difficulty": "hard",
+      "tags": ["degaussing", "data destruction", "security"]
+    },
+    {
+      "id": "ch12-q29",
+      "question": "What is tailgating in physical security?",
+      "options": [
+        "Following too closely while driving",
+        "Unauthorized person following authorized user through secure door",
+        "Network attack",
+        "Password sharing"
+      ],
+      "correct": 1,
+      "explanation": "Tailgating is when an unauthorized person follows an authorized user through a secure entrance.",
+      "difficulty": "medium",
+      "tags": ["tailgating", "physical security", "access control"]
+    },
+    {
+      "id": "ch12-q30",
+      "question": "What type of attack uses social engineering?",
+      "options": [
+        "DoS attack",
+        "Phishing",
+        "Port scan",
+        "Buffer overflow"
+      ],
+      "correct": 1,
+      "explanation": "Phishing attacks use social engineering to trick users into revealing sensitive information.",
+      "difficulty": "easy",
+      "tags": ["phishing", "social engineering", "attacks"]
+    },
+    {
+      "id": "ch12-q31",
+      "question": "What does Windows Defender Firewall filter?",
+      "options": [
+        "Email only",
+        "Traffic between computer and other computers",
+        "Screen brightness",
+        "Audio output"
+      ],
+      "correct": 1,
+      "explanation": "Windows Defender Firewall filters traffic between the computer and other computers it's connected to.",
+      "difficulty": "easy",
+      "tags": ["firewall", "Windows Defender", "network security"]
+    },
+    {
+      "id": "ch12-q32",
+      "question": "What is an FTP Trojan used for?",
+      "options": [
+        "Speeding up downloads",
+        "Unauthorized file transfers",
+        "Creating backups",
+        "Updating software"
+      ],
+      "correct": 1,
+      "explanation": "FTP Trojans enable unauthorized file transfers to and from infected computers.",
+      "difficulty": "medium",
+      "tags": ["FTP Trojan", "malware", "file transfer"]
+    },
+    {
+      "id": "ch12-q33",
+      "question": "What companies offer antimalware programs?",
+      "options": [
+        "Microsoft only",
+        "McAfee, Symantec, and Kaspersky",
+        "Apple only",
+        "Google only"
+      ],
+      "correct": 1,
+      "explanation": "Major antimalware vendors include McAfee, Symantec, Kaspersky, and many others.",
+      "difficulty": "easy",
+      "tags": ["antimalware", "vendors", "software"]
+    },
+    {
+      "id": "ch12-q34",
+      "question": "What is a data-sending Trojan designed to do?",
+      "options": [
+        "Speed up data transfer",
+        "Send sensitive information to attackers",
+        "Backup user data",
+        "Compress files"
+      ],
+      "correct": 1,
+      "explanation": "Data-sending Trojans are designed to steal and send sensitive information to cybercriminals.",
+      "difficulty": "easy",
+      "tags": ["Trojan", "data theft", "malware"]
+    },
+    {
+      "id": "ch12-q35",
+      "question": "What should encrypted communications use?",
+      "options": [
+        "Plain text",
+        "Encrypted channels like VPN",
+        "Public Wi-Fi",
+        "Shared passwords"
+      ],
+      "correct": 1,
+      "explanation": "Encrypted communications should occur over encrypted channels such as those provided by VPNs.",
+      "difficulty": "easy",
+      "tags": ["encryption", "VPN", "secure communication"]
+    }
+  ]
+}

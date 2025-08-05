@@ -1,0 +1,496 @@
+{
+  "chapter": 1,
+  "title": "Introduction to Personal Computer Hardware",
+  "questions": [
+    {
+      "id": "ch1-q1",
+      "question": "At what minimum voltage of static electricity can you feel an ESD shock?",
+      "options": [
+        "30 volts",
+        "300 volts",
+        "3,000 volts",
+        "10,000 volts"
+      ],
+      "correct": 2,
+      "explanation": "A person can feel ESD at a minimum of 3,000 volts. Less than 30 volts can damage computer components, but you won't feel it.",
+      "difficulty": "easy",
+      "tags": ["ESD", "safety"]
+    },
+    {
+      "id": "ch1-q2",
+      "question": "Which component is most susceptible to damage from ESD?",
+      "options": [
+        "Power supply",
+        "Monitor cable",
+        "RAM module",
+        "Computer case"
+      ],
+      "correct": 2,
+      "explanation": "RAM modules and other semiconductor components are highly sensitive to ESD damage. The computer case and cables are not as susceptible.",
+      "difficulty": "easy",
+      "tags": ["ESD", "components"]
+    },
+    {
+      "id": "ch1-q3",
+      "question": "What is the primary purpose of an antistatic wrist strap?",
+      "options": [
+        "To protect the technician from electrical shock",
+        "To ground the technician to prevent ESD damage",
+        "To improve grip when handling components",
+        "To monitor heart rate during repairs"
+      ],
+      "correct": 1,
+      "explanation": "An antistatic wrist strap grounds the technician to prevent electrostatic discharge from damaging sensitive computer components.",
+      "difficulty": "easy",
+      "tags": ["ESD", "safety", "tools"]
+    },
+    {
+      "id": "ch1-q4",
+      "question": "Which motherboard form factor is most commonly used in desktop computers?",
+      "options": [
+        "Mini-ITX",
+        "ATX",
+        "Micro-ATX",
+        "BTX"
+      ],
+      "correct": 1,
+      "explanation": "ATX (Advanced Technology Extended) is the most common motherboard form factor for desktop computers, providing a good balance of size and expansion capabilities.",
+      "difficulty": "medium",
+      "tags": ["motherboard", "form factors"]
+    },
+    {
+      "id": "ch1-q5",
+      "question": "What two components on the motherboard control system boot operations? (Choose two)",
+      "options": [
+        "BIOS chip",
+        "RAM",
+        "UEFI chip",
+        "CPU"
+      ],
+      "correct": 0,
+      "explanation": "The BIOS chip and UEFI chip are responsible for controlling system boot operations. Note: This is a multi-answer question - both BIOS and UEFI would be correct.",
+      "difficulty": "medium",
+      "tags": ["motherboard", "boot", "BIOS", "UEFI"]
+    },
+    {
+      "id": "ch1-q6",
+      "question": "Which component contains the basic instructions needed to boot the computer and load the operating system?",
+      "options": [
+        "RAM",
+        "Hard drive",
+        "ROM/BIOS",
+        "CPU cache"
+      ],
+      "correct": 2,
+      "explanation": "ROM (Read-Only Memory) containing the BIOS/UEFI stores the basic instructions needed to boot the computer and load the operating system.",
+      "difficulty": "easy",
+      "tags": ["boot", "BIOS", "ROM"]
+    },
+    {
+      "id": "ch1-q7",
+      "question": "What is the purpose of thermal compound?",
+      "options": [
+        "To clean the CPU surface",
+        "To conduct heat from the CPU to the heat sink",
+        "To prevent electrical shorts",
+        "To secure the CPU in place"
+      ],
+      "correct": 1,
+      "explanation": "Thermal compound (thermal paste) is applied between the CPU and heat sink to improve heat transfer by filling microscopic gaps between the surfaces.",
+      "difficulty": "easy",
+      "tags": ["CPU", "cooling", "maintenance"]
+    },
+    {
+      "id": "ch1-q8",
+      "question": "Which type of memory loses its contents when the computer is powered off?",
+      "options": [
+        "ROM",
+        "CMOS",
+        "RAM",
+        "BIOS"
+      ],
+      "correct": 2,
+      "explanation": "RAM (Random Access Memory) is volatile memory that loses its contents when power is removed. ROM, CMOS, and BIOS retain their data.",
+      "difficulty": "easy",
+      "tags": ["memory", "RAM"]
+    },
+    {
+      "id": "ch1-q9",
+      "question": "What ensures that memory modules are inserted correctly into memory slots?",
+      "options": [
+        "Color coding on the slots",
+        "A notch in the module aligned with a notch in the slot",
+        "The module only fits one way",
+        "Numbered pins on the module"
+      ],
+      "correct": 1,
+      "explanation": "Memory modules have a notch that must align with a corresponding notch in the memory slot, ensuring proper orientation and preventing incorrect installation.",
+      "difficulty": "medium",
+      "tags": ["memory", "installation"]
+    },
+    {
+      "id": "ch1-q10",
+      "question": "Which power connector is used to supply power to modern motherboards?",
+      "options": [
+        "20-pin ATX",
+        "24-pin ATX",
+        "4-pin Molex",
+        "SATA power"
+      ],
+      "correct": 1,
+      "explanation": "Modern motherboards use a 24-pin ATX power connector as the main power connection. Older boards used 20-pin connectors.",
+      "difficulty": "medium",
+      "tags": ["power", "connectors", "motherboard"]
+    },
+    {
+      "id": "ch1-q11",
+      "question": "What type of expansion slot is typically used for graphics cards in modern computers?",
+      "options": [
+        "PCI",
+        "AGP",
+        "PCIe x16",
+        "ISA"
+      ],
+      "correct": 2,
+      "explanation": "PCIe x16 (PCI Express x16) slots are the standard for modern graphics cards, providing high bandwidth for graphics processing.",
+      "difficulty": "medium",
+      "tags": ["expansion slots", "graphics", "PCIe"]
+    },
+    {
+      "id": "ch1-q12",
+      "question": "Which storage device has no moving parts?",
+      "options": [
+        "Hard disk drive (HDD)",
+        "DVD drive",
+        "Solid state drive (SSD)",
+        "Floppy disk drive"
+      ],
+      "correct": 2,
+      "explanation": "Solid state drives (SSDs) use flash memory and have no moving parts, making them faster, more durable, and quieter than mechanical drives.",
+      "difficulty": "easy",
+      "tags": ["storage", "SSD", "HDD"]
+    },
+    {
+      "id": "ch1-q13",
+      "question": "What is the standard interface for connecting modern hard drives and SSDs to the motherboard?",
+      "options": [
+        "IDE/PATA",
+        "SCSI",
+        "SATA",
+        "USB"
+      ],
+      "correct": 2,
+      "explanation": "SATA (Serial ATA) is the standard interface for connecting internal storage devices like hard drives and SSDs to modern motherboards.",
+      "difficulty": "medium",
+      "tags": ["storage", "interfaces", "SATA"]
+    },
+    {
+      "id": "ch1-q14",
+      "question": "Which component supplies DC power to all components inside the computer?",
+      "options": [
+        "Motherboard",
+        "Power supply unit (PSU)",
+        "Voltage regulator module",
+        "CMOS battery"
+      ],
+      "correct": 1,
+      "explanation": "The power supply unit (PSU) converts AC power from the wall outlet to the various DC voltages needed by computer components.",
+      "difficulty": "easy",
+      "tags": ["power", "PSU"]
+    },
+    {
+      "id": "ch1-q15",
+      "question": "What voltage does a CMOS battery typically provide?",
+      "options": [
+        "1.5V",
+        "3V",
+        "5V",
+        "12V"
+      ],
+      "correct": 1,
+      "explanation": "CMOS batteries typically provide 3V DC to maintain BIOS settings and system clock when the computer is powered off.",
+      "difficulty": "medium",
+      "tags": ["CMOS", "battery", "voltage"]
+    },
+    {
+      "id": "ch1-q16",
+      "question": "Which port is commonly used for connecting external storage devices and peripherals?",
+      "options": [
+        "PS/2",
+        "Serial",
+        "USB",
+        "Parallel"
+      ],
+      "correct": 2,
+      "explanation": "USB (Universal Serial Bus) is the most common port for connecting external storage devices, peripherals, and many other devices.",
+      "difficulty": "easy",
+      "tags": ["ports", "USB", "connectivity"]
+    },
+    {
+      "id": "ch1-q17",
+      "question": "What is the primary function of the chipset on a motherboard?",
+      "options": [
+        "Process graphics",
+        "Store BIOS settings",
+        "Control communication between CPU and other components",
+        "Provide power to the CPU"
+      ],
+      "correct": 2,
+      "explanation": "The chipset manages data flow between the CPU, memory, and peripheral devices, essentially controlling communication throughout the system.",
+      "difficulty": "medium",
+      "tags": ["chipset", "motherboard", "architecture"]
+    },
+    {
+      "id": "ch1-q18",
+      "question": "When building a PC that needs to support eSATA, which component should be checked for compatibility?",
+      "options": [
+        "Power supply",
+        "RAM",
+        "Chipset",
+        "CPU cooler"
+      ],
+      "correct": 2,
+      "explanation": "The chipset determines which features and interfaces are supported by the motherboard, including eSATA support.",
+      "difficulty": "hard",
+      "tags": ["chipset", "eSATA", "compatibility"]
+    },
+    {
+      "id": "ch1-q19",
+      "question": "What type of memory modules are used in desktop tower computers?",
+      "options": [
+        "SODIMM",
+        "DIMM",
+        "SIMM",
+        "MicroDIMM"
+      ],
+      "correct": 1,
+      "explanation": "Desktop tower computers use DIMM (Dual Inline Memory Module) for RAM. SODIMMs are used in laptops.",
+      "difficulty": "medium",
+      "tags": ["memory", "DIMM", "hardware"]
+    },
+    {
+      "id": "ch1-q20",
+      "question": "Which cooling method is most effective for high-performance CPUs?",
+      "options": [
+        "Passive heat sink",
+        "Case fans only",
+        "Liquid cooling",
+        "Thermal pads"
+      ],
+      "correct": 2,
+      "explanation": "Liquid cooling systems provide the most effective cooling for high-performance CPUs by efficiently transferring heat away from the processor.",
+      "difficulty": "medium",
+      "tags": ["cooling", "CPU", "performance"]
+    },
+    {
+      "id": "ch1-q21",
+      "question": "What is the purpose of standoffs in computer case installation?",
+      "options": [
+        "To improve airflow",
+        "To prevent the motherboard from shorting against the case",
+        "To reduce vibration",
+        "To support heavy graphics cards"
+      ],
+      "correct": 1,
+      "explanation": "Standoffs create space between the motherboard and case, preventing electrical shorts from the motherboard's circuits touching the metal case.",
+      "difficulty": "medium",
+      "tags": ["installation", "motherboard", "safety"]
+    },
+    {
+      "id": "ch1-q22",
+      "question": "Which component failure is typically indicated by a pattern of beeps during POST?",
+      "options": [
+        "Power supply failure",
+        "Case fan failure",
+        "Memory or hardware failure",
+        "Operating system corruption"
+      ],
+      "correct": 2,
+      "explanation": "POST (Power-On Self-Test) uses beep codes to indicate hardware failures, commonly memory problems or other critical component issues.",
+      "difficulty": "medium",
+      "tags": ["POST", "troubleshooting", "diagnostics"]
+    },
+    {
+      "id": "ch1-q23",
+      "question": "What is the maximum data transfer rate of USB 3.0?",
+      "options": [
+        "480 Mbps",
+        "5 Gbps",
+        "10 Gbps",
+        "20 Gbps"
+      ],
+      "correct": 1,
+      "explanation": "USB 3.0 (also known as USB 3.1 Gen 1) has a maximum theoretical transfer rate of 5 Gbps, which is 10 times faster than USB 2.0.",
+      "difficulty": "hard",
+      "tags": ["USB", "data transfer", "specifications"]
+    },
+    {
+      "id": "ch1-q24",
+      "question": "Which type of RAM must be installed in matched pairs for dual-channel operation?",
+      "options": [
+        "Any RAM modules",
+        "Same capacity modules",
+        "Same manufacturer modules",
+        "Identical modules (capacity, speed, and timings)"
+      ],
+      "correct": 3,
+      "explanation": "For optimal dual-channel operation, RAM modules should be identical in capacity, speed, and timings. Matched pairs ensure proper synchronization.",
+      "difficulty": "hard",
+      "tags": ["RAM", "dual-channel", "memory"]
+    },
+    {
+      "id": "ch1-q25",
+      "question": "What is the primary advantage of an M.2 SSD over a 2.5-inch SATA SSD?",
+      "options": [
+        "Lower cost",
+        "Higher capacity",
+        "Smaller form factor and potentially faster speeds",
+        "Better compatibility"
+      ],
+      "correct": 2,
+      "explanation": "M.2 SSDs offer a much smaller form factor and can use NVMe protocol for significantly faster speeds than SATA SSDs.",
+      "difficulty": "medium",
+      "tags": ["storage", "M.2", "SSD"]
+    },
+    {
+      "id": "ch1-q26",
+      "question": "Which power rail provides the primary power for modern CPUs?",
+      "options": [
+        "+3.3V",
+        "+5V",
+        "+12V",
+        "-12V"
+      ],
+      "correct": 2,
+      "explanation": "Modern CPUs receive their primary power from the +12V rail, which is then regulated down to the required voltage by the motherboard's VRM.",
+      "difficulty": "hard",
+      "tags": ["power", "voltage", "CPU"]
+    },
+    {
+      "id": "ch1-q27",
+      "question": "What is the purpose of a Safety Data Sheet (SDS)?",
+      "options": [
+        "To provide warranty information",
+        "To list compatible components",
+        "To summarize hazardous material information and disposal methods",
+        "To show installation instructions"
+      ],
+      "correct": 2,
+      "explanation": "An SDS provides information about hazardous materials, including health effects, fire hazards, first-aid requirements, and safe disposal methods.",
+      "difficulty": "medium",
+      "tags": ["safety", "documentation", "hazardous materials"]
+    },
+    {
+      "id": "ch1-q28",
+      "question": "Which video output provides the best quality for modern displays?",
+      "options": [
+        "VGA",
+        "DVI",
+        "HDMI",
+        "DisplayPort"
+      ],
+      "correct": 3,
+      "explanation": "DisplayPort provides the highest bandwidth and supports the highest resolutions and refresh rates, making it ideal for modern high-end displays.",
+      "difficulty": "medium",
+      "tags": ["video", "display", "connectors"]
+    },
+    {
+      "id": "ch1-q29",
+      "question": "What component stores BIOS/UEFI settings when the computer is powered off?",
+      "options": [
+        "Hard drive",
+        "RAM",
+        "CMOS memory",
+        "CPU cache"
+      ],
+      "correct": 2,
+      "explanation": "CMOS memory, powered by the CMOS battery, stores BIOS/UEFI settings, system time, and hardware configuration when the system is powered off.",
+      "difficulty": "easy",
+      "tags": ["CMOS", "BIOS", "storage"]
+    },
+    {
+      "id": "ch1-q30",
+      "question": "Which factor does NOT affect CPU performance?",
+      "options": [
+        "Clock speed",
+        "Number of cores",
+        "Cache size",
+        "CMOS battery voltage"
+      ],
+      "correct": 3,
+      "explanation": "CMOS battery voltage only maintains BIOS settings and does not affect CPU performance. Clock speed, cores, and cache directly impact performance.",
+      "difficulty": "medium",
+      "tags": ["CPU", "performance", "components"]
+    },
+    {
+      "id": "ch1-q31",
+      "question": "What is the standard voltage for PCIe slot power?",
+      "options": [
+        "+3.3V only",
+        "+5V only",
+        "+12V only",
+        "+3.3V and +12V"
+      ],
+      "correct": 3,
+      "explanation": "PCIe slots provide both +3.3V and +12V power rails. High-power devices like graphics cards primarily use the +12V rail.",
+      "difficulty": "hard",
+      "tags": ["PCIe", "voltage", "power"]
+    },
+    {
+      "id": "ch1-q32",
+      "question": "Which component directly executes program instructions?",
+      "options": [
+        "RAM",
+        "Hard drive",
+        "CPU",
+        "Chipset"
+      ],
+      "correct": 2,
+      "explanation": "The CPU (Central Processing Unit) is responsible for executing program instructions and performing calculations.",
+      "difficulty": "easy",
+      "tags": ["CPU", "processing", "architecture"]
+    },
+    {
+      "id": "ch1-q33",
+      "question": "What happens when the CMOS battery fails?",
+      "options": [
+        "Computer won't power on",
+        "BIOS settings and system time are lost",
+        "RAM stops working",
+        "CPU overheats"
+      ],
+      "correct": 1,
+      "explanation": "When the CMOS battery fails, the system loses BIOS settings and system time/date when powered off, but the computer can still boot.",
+      "difficulty": "medium",
+      "tags": ["CMOS", "troubleshooting", "battery"]
+    },
+    {
+      "id": "ch1-q34",
+      "question": "Which interface provides the fastest data transfer for internal storage?",
+      "options": [
+        "SATA III",
+        "USB 3.0",
+        "NVMe over PCIe",
+        "eSATA"
+      ],
+      "correct": 2,
+      "explanation": "NVMe over PCIe provides the fastest data transfer rates for internal storage, significantly outperforming SATA-based interfaces.",
+      "difficulty": "hard",
+      "tags": ["storage", "NVMe", "performance"]
+    },
+    {
+      "id": "ch1-q35",
+      "question": "What is the primary purpose of a grounded mat on a workbench?",
+      "options": [
+        "To provide cushioning for components",
+        "To organize tools",
+        "To prevent ESD damage to components",
+        "To absorb liquid spills"
+      ],
+      "correct": 2,
+      "explanation": "A grounded mat (antistatic mat) on a workbench provides an ESD-safe surface for working on sensitive electronic components.",
+      "difficulty": "easy",
+      "tags": ["ESD", "safety", "workspace"]
+    }
+  ]
+}

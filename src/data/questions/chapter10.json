@@ -1,0 +1,496 @@
+{
+  "chapter": 10,
+  "title": "Laptops and Mobile Devices",
+  "questions": [
+    {
+      "id": "ch10-q1",
+      "question": "What are Customer-Replaceable Units (CRUs) in laptops?",
+      "options": [
+        "Components requiring professional service",
+        "Components that customers can replace themselves",
+        "Software components only",
+        "External peripherals only"
+      ],
+      "correct": 1,
+      "explanation": "CRUs are components that can be replaced by the customer, typically including the laptop battery and RAM.",
+      "difficulty": "easy",
+      "tags": ["CRU", "laptop components", "maintenance"]
+    },
+    {
+      "id": "ch10-q2",
+      "question": "Which components are typically considered Field-Replaceable Units (FRUs)?",
+      "options": [
+        "Battery and RAM",
+        "Mouse and keyboard",
+        "Motherboard, LCD display, and keyboard",
+        "Power cord and adapter"
+      ],
+      "correct": 2,
+      "explanation": "FRUs include motherboard, LCD display, and keyboard - parts that require considerable technical skill to replace.",
+      "difficulty": "medium",
+      "tags": ["FRU", "laptop components", "repair"]
+    },
+    {
+      "id": "ch10-q3",
+      "question": "What converts touch actions into digital signals on mobile devices?",
+      "options": [
+        "CPU",
+        "Digitizer",
+        "RAM",
+        "Battery"
+      ],
+      "correct": 1,
+      "explanation": "The digitizer converts user touch actions such as swipes or taps into digital input signals.",
+      "difficulty": "easy",
+      "tags": ["digitizer", "touchscreen", "mobile devices"]
+    },
+    {
+      "id": "ch10-q4",
+      "question": "How do mobile device CPUs differ from desktop CPUs?",
+      "options": [
+        "They are faster",
+        "They have more cores",
+        "They have a reduced instruction set",
+        "They use more power"
+      ],
+      "correct": 2,
+      "explanation": "Mobile device CPUs have a different architecture with a reduced instruction set compared to laptop and desktop processors.",
+      "difficulty": "medium",
+      "tags": ["CPU", "mobile devices", "architecture"]
+    },
+    {
+      "id": "ch10-q5",
+      "question": "What components are typically found in a laptop lid?",
+      "options": [
+        "CPU and RAM",
+        "Battery and power supply",
+        "Screen, webcam, microphone, and Wi-Fi antenna",
+        "Hard drive and optical drive"
+      ],
+      "correct": 2,
+      "explanation": "The laptop lid commonly contains the screen, webcam, microphone, and Wi-Fi antenna.",
+      "difficulty": "easy",
+      "tags": ["laptop", "components", "display"]
+    },
+    {
+      "id": "ch10-q6",
+      "question": "Why are laptop motherboards different from desktop motherboards?",
+      "options": [
+        "They are the same",
+        "Laptop motherboards are proprietary and vary by manufacturer",
+        "Desktop motherboards are smaller",
+        "Laptop motherboards use different voltages"
+      ],
+      "correct": 1,
+      "explanation": "Laptop motherboards are proprietary, varying by manufacturer, and components designed for laptops generally cannot be used in desktops.",
+      "difficulty": "medium",
+      "tags": ["motherboard", "laptop", "proprietary"]
+    },
+    {
+      "id": "ch10-q7",
+      "question": "What should you do first if a laptop screen shows nothing when powered on?",
+      "options": [
+        "Replace the screen",
+        "Tap a key to check if it's in sleep mode",
+        "Replace the motherboard",
+        "Update the BIOS"
+      ],
+      "correct": 1,
+      "explanation": "First tap a key to see if the laptop has gone into sleep mode before trying other troubleshooting steps.",
+      "difficulty": "easy",
+      "tags": ["troubleshooting", "display", "sleep mode"]
+    },
+    {
+      "id": "ch10-q8",
+      "question": "What is a common cause of unresponsive touchscreen?",
+      "options": [
+        "Low battery",
+        "Faulty digitizer or dirty screen",
+        "Slow processor",
+        "Insufficient RAM"
+      ],
+      "correct": 1,
+      "explanation": "A faulty digitizer or dirty screen are common causes of unresponsive or inaccurate touchscreen behavior.",
+      "difficulty": "easy",
+      "tags": ["touchscreen", "troubleshooting", "digitizer"]
+    },
+    {
+      "id": "ch10-q9",
+      "question": "How do mobile devices typically connect to the internet?",
+      "options": [
+        "Ethernet only",
+        "Bluetooth only",
+        "Wi-Fi and cellular data",
+        "USB cable only"
+      ],
+      "correct": 2,
+      "explanation": "Mobile devices commonly use Wi-Fi (802.11 wireless) and cellular data networks to connect to the internet.",
+      "difficulty": "easy",
+      "tags": ["connectivity", "mobile devices", "internet"]
+    },
+    {
+      "id": "ch10-q10",
+      "question": "Why might laptop CPUs be designed to use less power?",
+      "options": [
+        "To reduce cost",
+        "To ensure longer battery operation time",
+        "To improve performance",
+        "To reduce size"
+      ],
+      "correct": 1,
+      "explanation": "Laptop CPUs may be designed to use less power to ensure the system can operate for a longer period when using battery power.",
+      "difficulty": "easy",
+      "tags": ["CPU", "power management", "battery"]
+    },
+    {
+      "id": "ch10-q11",
+      "question": "What is important when repairing laptops?",
+      "options": [
+        "Use desktop parts",
+        "Keep parts organized and cables labeled",
+        "Work as fast as possible",
+        "Never document the process"
+      ],
+      "correct": 1,
+      "explanation": "When repairing laptops, it's important to keep parts organized and cables labeled to aid in reassembly.",
+      "difficulty": "easy",
+      "tags": ["repair", "organization", "best practices"]
+    },
+    {
+      "id": "ch10-q12",
+      "question": "Where can you find information about laptop replacement parts?",
+      "options": [
+        "Any computer store",
+        "Desktop manufacturer websites",
+        "The laptop manufacturer's website",
+        "Generic parts catalogs"
+      ],
+      "correct": 2,
+      "explanation": "Due to proprietary parts, you often need to research the laptop manufacturer's website for replacement part information.",
+      "difficulty": "medium",
+      "tags": ["repair", "parts", "manufacturer"]
+    },
+    {
+      "id": "ch10-q13",
+      "question": "What defines a mobile device?",
+      "options": [
+        "Any portable computer",
+        "Hand-held, lightweight device with touchscreen",
+        "Any device with a battery",
+        "Devices without keyboards"
+      ],
+      "correct": 1,
+      "explanation": "A mobile device is any hand-held, lightweight device that typically has a touchscreen for input.",
+      "difficulty": "easy",
+      "tags": ["mobile device", "definition", "characteristics"]
+    },
+    {
+      "id": "ch10-q14",
+      "question": "What should you remove if a laptop won't power on after checking sleep mode?",
+      "options": [
+        "Hard drive and RAM",
+        "Screen and keyboard",
+        "Battery and AC power cord",
+        "All internal components"
+      ],
+      "correct": 2,
+      "explanation": "Remove the battery and AC power cord, then reinstall the battery and attach the power cord before trying to power on again.",
+      "difficulty": "medium",
+      "tags": ["troubleshooting", "power", "laptop"]
+    },
+    {
+      "id": "ch10-q15",
+      "question": "Which wireless standard do mobile devices use for Wi-Fi?",
+      "options": [
+        "802.3",
+        "802.11",
+        "802.15",
+        "802.16"
+      ],
+      "correct": 1,
+      "explanation": "Mobile devices use 802.11 wireless network standards for Wi-Fi connectivity.",
+      "difficulty": "medium",
+      "tags": ["wireless", "802.11", "connectivity"]
+    },
+    {
+      "id": "ch10-q16",
+      "question": "What type of display technology is common in mobile devices?",
+      "options": [
+        "CRT",
+        "Plasma",
+        "LCD/LED with touchscreen",
+        "Projector"
+      ],
+      "correct": 2,
+      "explanation": "Mobile devices typically use LCD or LED displays with integrated touchscreen technology.",
+      "difficulty": "easy",
+      "tags": ["display", "touchscreen", "technology"]
+    },
+    {
+      "id": "ch10-q17",
+      "question": "What is a common symptom of laptop overheating?",
+      "options": [
+        "Bright screen",
+        "Loud speakers",
+        "System freezing or shutting down",
+        "Fast performance"
+      ],
+      "correct": 2,
+      "explanation": "Overheating commonly causes systems to freeze, become unresponsive, or shut down to protect components.",
+      "difficulty": "easy",
+      "tags": ["overheating", "troubleshooting", "symptoms"]
+    },
+    {
+      "id": "ch10-q18",
+      "question": "What component failure causes very short battery life?",
+      "options": [
+        "Faulty screen",
+        "Degraded battery cells",
+        "Broken keyboard",
+        "Slow processor"
+      ],
+      "correct": 1,
+      "explanation": "Very short battery life typically indicates degraded or failing battery cells that need replacement.",
+      "difficulty": "easy",
+      "tags": ["battery", "troubleshooting", "power"]
+    },
+    {
+      "id": "ch10-q19",
+      "question": "How can laptop power settings be configured?",
+      "options": [
+        "Only through BIOS",
+        "Cannot be changed",
+        "To ensure efficient power usage",
+        "Only when plugged in"
+      ],
+      "correct": 2,
+      "explanation": "Laptop battery power settings can be configured to ensure power is used efficiently and extend battery life.",
+      "difficulty": "easy",
+      "tags": ["power management", "battery", "settings"]
+    },
+    {
+      "id": "ch10-q20",
+      "question": "What makes laptop repair different from desktop repair?",
+      "options": [
+        "Laptops are easier to repair",
+        "Laptops use proprietary parts",
+        "Desktop parts are more expensive",
+        "No difference exists"
+      ],
+      "correct": 1,
+      "explanation": "Laptops often use proprietary parts specific to each manufacturer, making repairs more challenging.",
+      "difficulty": "medium",
+      "tags": ["repair", "laptop", "proprietary"]
+    },
+    {
+      "id": "ch10-q21",
+      "question": "What is the purpose of a laptop docking station?",
+      "options": [
+        "Charge the battery only",
+        "Provide additional ports and connectivity",
+        "Cool the laptop",
+        "Store the laptop"
+      ],
+      "correct": 1,
+      "explanation": "Docking stations provide additional ports and connectivity options for laptops, enabling desktop-like functionality.",
+      "difficulty": "medium",
+      "tags": ["docking station", "connectivity", "peripherals"]
+    },
+    {
+      "id": "ch10-q22",
+      "question": "Which component is NOT typically user-replaceable in smartphones?",
+      "options": [
+        "SIM card",
+        "Memory card",
+        "Battery (in modern phones)",
+        "Case/cover"
+      ],
+      "correct": 2,
+      "explanation": "Modern smartphones typically have non-removable batteries that require professional service to replace.",
+      "difficulty": "medium",
+      "tags": ["smartphone", "battery", "repair"]
+    },
+    {
+      "id": "ch10-q23",
+      "question": "What technology allows laptops to wake from sleep via network?",
+      "options": [
+        "Wake-on-LAN",
+        "Sleep-on-LAN",
+        "Power-over-Ethernet",
+        "Bluetooth wake"
+      ],
+      "correct": 0,
+      "explanation": "Wake-on-LAN (WoL) technology allows laptops to be awakened from sleep mode via network signal.",
+      "difficulty": "medium",
+      "tags": ["Wake-on-LAN", "power management", "network"]
+    },
+    {
+      "id": "ch10-q24",
+      "question": "What is the typical lifespan of a laptop battery?",
+      "options": [
+        "6 months",
+        "1 year",
+        "2-3 years",
+        "10 years"
+      ],
+      "correct": 2,
+      "explanation": "Laptop batteries typically last 2-3 years or 300-500 charge cycles before significant capacity degradation.",
+      "difficulty": "medium",
+      "tags": ["battery", "lifespan", "maintenance"]
+    },
+    {
+      "id": "ch10-q25",
+      "question": "What causes 'ghost touches' on touchscreens?",
+      "options": [
+        "Low battery",
+        "Faulty digitizer or calibration issues",
+        "Slow processor",
+        "Insufficient storage"
+      ],
+      "correct": 1,
+      "explanation": "Ghost touches are typically caused by faulty digitizers or calibration issues in the touchscreen.",
+      "difficulty": "medium",
+      "tags": ["touchscreen", "ghost touches", "troubleshooting"]
+    },
+    {
+      "id": "ch10-q26",
+      "question": "Which port is commonly found on modern laptops for video and data?",
+      "options": [
+        "VGA",
+        "Serial",
+        "USB-C/Thunderbolt",
+        "Parallel"
+      ],
+      "correct": 2,
+      "explanation": "USB-C/Thunderbolt ports on modern laptops support video output, data transfer, and power delivery.",
+      "difficulty": "easy",
+      "tags": ["ports", "USB-C", "connectivity"]
+    },
+    {
+      "id": "ch10-q27",
+      "question": "What is a common cause of laptop keyboard failure?",
+      "options": [
+        "Software updates",
+        "Liquid spills",
+        "Screen brightness",
+        "Wi-Fi interference"
+      ],
+      "correct": 1,
+      "explanation": "Liquid spills are a common cause of laptop keyboard failure, often requiring keyboard replacement.",
+      "difficulty": "easy",
+      "tags": ["keyboard", "damage", "liquid"]
+    },
+    {
+      "id": "ch10-q28",
+      "question": "How do tablets differ from laptops?",
+      "options": [
+        "Tablets are always faster",
+        "Tablets primarily use touchscreen input",
+        "Tablets have more ports",
+        "Tablets use desktop CPUs"
+      ],
+      "correct": 1,
+      "explanation": "Tablets differ from laptops primarily in their reliance on touchscreen input rather than keyboard and mouse.",
+      "difficulty": "easy",
+      "tags": ["tablet", "touchscreen", "comparison"]
+    },
+    {
+      "id": "ch10-q29",
+      "question": "What is the purpose of airplane mode on mobile devices?",
+      "options": [
+        "Save battery only",
+        "Disable all wireless communications",
+        "Increase performance",
+        "Enable GPS only"
+      ],
+      "correct": 1,
+      "explanation": "Airplane mode disables all wireless communications including cellular, Wi-Fi, and Bluetooth for flight safety.",
+      "difficulty": "easy",
+      "tags": ["airplane mode", "wireless", "mobile devices"]
+    },
+    {
+      "id": "ch10-q30",
+      "question": "What component allows stylus input on devices?",
+      "options": [
+        "Regular touchscreen",
+        "Active digitizer",
+        "LCD panel",
+        "Trackpad"
+      ],
+      "correct": 1,
+      "explanation": "Active digitizers enable precise stylus input with pressure sensitivity and palm rejection.",
+      "difficulty": "medium",
+      "tags": ["digitizer", "stylus", "input"]
+    },
+    {
+      "id": "ch10-q31",
+      "question": "Which feature helps prevent laptop theft?",
+      "options": [
+        "Bright screen",
+        "Kensington lock slot",
+        "Multiple USB ports",
+        "Loud speakers"
+      ],
+      "correct": 1,
+      "explanation": "Kensington lock slots allow physical security cables to be attached to prevent laptop theft.",
+      "difficulty": "easy",
+      "tags": ["security", "Kensington lock", "theft prevention"]
+    },
+    {
+      "id": "ch10-q32",
+      "question": "What is a hybrid laptop?",
+      "options": [
+        "Uses two power sources",
+        "Combines laptop and tablet functionality",
+        "Has two processors",
+        "Uses hybrid storage only"
+      ],
+      "correct": 1,
+      "explanation": "Hybrid laptops (2-in-1s) combine laptop and tablet functionality with convertible or detachable designs.",
+      "difficulty": "easy",
+      "tags": ["hybrid", "2-in-1", "laptop types"]
+    },
+    {
+      "id": "ch10-q33",
+      "question": "What technology enables wireless charging?",
+      "options": [
+        "Bluetooth",
+        "Inductive charging",
+        "USB",
+        "Ethernet"
+      ],
+      "correct": 1,
+      "explanation": "Inductive charging (Qi standard) enables wireless charging through electromagnetic fields.",
+      "difficulty": "medium",
+      "tags": ["wireless charging", "inductive", "power"]
+    },
+    {
+      "id": "ch10-q34",
+      "question": "What is TPM in laptops used for?",
+      "options": [
+        "Temperature monitoring",
+        "Hardware-based encryption and security",
+        "Power management",
+        "Performance boost"
+      ],
+      "correct": 1,
+      "explanation": "TPM (Trusted Platform Module) provides hardware-based encryption and security features for laptops.",
+      "difficulty": "medium",
+      "tags": ["TPM", "security", "encryption"]
+    },
+    {
+      "id": "ch10-q35",
+      "question": "What causes laptop hinges to fail?",
+      "options": [
+        "Software issues",
+        "Repeated stress and poor handling",
+        "Battery problems",
+        "Screen brightness"
+      ],
+      "correct": 1,
+      "explanation": "Laptop hinges fail due to repeated stress from opening/closing and poor handling practices.",
+      "difficulty": "easy",
+      "tags": ["hinges", "mechanical failure", "laptop"]
+    }
+  ]
+}
