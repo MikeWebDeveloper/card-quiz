@@ -7,6 +7,24 @@ export function Statistics() {
   const chapters = getAllChapters();
   const [activeTab, setActiveTab] = useState<'practice' | 'exam'>('practice');
   
+  // Debug logging
+  console.log('📈 Statistics component rendering with userStats:', JSON.parse(JSON.stringify(userStats)));
+  console.log('📊 Practice stats:', JSON.parse(JSON.stringify(userStats.practice || {})));
+  console.log('🎯 Chapter stats keys:', Object.keys(userStats.practice?.chapterStats || {}));
+  
+  // Check localStorage directly
+  try {
+    const localStorageData = localStorage.getItem('quiz-storage');
+    console.log('💾 Raw localStorage data:', localStorageData);
+    if (localStorageData) {
+      const parsedData = JSON.parse(localStorageData);
+      console.log('🔍 Parsed localStorage data:', parsedData);
+      console.log('📊 localStorage practice stats:', parsedData.state?.userStats?.practice);
+    }
+  } catch (error) {
+    console.error('❌ Error reading localStorage:', error);
+  }
+  
   // Practice Mode Statistics with null checks
   const practiceStats = userStats.practice || { totalQuestionsAttempted: 0, totalCorrectAnswers: 0, totalTimeSpent: 0, chapterStats: {} };
   const practiceSuccessRate = practiceStats.totalQuestionsAttempted > 0
@@ -55,6 +73,28 @@ export function Statistics() {
     }
   };
   
+  const handleDebugStats = () => {
+    console.log('🔧 Debug Stats - Current userStats:', JSON.parse(JSON.stringify(userStats)));
+    
+    // Check localStorage directly
+    try {
+      const localStorageData = localStorage.getItem('quiz-storage');
+      console.log('🔧 Debug Stats - Raw localStorage:', localStorageData);
+      if (localStorageData) {
+        const parsedData = JSON.parse(localStorageData);
+        console.log('🔧 Debug Stats - Parsed localStorage:', parsedData);
+      }
+    } catch (error) {
+      console.error('🔧 Debug Stats - localStorage error:', error);
+    }
+    
+    // Also manually check each chapter's stats
+    chapters.forEach(chapter => {
+      const stats = userStats.practice?.chapterStats?.[chapter.chapter];
+      console.log(`🔧 Debug Stats - Chapter ${chapter.chapter}:`, stats);
+    });
+  };
+  
   return (
     <div className="max-w-7xl mx-auto">
       <div className="flex justify-between items-center mb-8">
@@ -62,12 +102,20 @@ export function Statistics() {
           <h1 className="text-3xl font-bold text-foreground-primary animate-slide-up">Your Statistics</h1>
           <p className="text-foreground-secondary animate-slide-up animation-delay-100">Track your learning progress across Practice and Exam modes</p>
         </div>
-        <button
-          onClick={handleResetStats}
-          className="bg-red-600 hover:bg-red-700 text-white px-4 py-2 rounded-lg transition-all duration-300 hover:scale-105"
-        >
-          Reset All Stats
-        </button>
+        <div className="flex gap-2">
+          <button
+            onClick={handleDebugStats}
+            className="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg transition-all duration-300 hover:scale-105"
+          >
+            Debug Stats
+          </button>
+          <button
+            onClick={handleResetStats}
+            className="bg-red-600 hover:bg-red-700 text-white px-4 py-2 rounded-lg transition-all duration-300 hover:scale-105"
+          >
+            Reset All Stats
+          </button>
+        </div>
       </div>
 
       {/* Mode Toggle */}

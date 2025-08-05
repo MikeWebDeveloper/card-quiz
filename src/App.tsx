@@ -5,6 +5,7 @@ import { Home } from './pages/Home';
 import { Practice } from './pages/Practice';
 import { Exam } from './pages/Exam';
 import { Statistics } from './pages/Statistics';
+import { DebugStats } from './components/DebugStats';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
             <Route path="stats" element={<Statistics />} />
           </Route>
         </Routes>
+        <DebugStats />
       </Router>
     </ThemeProvider>
   );

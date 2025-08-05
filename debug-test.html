@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Quiz Statistics Debug Test</title>
+</head>
+<body>
+    <h1>Quiz Statistics Debug Test</h1>
+    <p>Open browser console and visit: <a href="http://localhost:5176">http://localhost:5176</a></p>
+    
+    <h2>Debug Steps:</h2>
+    <ol>
+        <li>Go to Practice Mode</li>
+        <li>Select any chapter and complete a few questions</li>
+        <li>Check console logs for the debugging output</li>
+        <li>Go to Statistics page</li>
+        <li>Click "Debug Stats" button</li>
+        <li>Check if localStorage contains the updated stats</li>
+    </ol>
+    
+    <h2>Expected Console Logs:</h2>
+    <ul>
+        <li>🎯 Practice Quiz Complete - handleQuizComplete called with: ...</li>
+        <li>📊 updatePracticeStats called with: ...</li>
+        <li>📋 Current state before update: ...</li>
+        <li>💾 New state after update: ...</li>
+        <li>✨ Final state after set: ...</li>
+        <li>🔍 Stats after update for chapter X: ...</li>
+    </ul>
+    
+    <h2>What to Check:</h2>
+    <ul>
+        <li>Are the console logs showing the correct data being passed?</li>
+        <li>Is the state being updated correctly?</li>
+        <li>Is localStorage being updated?</li>
+        <li>Is the Statistics page reading the correct data?</li>
+    </ul>
+</body>
+</html>

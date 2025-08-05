@@ -47,6 +47,8 @@ const initialStats: UserStats = {
   chapterProgress: {},
 };
 
+const STORAGE_VERSION = 2; // Increment when changing storage structure
+
 export const useQuizStore = create<QuizStore>()(
   persist(
     (set, get) => ({
@@ -54,6 +56,27 @@ export const useQuizStore = create<QuizStore>()(
       
       // Practice Mode Methods
       updatePracticeStats: (chapter: number, correct: number, total: number, timeSpent: number) => {
+        console.log('📊 updatePracticeStats called with:', { chapter, correct, total, timeSpent });
+        console.log('📋 Current state before update:', JSON.parse(JSON.stringify(get().userStats.practice)));
+        
+        // Validate inputs
+        if (typeof chapter !== 'number' || chapter <= 0) {
+          console.error('❌ Invalid chapter:', chapter);
+          return;
+        }
+        if (typeof correct !== 'number' || correct < 0) {
+          console.error('❌ Invalid correct answers:', correct);
+          return;
+        }
+        if (typeof total !== 'number' || total <= 0) {
+          console.error('❌ Invalid total questions:', total);
+          return;
+        }
+        if (correct > total) {
+          console.error('❌ Correct answers cannot exceed total questions:', { correct, total });
+          return;
+        }
+        
         set((state) => {
           const currentChapterStats = state.userStats.practice.chapterStats[chapter] || {
             questionsAttempted: 0,
@@ -76,32 +99,57 @@ export const useQuizStore = create<QuizStore>()(
           const currentScore = Math.round((correct / total) * 100);
           const newBestScore = Math.max(currentChapterStats.bestScore, currentScore);
 
-          return {
-            userStats: {
-              ...state.userStats,
-              practice: {
-                ...state.userStats.practice,
-                totalQuestionsAttempted: state.userStats.practice.totalQuestionsAttempted + total,
-                totalCorrectAnswers: state.userStats.practice.totalCorrectAnswers + correct,
-                totalTimeSpent: state.userStats.practice.totalTimeSpent + timeSpent,
-                chapterStats: {
-                  ...state.userStats.practice.chapterStats,
-                  [chapter]: {
-                    questionsAttempted: newQuestionsAttempted,
-                    correctAnswers: newCorrectAnswers,
-                    incorrectAnswers: newIncorrectAnswers,
-                    successRate: newSuccessRate,
-                    totalTimeSpent: newTotalTimeSpent,
-                    averageTimePerQuestion: newAverageTimePerQuestion,
-                    bestScore: newBestScore,
-                    attempts: currentChapterStats.attempts + 1,
-                    lastAttempt: new Date(),
-                  },
-                },
-              },
+          // Create completely new objects to ensure immutability
+          const newChapterStats = {
+            ...state.userStats.practice.chapterStats,
+            [chapter]: {
+              questionsAttempted: newQuestionsAttempted,
+              correctAnswers: newCorrectAnswers,
+              incorrectAnswers: newIncorrectAnswers,
+              successRate: newSuccessRate,
+              totalTimeSpent: newTotalTimeSpent,
+              averageTimePerQuestion: newAverageTimePerQuestion,
+              bestScore: newBestScore,
+              attempts: currentChapterStats.attempts + 1,
+              lastAttempt: new Date(),
             },
           };
+
+          const newPractice = {
+            totalQuestionsAttempted: state.userStats.practice.totalQuestionsAttempted + total,
+            totalCorrectAnswers: state.userStats.practice.totalCorrectAnswers + correct,
+            totalTimeSpent: state.userStats.practice.totalTimeSpent + timeSpent,
+            chapterStats: newChapterStats,
+          };
+
+          const newUserStats = {
+            ...state.userStats,
+            practice: newPractice,
+          };
+
+          console.log('💾 New state after update:', JSON.parse(JSON.stringify(newPractice)));
+          console.log('🔄 Returning new state...');
+          
+          return { userStats: newUserStats };
         });
+        
+        // Check final state after update
+        setTimeout(() => {
+          const finalState = get().userStats.practice;
+          console.log('✨ Final state after set:', JSON.parse(JSON.stringify(finalState)));
+          
+          // Also check localStorage directly
+          try {
+            const stored = localStorage.getItem('quiz-storage');
+            console.log('💾 localStorage after update:', stored);
+            if (stored) {
+              const parsed = JSON.parse(stored);
+              console.log('🔍 Parsed stored practice stats:', parsed.state?.userStats?.practice);
+            }
+          } catch (error) {
+            console.error('❌ Error checking localStorage:', error);
+          }
+        }, 100);
       },
 
       getPracticeChapterStats: (chapter: number) => {
@@ -251,32 +299,129 @@ export const useQuizStore = create<QuizStore>()(
     }),
     {
       name: 'quiz-storage',
+      version: STORAGE_VERSION,
       partialize: (state) => ({ userStats: state.userStats }),
+      migrate: (persistedState: any, version: number) => {
+        console.log(`🔄 Migrating from version ${version} to ${STORAGE_VERSION}`);
+        
+        // If old version or no version, ensure proper structure
+        if (version < STORAGE_VERSION || !version) {
+          const migrated = {
+            userStats: {
+              ...initialStats,
+              ...persistedState?.userStats,
+              practice: {
+                ...initialPracticeStats,
+                ...persistedState?.userStats?.practice,
+                chapterStats: persistedState?.userStats?.practice?.chapterStats || {},
+              },
+              exam: {
+                ...initialExamStats,
+                ...persistedState?.userStats?.exam,
+                checkpointStats: persistedState?.userStats?.exam?.checkpointStats || {},
+              },
+            },
+          };
+          console.log('✅ Migration complete:', migrated);
+          return migrated;
+        }
+        
+        return persistedState;
+      },
+      serialize: (state) => {
+        console.log('💾 Serializing state to localStorage:', state);
+        
+        // Deep clone the state to avoid mutation
+        const stateToSerialize = JSON.parse(JSON.stringify(state, (key, value) => {
+          // Convert Date objects to ISO strings
+          if (value instanceof Date) {
+            return value.toISOString();
+          }
+          return value;
+        }));
+        
+        return JSON.stringify(stateToSerialize);
+      },
+      deserialize: (str) => {
+        console.log('🔄 Deserializing state from localStorage:', str);
+        try {
+          const parsed = JSON.parse(str);
+          
+          // Ensure the structure is complete
+          if (parsed.userStats) {
+            // Ensure practice object exists
+            if (!parsed.userStats.practice) {
+              parsed.userStats.practice = initialPracticeStats;
+            }
+            // Ensure exam object exists  
+            if (!parsed.userStats.exam) {
+              parsed.userStats.exam = initialExamStats;
+            }
+            
+            // Convert date strings back to Date objects
+            const convertDates = (obj: any): any => {
+              if (!obj || typeof obj !== 'object') return obj;
+              
+              for (const key in obj) {
+                if (key === 'lastAttempt' && typeof obj[key] === 'string') {
+                  obj[key] = new Date(obj[key]);
+                } else if (typeof obj[key] === 'object') {
+                  obj[key] = convertDates(obj[key]);
+                }
+              }
+              return obj;
+            };
+            
+            return convertDates(parsed);
+          }
+          
+          return parsed;
+        } catch (error) {
+          console.error('❌ Error deserializing state:', error);
+          return { userStats: initialStats };
+        }
+      },
       merge: (persistedState: unknown, currentState: QuizStore) => {
+        console.log('🔄 Merging persisted state:', persistedState);
+        console.log('🔄 Current state for merge:', currentState.userStats);
+        
         // Ensure practice and exam objects exist even if not in persisted state
         const typedPersistedState = persistedState as { userStats?: UserStats } | null;
-        const mergedStats = {
+        
+        // Deep merge to preserve nested objects like chapterStats
+        const mergedStats: UserStats = {
           ...initialStats,
           ...typedPersistedState?.userStats,
           practice: {
             ...initialPracticeStats,
             ...typedPersistedState?.userStats?.practice,
+            chapterStats: {
+              ...typedPersistedState?.userStats?.practice?.chapterStats || {},
+            },
           },
           exam: {
             ...initialExamStats,
             ...typedPersistedState?.userStats?.exam,
+            checkpointStats: {
+              ...typedPersistedState?.userStats?.exam?.checkpointStats || {},
+            },
           },
         };
         
-        return {
+        const result = {
           ...currentState,
           userStats: mergedStats,
         };
+        
+        console.log('✅ Merged result:', result.userStats);
+        return result;
       },
       onRehydrateStorage: () => (state) => {
+        console.log('🏠 Rehydrating storage with state:', state?.userStats);
         // Auto-migrate on app load
         if (state) {
           state.migrateOldStats();
+          console.log('🔄 After migration:', state.userStats);
         }
       },
     }

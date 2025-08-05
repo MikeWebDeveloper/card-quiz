@@ -23,14 +23,25 @@ export function QuizEngine({ questions, onComplete, timeLimit }: QuizEngineProps
   const currentQuestion = questions[quizState.currentQuestionIndex];
   const isLastQuestion = quizState.currentQuestionIndex === questions.length - 1;
 
-  const handleCompleteQuiz = useCallback(() => {
+  const handleCompleteQuiz = useCallback((finalState?: QuizState) => {
     const endTime = new Date();
-    const timeSpent = quizState.startTime ? Math.floor((endTime.getTime() - quizState.startTime.getTime()) / 1000) : 0;
+    const stateToUse = finalState || quizState;
+    const timeSpent = stateToUse.startTime ? Math.floor((endTime.getTime() - stateToUse.startTime.getTime()) / 1000) : 0;
+    
+    console.log('🏁 QuizEngine completing quiz with:', {
+      score: stateToUse.score,
+      totalAnswers: Object.keys(stateToUse.answers).length,
+      timeSpent,
+      answers: stateToUse.answers
+    });
+    
     setQuizState(prev => ({
       ...prev,
       endTime,
     }));
-    onComplete(quizState.score, quizState.answers, timeSpent);
+    
+    onComplete(stateToUse.score, stateToUse.answers, timeSpent);
+    console.log('📤 onComplete callback called');
   }, [onComplete, quizState.score, quizState.answers, quizState.startTime]);
 
   // Timer effect
@@ -40,7 +51,11 @@ export function QuizEngine({ questions, onComplete, timeLimit }: QuizEngineProps
     const timer = setInterval(() => {
       setTimeRemaining(prev => {
         if (prev && prev <= 1) {
-          handleCompleteQuiz();
+          // Use setQuizState to access the latest state when time expires
+          setQuizState(current => {
+            handleCompleteQuiz(current);
+            return current;
+          });
           return 0;
         }
         return prev ? prev - 1 : null;
@@ -73,7 +88,12 @@ export function QuizEngine({ questions, onComplete, timeLimit }: QuizEngineProps
 
   const handleNext = () => {
     if (isLastQuestion) {
-      handleCompleteQuiz();
+      // Pass the current state to ensure we have the latest values
+      setQuizState(prev => {
+        const finalState = { ...prev };
+        handleCompleteQuiz(finalState);
+        return prev;
+      });
     } else {
       setQuizState(prev => ({
         ...prev,
