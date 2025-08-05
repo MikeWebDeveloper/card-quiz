@@ -56,24 +56,17 @@ export const useQuizStore = create<QuizStore>()(
       
       // Practice Mode Methods
       updatePracticeStats: (chapter: number, correct: number, total: number, timeSpent: number) => {
-        console.log('📊 updatePracticeStats called with:', { chapter, correct, total, timeSpent });
-        console.log('📋 Current state before update:', JSON.parse(JSON.stringify(get().userStats.practice)));
-        
         // Validate inputs
         if (typeof chapter !== 'number' || chapter <= 0) {
-          console.error('❌ Invalid chapter:', chapter);
           return;
         }
         if (typeof correct !== 'number' || correct < 0) {
-          console.error('❌ Invalid correct answers:', correct);
           return;
         }
         if (typeof total !== 'number' || total <= 0) {
-          console.error('❌ Invalid total questions:', total);
           return;
         }
         if (correct > total) {
-          console.error('❌ Correct answers cannot exceed total questions:', { correct, total });
           return;
         }
         
@@ -126,30 +119,9 @@ export const useQuizStore = create<QuizStore>()(
             ...state.userStats,
             practice: newPractice,
           };
-
-          console.log('💾 New state after update:', JSON.parse(JSON.stringify(newPractice)));
-          console.log('🔄 Returning new state...');
           
           return { userStats: newUserStats };
         });
-        
-        // Check final state after update
-        setTimeout(() => {
-          const finalState = get().userStats.practice;
-          console.log('✨ Final state after set:', JSON.parse(JSON.stringify(finalState)));
-          
-          // Also check localStorage directly
-          try {
-            const stored = localStorage.getItem('quiz-storage');
-            console.log('💾 localStorage after update:', stored);
-            if (stored) {
-              const parsed = JSON.parse(stored);
-              console.log('🔍 Parsed stored practice stats:', parsed.state?.userStats?.practice);
-            }
-          } catch (error) {
-            console.error('❌ Error checking localStorage:', error);
-          }
-        }, 100);
       },
 
       getPracticeChapterStats: (chapter: number) => {
@@ -302,8 +274,6 @@ export const useQuizStore = create<QuizStore>()(
       version: STORAGE_VERSION,
       partialize: (state) => ({ userStats: state.userStats }),
       migrate: (persistedState: any, version: number) => {
-        console.log(`🔄 Migrating from version ${version} to ${STORAGE_VERSION}`);
-        
         // If old version or no version, ensure proper structure
         if (version < STORAGE_VERSION || !version) {
           const migrated = {
@@ -322,7 +292,6 @@ export const useQuizStore = create<QuizStore>()(
               },
             },
           };
-          console.log('✅ Migration complete:', migrated);
           return migrated;
         }
         
@@ -331,7 +300,6 @@ export const useQuizStore = create<QuizStore>()(
       storage: {
         getItem: (name) => {
           const str = localStorage.getItem(name);
-          console.log('🔄 Getting from localStorage:', str);
           if (!str) return null;
           
           try {
@@ -367,13 +335,10 @@ export const useQuizStore = create<QuizStore>()(
             
             return parsed;
           } catch (error) {
-            console.error('❌ Error parsing localStorage:', error);
             return null;
           }
         },
         setItem: (name, value) => {
-          console.log('💾 Saving to localStorage:', value);
-          
           // Deep clone and convert dates
           const valueToStore = JSON.parse(JSON.stringify(value, (_key, val) => {
             if (val instanceof Date) {
@@ -389,9 +354,6 @@ export const useQuizStore = create<QuizStore>()(
         },
       },
       merge: (persistedState: unknown, currentState: QuizStore) => {
-        console.log('🔄 Merging persisted state:', persistedState);
-        console.log('🔄 Current state for merge:', currentState.userStats);
-        
         // Ensure practice and exam objects exist even if not in persisted state
         const typedPersistedState = persistedState as { userStats?: UserStats } | null;
         
@@ -420,15 +382,12 @@ export const useQuizStore = create<QuizStore>()(
           userStats: mergedStats,
         };
         
-        console.log('✅ Merged result:', result.userStats);
         return result;
       },
       onRehydrateStorage: () => (state) => {
-        console.log('🏠 Rehydrating storage with state:', state?.userStats);
         // Auto-migrate on app load
         if (state) {
           state.migrateOldStats();
-          console.log('🔄 After migration:', state.userStats);
         }
       },
     }

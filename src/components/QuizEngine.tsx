@@ -28,12 +28,7 @@ export function QuizEngine({ questions, onComplete, timeLimit }: QuizEngineProps
     const stateToUse = finalState || quizState;
     const timeSpent = stateToUse.startTime ? Math.floor((endTime.getTime() - stateToUse.startTime.getTime()) / 1000) : 0;
     
-    console.log('🏁 QuizEngine completing quiz with:', {
-      score: stateToUse.score,
-      totalAnswers: Object.keys(stateToUse.answers).length,
-      timeSpent,
-      answers: stateToUse.answers
-    });
+    // Complete quiz with final stats
     
     setQuizState(prev => ({
       ...prev,
@@ -41,7 +36,6 @@ export function QuizEngine({ questions, onComplete, timeLimit }: QuizEngineProps
     }));
     
     onComplete(stateToUse.score, stateToUse.answers, timeSpent);
-    console.log('📤 onComplete callback called');
   }, [onComplete, quizState.score, quizState.answers, quizState.startTime]);
 
   // Timer effect

@@ -25,56 +25,8 @@ export function Practice() {
     const chapter = getChapterById(selectedChapter!);
     const totalQuestions = chapter?.questions.length || 0;
     
-    console.log('🎯 Practice Quiz Complete - handleQuizComplete called with:', {
-      selectedChapter: selectedChapter,
-      score,
-      totalQuestions,
-      timeSpent,
-      answers: Object.keys(answers).length + ' answers',
-      answerKeys: Object.keys(answers),
-      scoreValidation: score <= totalQuestions ? '✅ Valid' : '❌ Invalid - score exceeds total'
-    });
-    
-    // Validate inputs before calling updatePracticeStats
-    if (selectedChapter === null) {
-      console.error('❌ Cannot update stats: selectedChapter is null');
-      return;
-    }
-    
-    if (score < 0 || score > totalQuestions) {
-      console.error('❌ Invalid score:', { score, totalQuestions });
-      return;
-    }
-    
-    if (totalQuestions === 0) {
-      console.error('❌ Invalid total questions:', totalQuestions);
-      return;
-    }
-    
-    console.log('📊 About to call updatePracticeStats with validated inputs...');
-    
     // Update comprehensive practice statistics
     updatePracticeStats(selectedChapter!, score, totalQuestions, timeSpent);
-    
-    console.log('✅ updatePracticeStats called successfully');
-    
-    // Check if stats were actually updated after a short delay
-    setTimeout(() => {
-      const currentStats = getPracticeChapterStats(selectedChapter!);
-      console.log('🔍 Stats after update for chapter', selectedChapter, ':', currentStats);
-      
-      // Additional validation
-      if (currentStats) {
-        const expectedSuccessRate = Math.round((score / totalQuestions) * 100);
-        console.log('🎯 Expected vs Actual Success Rate:', {
-          expected: expectedSuccessRate,
-          actual: currentStats.successRate,
-          match: expectedSuccessRate === currentStats.successRate ? '✅' : '❌'
-        });
-      } else {
-        console.error('❌ No stats found after update!');
-      }
-    }, 200);
     
     setQuizResults({ score, answers });
     setShowResults(true);

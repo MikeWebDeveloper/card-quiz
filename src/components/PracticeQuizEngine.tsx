@@ -35,12 +35,7 @@ export function PracticeQuizEngine({ questions, chapterId, onComplete, onExit }:
     const currentTime = new Date();
     const timeSpent = Math.floor((currentTime.getTime() - sessionStats.startTime.getTime()) / 1000);
     
-    console.log('💾 Saving incremental progress:', {
-      chapter: chapterId,
-      correct: sessionStats.correctAnswers,
-      total: sessionStats.questionsAnswered,
-      timeSpent,
-    });
+    // Save progress incrementally
     
     // Update stats in the store
     updatePracticeStats(chapterId, sessionStats.correctAnswers, sessionStats.questionsAnswered, timeSpent);
@@ -59,11 +54,7 @@ export function PracticeQuizEngine({ questions, chapterId, onComplete, onExit }:
     const stateToUse = finalState || quizState;
     const timeSpent = stateToUse.startTime ? Math.floor((endTime.getTime() - stateToUse.startTime.getTime()) / 1000) : 0;
     
-    console.log('🏁 Practice Quiz Complete:', {
-      score: stateToUse.score,
-      totalAnswers: Object.keys(stateToUse.answers).length,
-      timeSpent,
-    });
+    // Complete quiz with final stats
     
     setQuizState(prev => ({
       ...prev,
