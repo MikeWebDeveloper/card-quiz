@@ -328,58 +328,65 @@ export const useQuizStore = create<QuizStore>()(
         
         return persistedState;
       },
-      serialize: (state) => {
-        console.log('💾 Serializing state to localStorage:', state);
-        
-        // Deep clone the state to avoid mutation
-        const stateToSerialize = JSON.parse(JSON.stringify(state, (key, value) => {
-          // Convert Date objects to ISO strings
-          if (value instanceof Date) {
-            return value.toISOString();
-          }
-          return value;
-        }));
-        
-        return JSON.stringify(stateToSerialize);
-      },
-      deserialize: (str) => {
-        console.log('🔄 Deserializing state from localStorage:', str);
-        try {
-          const parsed = JSON.parse(str);
+      storage: {
+        getItem: (name) => {
+          const str = localStorage.getItem(name);
+          console.log('🔄 Getting from localStorage:', str);
+          if (!str) return null;
           
-          // Ensure the structure is complete
-          if (parsed.userStats) {
-            // Ensure practice object exists
-            if (!parsed.userStats.practice) {
-              parsed.userStats.practice = initialPracticeStats;
-            }
-            // Ensure exam object exists  
-            if (!parsed.userStats.exam) {
-              parsed.userStats.exam = initialExamStats;
-            }
+          try {
+            const parsed = JSON.parse(str);
             
-            // Convert date strings back to Date objects
-            const convertDates = (obj: any): any => {
-              if (!obj || typeof obj !== 'object') return obj;
-              
-              for (const key in obj) {
-                if (key === 'lastAttempt' && typeof obj[key] === 'string') {
-                  obj[key] = new Date(obj[key]);
-                } else if (typeof obj[key] === 'object') {
-                  obj[key] = convertDates(obj[key]);
-                }
+            // Ensure the structure is complete
+            if (parsed.state?.userStats) {
+              // Ensure practice object exists
+              if (!parsed.state.userStats.practice) {
+                parsed.state.userStats.practice = initialPracticeStats;
               }
-              return obj;
-            };
+              // Ensure exam object exists  
+              if (!parsed.state.userStats.exam) {
+                parsed.state.userStats.exam = initialExamStats;
+              }
+              
+              // Convert date strings back to Date objects
+              const convertDates = (obj: any): any => {
+                if (!obj || typeof obj !== 'object') return obj;
+                
+                for (const key in obj) {
+                  if (key === 'lastAttempt' && typeof obj[key] === 'string') {
+                    obj[key] = new Date(obj[key]);
+                  } else if (typeof obj[key] === 'object') {
+                    obj[key] = convertDates(obj[key]);
+                  }
+                }
+                return obj;
+              };
+              
+              parsed.state = convertDates(parsed.state);
+            }
             
-            return convertDates(parsed);
+            return parsed;
+          } catch (error) {
+            console.error('❌ Error parsing localStorage:', error);
+            return null;
           }
+        },
+        setItem: (name, value) => {
+          console.log('💾 Saving to localStorage:', value);
           
-          return parsed;
-        } catch (error) {
-          console.error('❌ Error deserializing state:', error);
-          return { userStats: initialStats };
-        }
+          // Deep clone and convert dates
+          const valueToStore = JSON.parse(JSON.stringify(value, (_key, val) => {
+            if (val instanceof Date) {
+              return val.toISOString();
+            }
+            return val;
+          }));
+          
+          localStorage.setItem(name, JSON.stringify(valueToStore));
+        },
+        removeItem: (name) => {
+          localStorage.removeItem(name);
+        },
       },
       merge: (persistedState: unknown, currentState: QuizStore) => {
         console.log('🔄 Merging persisted state:', persistedState);

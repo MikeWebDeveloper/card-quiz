@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { getAllChapters, getChapterById, getRandomizedChapterQuestions } from '../utils/questionLoader';
-import { QuizEngine } from '../components/QuizEngine';
+import { PracticeQuizEngine } from '../components/PracticeQuizEngine';
 import { Results } from '../components/Results';
 import { useQuizStore } from '../store/quizStore';
 
@@ -121,23 +121,14 @@ export function Practice() {
     
     return (
       <div>
-        <button
-          onClick={handleBackToChapters}
-          className="mb-6 text-blue-600 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-300 flex items-center gap-2 transition-colors"
-        >
-          <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} 
-              d="M10 19l-7-7m0 0l7-7m-7 7h18" />
-          </svg>
-          Back to Chapters
-        </button>
-        
         <h1 className="text-3xl font-bold mb-2 text-foreground-primary">{chapter.title}</h1>
         <p className="text-foreground-secondary mb-8">Chapter {chapter.chapter} Practice Quiz</p>
         
-        <QuizEngine
+        <PracticeQuizEngine
           questions={randomizedQuestions}
+          chapterId={selectedChapter}
           onComplete={handleQuizComplete}
+          onExit={handleBackToChapters}
         />
       </div>
     );
