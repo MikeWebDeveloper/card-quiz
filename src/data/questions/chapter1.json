@@ -701,6 +701,76 @@
       "explanation": "TPM 2.0 (Trusted Platform Module) provides hardware-based security functions including secure boot, BitLocker encryption, and secure storage of encryption keys and credentials.",
       "difficulty": "medium",
       "tags": ["security", "TPM", "encryption", "hardware"]
+    },
+    {
+      "id": "ch1-q51",
+      "question": "In which situation would an ESD strike potentially cause harm to the PC?",
+      "options": [
+        "when replacing a mechanical hard drive with an M.2 SSD",
+        "when installing an additional display in a workplace cubicle",
+        "when using a grounded mat and working on a computer on an ungrounded workbench",
+        "when installing a dual-voltage power supply"
+      ],
+      "correct": 0,
+      "explanation": "Minimize the risk of electrostatic discharge. Whenever 2 things touch, there is always an exchange of electrons at the atomic level. Most of the time, this exchange is so negligible that you don't notice it, but even tiny bolts of static electricity can fry your RAM modules. In fact, any electrical component in your computer has a chance to be damaged by static electricity.",
+      "difficulty": "medium",
+      "tags": ["ESD", "safety", "hardware"]
+    },
+    {
+      "id": "ch1-q52",
+      "question": "A person has started a new technical job. In which situation would ESD be an issue?",
+      "options": [
+        "when installing a processor",
+        "when using a grounded mat and working on a computer on an ungrounded workbench",
+        "when installing a dual-voltage power supply",
+        "while exchanging one laptop AC adapter with one that is not from the original equipment manufacturer"
+      ],
+      "correct": 0,
+      "explanation": "ESD is most dangerous when working with sensitive electronic components like processors, RAM, and other semiconductor devices.",
+      "difficulty": "medium",
+      "tags": ["ESD", "safety", "processor"]
+    },
+    {
+      "id": "ch1-q53",
+      "question": "A technician is about to begin preventive maintenance on a company PC. In which situation would ESD be an issue?",
+      "options": [
+        "when replacing a motherboard",
+        "while attaching speakers to a surround sound card",
+        "when using a grounded mat and working on a computer on an ungrounded workbench",
+        "when installing a dual-voltage power supply"
+      ],
+      "correct": 0,
+      "explanation": "Motherboards contain many sensitive electronic components that can be damaged by ESD.",
+      "difficulty": "medium",
+      "tags": ["ESD", "motherboard", "maintenance"]
+    },
+    {
+      "id": "ch1-q54",
+      "question": "An instructor has given a student an assignment to assemble a PC. In which situation should the student be aware that ESD is an issue?",
+      "options": [
+        "when installing RAM",
+        "when working in a corporate environment that has carpet installed under tower PCs",
+        "when using a grounded mat and working on a computer on an ungrounded workbench",
+        "when installing a dual-voltage power supply"
+      ],
+      "correct": 0,
+      "explanation": "RAM modules are highly sensitive to ESD damage and should be handled with proper ESD precautions.",
+      "difficulty": "medium",
+      "tags": ["ESD", "RAM", "assembly"]
+    },
+    {
+      "id": "ch1-q55",
+      "question": "What would happen if a PC that contains a power supply that does not automatically adjust for input voltage is set to 230 volts and attaches to an outlet in the United States?",
+      "options": [
+        "The power supply would explode.",
+        "The PC would not turn on.",
+        "The PC would display an error code.",
+        "The PC would emit a series of beeps."
+      ],
+      "correct": 1,
+      "explanation": "In the United States, the wall outlet electrical power is standardized at 120 volts AC. A power supply set to 230V would not function properly on 120V.",
+      "difficulty": "medium",
+      "tags": ["power supply", "voltage", "specifications"]
     }
   ]
 }

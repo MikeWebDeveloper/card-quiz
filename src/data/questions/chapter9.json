@@ -491,6 +491,104 @@
       "explanation": "Regular print head cleaning prevents clogs and extends the life of inkjet printers.",
       "difficulty": "medium",
       "tags": ["maintenance", "inkjet", "print head"]
+    },
+    {
+      "id": "ch9-q36",
+      "question": "A reporter is trying to print several high resolution photographs but the color laser printer is going extremely slowly. What should the technician do to resolve the issue?",
+      "options": [
+        "Rewind the ribbon.",
+        "Connect the printer using wireless.",
+        "Install a USB hub.",
+        "Add more RAM to the printer."
+      ],
+      "correct": 3,
+      "explanation": "High resolution images require significant memory to process. Adding more RAM to the printer will improve performance when printing large image files.",
+      "difficulty": "medium",
+      "tags": ["laser printer", "performance", "RAM", "troubleshooting"]
+    },
+    {
+      "id": "ch9-q37",
+      "question": "A new printer has just been installed deep in a mine. When test pages are printed, the paper constantly jams. What should the technician do to resolve the issue?",
+      "options": [
+        "Move the printer to a less-humid location.",
+        "Clean the printer.",
+        "Connect the printer using wireless.",
+        "Install a USB hub."
+      ],
+      "correct": 0,
+      "explanation": "High humidity environments can cause paper to absorb moisture and jam. Moving the printer to a less humid location will resolve paper jamming issues.",
+      "difficulty": "medium",
+      "tags": ["paper jam", "humidity", "environmental", "troubleshooting"]
+    },
+    {
+      "id": "ch9-q38",
+      "question": "A user complains that recently every printed document has vertical lines and streaks on the paper. What should the technician do to resolve the issue?",
+      "options": [
+        "Distribute the toner more evenly within the cartridge.",
+        "Clean the printer.",
+        "Connect the printer using wireless.",
+        "Install a USB hub."
+      ],
+      "correct": 0,
+      "explanation": "Vertical lines and streaks are typically caused by uneven toner distribution or a damaged toner cartridge. Redistributing the toner or replacing the cartridge will resolve this issue.",
+      "difficulty": "medium",
+      "tags": ["print quality", "toner", "vertical lines", "troubleshooting"]
+    },
+    {
+      "id": "ch9-q39",
+      "question": "A school is installing a new shared printer but the printer is not showing up on the list of available printers. What should the technician do to resolve the issue?",
+      "options": [
+        "Reset the page counter.",
+        "Manually add the printer IP address.",
+        "Connect the printer using wireless.",
+        "Install a USB hub."
+      ],
+      "correct": 1,
+      "explanation": "When a network printer doesn't appear in the available printers list, manually adding the printer by its IP address will allow users to connect to it.",
+      "difficulty": "medium",
+      "tags": ["network printer", "IP address", "installation", "troubleshooting"]
+    },
+    {
+      "id": "ch9-q40",
+      "question": "Employees are complaining that they send print jobs to a newly installed printer but the print jobs never print. What should the technician do to resolve the issue?",
+      "options": [
+        "The printer is connected to the wrong port. Modify the port.",
+        "Check the vibration of the crystals.",
+        "Connect the printer using wireless.",
+        "Install a USB hub."
+      ],
+      "correct": 0,
+      "explanation": "When print jobs are sent but never print, the printer is likely connected to the wrong port or the port configuration is incorrect. Modifying the port settings will resolve this issue.",
+      "difficulty": "medium",
+      "tags": ["print jobs", "port configuration", "installation", "troubleshooting"]
+    },
+    {
+      "id": "ch9-q41",
+      "question": "Users have noticed that the colors on their printed documents are different from the colors that they see on their computer screens. What should the technician do to resolve the issue?",
+      "options": [
+        "Install a USB hub.",
+        "Reset the page counter.",
+        "Check the vibration of the crystals.",
+        "Calibrate the printer."
+      ],
+      "correct": 3,
+      "explanation": "Color differences between screen and print output indicate that the printer needs calibration to match color profiles correctly.",
+      "difficulty": "medium",
+      "tags": ["color calibration", "print quality", "color matching", "troubleshooting"]
+    },
+    {
+      "id": "ch9-q42",
+      "question": "Employees of a small business are complaining that the printer is printing faded images. What should the technician do to resolve the issue?",
+      "options": [
+        "Replace the toner cartridge.",
+        "Update the BIOS.",
+        "Reset the page counter.",
+        "Check the vibration of the crystals."
+      ],
+      "correct": 0,
+      "explanation": "Faded images are typically caused by low toner levels. Replacing the toner cartridge will restore proper print quality.",
+      "difficulty": "easy",
+      "tags": ["faded print", "toner cartridge", "print quality", "troubleshooting"]
     }
   ]
 }

@@ -491,6 +491,48 @@
       "explanation": "A knowledgeable technician who uses good communication skills will always be in demand in the job market.",
       "difficulty": "easy",
       "tags": ["job market", "value", "skills combination"]
+    },
+    {
+      "id": "ch14-q36",
+      "question": "A technician is upgrading many PCs used within the company. How should the technician dispose of an old battery?",
+      "options": [
+        "Throw it away.",
+        "Take it to the garbage dump.",
+        "Recycle following local regulations.",
+        "Burn it in a safe area."
+      ],
+      "correct": 2,
+      "explanation": "Batteries contain hazardous materials and must be disposed of following local environmental regulations. Many communities have battery recycling programs.",
+      "difficulty": "medium",
+      "tags": ["disposal", "battery", "environmental", "recycling"]
+    },
+    {
+      "id": "ch14-q37",
+      "question": "A technician is upgrading many PCs used within the company. How should the technician dispose of an old motherboard?",
+      "options": [
+        "Seal in a plastic bag before putting in the garbage.",
+        "Recycle following local regulations.",
+        "Give it to your neighbor.",
+        "Destroy it with a hammer."
+      ],
+      "correct": 1,
+      "explanation": "Electronic components like motherboards contain hazardous materials such as lead, mercury, and other toxic substances. They should be recycled according to local e-waste regulations.",
+      "difficulty": "medium",
+      "tags": ["disposal", "motherboard", "environmental", "e-waste"]
+    },
+    {
+      "id": "ch14-q38",
+      "question": "A technician is upgrading many PCs used within the company. How should the technician dispose of an old hard drive?",
+      "options": [
+        "Seal in a cardboard box.",
+        "Give it to your neighbor.",
+        "Destroy it with a hammer.",
+        "Recycle following local regulations."
+      ],
+      "correct": 3,
+      "explanation": "Hard drives should be properly disposed of following local regulations. Data should be securely wiped before disposal, and the drive should be recycled through proper e-waste channels.",
+      "difficulty": "medium",
+      "tags": ["disposal", "hard drive", "environmental", "data security"]
     }
   ]
 }
