@@ -491,6 +491,216 @@
       "explanation": "DDR4 RAM operates at 1.2V standard voltage, lower than DDR3's 1.5V, improving power efficiency.",
       "difficulty": "hard",
       "tags": ["RAM", "voltage", "specifications"]
+    },
+    {
+      "id": "ch3-q36",
+      "question": "What is the primary advantage of Intel's hybrid architecture in 12th/13th generation processors?",
+      "options": [
+        "Higher maximum clock speeds",
+        "Better single-threaded performance only",
+        "Efficient combination of performance and efficiency cores",
+        "Improved integrated graphics only"
+      ],
+      "correct": 2,
+      "explanation": "Intel's hybrid architecture combines high-performance P-cores for demanding tasks with efficient E-cores for background processes, optimizing both performance and power consumption.",
+      "difficulty": "medium",
+      "tags": ["CPU", "architecture", "Intel", "hybrid cores"]
+    },
+    {
+      "id": "ch3-q37",
+      "question": "Which RAID level provides the best performance for a database server requiring both speed and fault tolerance?",
+      "options": [
+        "RAID 0",
+        "RAID 1", 
+        "RAID 10",
+        "RAID 5"
+      ],
+      "correct": 2,
+      "explanation": "RAID 10 combines striping (RAID 0) for performance with mirroring (RAID 1) for redundancy, providing excellent read/write performance and fault tolerance suitable for database servers.",
+      "difficulty": "hard",
+      "tags": ["RAID", "performance", "redundancy", "database"]
+    },
+    {
+      "id": "ch3-q38",
+      "question": "What is the maximum theoretical PCIe 5.0 x16 bandwidth?",
+      "options": [
+        "16 GB/s",
+        "32 GB/s",
+        "64 GB/s",
+        "128 GB/s"
+      ],
+      "correct": 2,
+      "explanation": "PCIe 5.0 provides 4 GB/s per lane. A x16 slot delivers 64 GB/s of theoretical bandwidth (4 GB/s × 16 lanes), double that of PCIe 4.0.",
+      "difficulty": "hard",
+      "tags": ["PCIe", "bandwidth", "specifications", "performance"]
+    },
+    {
+      "id": "ch3-q39",
+      "question": "Which CPU cache level has the lowest latency but smallest capacity?",
+      "options": [
+        "L1 cache",
+        "L2 cache",
+        "L3 cache",
+        "System RAM"
+      ],
+      "correct": 0,
+      "explanation": "L1 cache is the fastest but smallest cache level, typically 32-64KB per core with 1-2 cycle latency. Each level increases in size but adds latency.",
+      "difficulty": "medium",
+      "tags": ["CPU", "cache", "performance", "architecture"]
+    },
+    {
+      "id": "ch3-q40",
+      "question": "What is the primary security benefit of TPM 2.0 over TPM 1.2?",
+      "options": [
+        "Faster encryption processing",
+        "Improved cryptographic algorithms and flexibility",
+        "Larger key storage capacity",
+        "Better hardware compatibility"
+      ],
+      "correct": 1,
+      "explanation": "TPM 2.0 supports modern cryptographic algorithms (SHA-256, AES, RSA 2048), algorithm agility, and enhanced authorization policies compared to TPM 1.2's limited algorithm support.",
+      "difficulty": "hard",
+      "tags": ["TPM", "security", "encryption", "algorithms"]
+    },
+    {
+      "id": "ch3-q41",
+      "question": "Which NVMe feature significantly improves performance in enterprise environments?",
+      "options": [
+        "Larger cache sizes",
+        "Command queuing (up to 65,536 commands)",
+        "Higher capacity options",
+        "Better error correction"
+      ],
+      "correct": 1,
+      "explanation": "NVMe supports up to 65,536 outstanding commands across multiple queues, compared to AHCI/SATA's single queue with 32 commands, dramatically improving concurrent I/O performance.",
+      "difficulty": "hard",
+      "tags": ["NVMe", "performance", "storage", "queuing"]
+    },
+    {
+      "id": "ch3-q42",
+      "question": "What is the main advantage of AMD's chiplet architecture?",
+      "options": [
+        "Lower manufacturing costs only",
+        "Higher clock speeds",
+        "Better yields and scalability across product lines",
+        "Improved single-core performance"
+      ],
+      "correct": 2,
+      "explanation": "AMD's chiplet design allows better manufacturing yields (smaller dies have fewer defects) and easy scalability from 4-core to 64-core processors using the same core design.",
+      "difficulty": "medium",
+      "tags": ["AMD", "architecture", "chiplet", "scalability"]
+    },
+    {
+      "id": "ch3-q43",
+      "question": "Which UEFI setting is essential for Windows 11 installation on modern systems?",
+      "options": [
+        "Legacy BIOS mode",
+        "Secure Boot enabled with TPM 2.0",
+        "AHCI mode disabled",
+        "Virtualization disabled"
+      ],
+      "correct": 1,
+      "explanation": "Windows 11 requires UEFI mode with Secure Boot enabled and TPM 2.0 for security features. Legacy BIOS mode is not supported for Windows 11 installation.",
+      "difficulty": "medium",
+      "tags": ["UEFI", "Windows 11", "Secure Boot", "TPM"]
+    },
+    {
+      "id": "ch3-q44",
+      "question": "What causes the 'CPU over temperature' warning in BIOS?",
+      "options": [
+        "Ambient room temperature too high",
+        "CPU thermal sensors detecting unsafe temperatures",
+        "Power supply overheating",
+        "RAM running too hot"
+      ],
+      "correct": 1,
+      "explanation": "Modern CPUs have built-in thermal sensors that trigger warnings when junction temperatures exceed safe thresholds (typically 90-100°C), preventing permanent damage.",
+      "difficulty": "easy",
+      "tags": ["CPU", "temperature", "thermal protection", "BIOS"]
+    },
+    {
+      "id": "ch3-q45",
+      "question": "Which memory configuration provides the best performance on modern dual-channel systems?",
+      "options": [
+        "Single 32GB module",
+        "Two 16GB modules in slots 1 and 3",
+        "Two 16GB modules in slots 2 and 4", 
+        "Four 8GB modules filling all slots"
+      ],
+      "correct": 2,
+      "explanation": "For dual-channel operation, install matched memory modules in slots 2 and 4 (or as indicated by motherboard manual) to enable dual-channel mode for optimal bandwidth.",
+      "difficulty": "medium",
+      "tags": ["RAM", "dual-channel", "configuration", "performance"]
+    },
+    {
+      "id": "ch3-q46",
+      "question": "What is the primary cause of system instability when overclocking?",
+      "options": [
+        "Increased power consumption",
+        "Higher temperatures only",
+        "Insufficient voltage for stable operation",
+        "Faster memory speeds"
+      ],
+      "correct": 2,
+      "explanation": "Overclocking increases frequency requirements, often needing higher voltages for stable operation. Insufficient voltage causes crashes, freezes, and system instability even at moderate overclocks.",
+      "difficulty": "medium",
+      "tags": ["overclocking", "voltage", "stability", "troubleshooting"]
+    },
+    {
+      "id": "ch3-q47",
+      "question": "Which storage interface provides the lowest latency for enterprise applications?",
+      "options": [
+        "SATA 3.0",
+        "NVMe over PCIe 4.0",
+        "U.2 NVMe",
+        "Intel Optane with 3D XPoint"
+      ],
+      "correct": 3,
+      "explanation": "Intel Optane with 3D XPoint technology provides the lowest latency (sub-10 microseconds) and highest endurance, designed specifically for enterprise applications requiring extreme performance.",
+      "difficulty": "hard",
+      "tags": ["storage", "latency", "Optane", "enterprise"]
+    },
+    {
+      "id": "ch3-q48",
+      "question": "What is the purpose of CPU microcode updates?",
+      "options": [
+        "Improve overclocking potential",
+        "Fix CPU bugs and security vulnerabilities",
+        "Increase maximum clock speeds",
+        "Add new instruction sets"
+      ],
+      "correct": 1,
+      "explanation": "Microcode updates patch CPU bugs, security vulnerabilities (like Spectre/Meltdown), and improve stability. They're delivered through BIOS updates or OS-level patches.",
+      "difficulty": "medium",
+      "tags": ["CPU", "microcode", "security", "updates"]
+    },
+    {
+      "id": "ch3-q49",
+      "question": "Which factor most affects SSD performance degradation over time?",
+      "options": [
+        "Temperature fluctuations",
+        "Write amplification and wear leveling",
+        "Power supply quality",
+        "Cable quality"
+      ],
+      "correct": 1,
+      "explanation": "Write amplification (writing more data than requested) and wear leveling algorithms affect SSD longevity and performance as NAND cells wear out after repeated program/erase cycles.",
+      "difficulty": "hard",
+      "tags": ["SSD", "wear leveling", "performance", "degradation"]
+    },
+    {
+      "id": "ch3-q50",
+      "question": "What is the primary advantage of ECC memory in professional workstations?",
+      "options": [
+        "Higher bandwidth",
+        "Lower power consumption",
+        "Automatic error detection and correction",
+        "Better overclocking potential"
+      ],
+      "correct": 2,
+      "explanation": "ECC (Error-Correcting Code) memory detects and corrects single-bit errors automatically, preventing data corruption critical in professional applications like scientific computing and servers.",
+      "difficulty": "medium",
+      "tags": ["ECC", "memory", "error correction", "reliability"]
     }
   ]
 }

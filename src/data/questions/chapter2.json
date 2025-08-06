@@ -491,6 +491,216 @@
       "explanation": "Proper case grounding requires the power supply to be securely mounted with direct metal-to-metal contact with the case.",
       "difficulty": "hard",
       "tags": ["grounding", "safety", "electrical"]
+    },
+    {
+      "id": "ch2-q36",
+      "question": "What is the correct sequence for installing components in a new PC build?",
+      "options": [
+        "CPU, RAM, GPU, Storage",
+        "PSU, Motherboard, CPU, RAM, Storage",
+        "Motherboard, CPU, RAM, PSU, Storage",
+        "CPU, Motherboard, PSU, RAM, GPU"
+      ],
+      "correct": 1,
+      "explanation": "The optimal sequence is: 1) Install PSU in case, 2) Install motherboard with standoffs, 3) Install CPU with cooler, 4) Install RAM, 5) Install storage devices. This ensures proper access and reduces handling of installed components.",
+      "difficulty": "medium",
+      "tags": ["assembly", "installation", "workflow", "best practices"]
+    },
+    {
+      "id": "ch2-q37",
+      "question": "Which tool is essential for ensuring proper CPU installation pressure?",
+      "options": [
+        "Thermal paste applicator",
+        "Anti-static wrist strap",
+        "CPU installation tool",
+        "Following socket mechanism design"
+      ],
+      "correct": 3,
+      "explanation": "Modern CPU sockets are designed with proper pressure mechanisms (LGA retention arm, AM4/AM5 lever). Following the socket's built-in mechanism ensures correct pressure without special tools.",
+      "difficulty": "easy",
+      "tags": ["CPU", "installation", "socket", "pressure"]
+    },
+    {
+      "id": "ch2-q38",
+      "question": "What is the maximum safe force when installing RAM modules?",
+      "options": [
+        "Light finger pressure only",
+        "Firm, even pressure until clips engage",
+        "Maximum force until it clicks",
+        "Use a tool to ensure proper seating"
+      ],
+      "correct": 1,
+      "explanation": "RAM requires firm, even pressure on both ends until the retention clips snap into place. Too little pressure prevents proper seating, while excessive force can damage the module or motherboard.",
+      "difficulty": "easy",
+      "tags": ["RAM", "installation", "pressure", "safety"]
+    },
+    {
+      "id": "ch2-q39",
+      "question": "Which M.2 screw size is standard for most motherboards?",
+      "options": [
+        "M2 x 2mm",
+        "M2 x 3mm", 
+        "M3 x 2mm",
+        "2.5mm standoff screw"
+      ],
+      "correct": 1,
+      "explanation": "M2 x 3mm screws are the standard for securing M.2 SSDs to motherboard standoffs. The M2 designation refers to the thread diameter (2mm), and 3mm is the typical length.",
+      "difficulty": "medium",
+      "tags": ["M.2", "screws", "installation", "specifications"]
+    },
+    {
+      "id": "ch2-q40",
+      "question": "What should you check BEFORE applying thermal paste to a CPU?",
+      "options": [
+        "CPU socket pins",
+        "Cooler mounting mechanism",
+        "Clean surfaces of both CPU and cooler",
+        "Room temperature"
+      ],
+      "correct": 2,
+      "explanation": "Both the CPU heat spreader and cooler base must be completely clean and free of dust, old thermal paste, or debris before applying new thermal paste for optimal heat transfer.",
+      "difficulty": "medium",
+      "tags": ["thermal paste", "CPU", "cooling", "preparation"]
+    },
+    {
+      "id": "ch2-q41",
+      "question": "Which cable should be connected LAST during PC assembly?",
+      "options": [
+        "24-pin ATX power",
+        "8-pin CPU power",
+        "SATA data cables",
+        "Front panel connectors"
+      ],
+      "correct": 2,
+      "explanation": "SATA data cables should be connected last because they're easily accessible and won't interfere with component installation. Power cables should be connected early to avoid difficult routing later.",
+      "difficulty": "medium",
+      "tags": ["cables", "installation", "sequence", "workflow"]
+    },
+    {
+      "id": "ch2-q42",
+      "question": "What is the primary cause of a PC that powers on but displays nothing?",
+      "options": [
+        "Faulty power supply",
+        "RAM not properly seated",
+        "Missing front panel connectors",
+        "Incorrect storage connection"
+      ],
+      "correct": 1,
+      "explanation": "RAM that's not properly seated is the most common cause of a PC that powers on (fans spin, LEDs light) but produces no display or POST beeps. Always reseat RAM modules first.",
+      "difficulty": "easy",
+      "tags": ["troubleshooting", "RAM", "POST", "display"]
+    },
+    {
+      "id": "ch2-q43",
+      "question": "How much thermal paste should be applied to a CPU?",
+      "options": [
+        "Cover the entire heat spreader",
+        "Rice grain size dot in center",
+        "Thin layer spread evenly",
+        "Two lines across the CPU"
+      ],
+      "correct": 1,
+      "explanation": "A rice grain-sized dot in the center of the CPU is optimal. The mounting pressure will spread it evenly. Too much thermal paste can actually reduce heat transfer efficiency.",
+      "difficulty": "medium",
+      "tags": ["thermal paste", "CPU", "cooling", "application"]
+    },
+    {
+      "id": "ch2-q44",
+      "question": "Which PCIe slot should be used for a graphics card on a typical motherboard?",
+      "options": [
+        "Any available PCIe slot",
+        "The slot closest to the CPU",
+        "The longest PCIe x16 slot",
+        "The bottom PCIe slot for better cooling"
+      ],
+      "correct": 2,
+      "explanation": "The primary PCIe x16 slot (usually closest to CPU) provides the full x16 bandwidth and direct CPU connection. Other x16 slots may run at reduced speeds or through chipset.",
+      "difficulty": "medium",
+      "tags": ["PCIe", "GPU", "motherboard", "bandwidth"]
+    },
+    {
+      "id": "ch2-q45",
+      "question": "What indicates a properly seated CPU in an LGA socket?",
+      "options": [
+        "CPU sits flush with socket",
+        "Retention arm closes with moderate force",
+        "No bent pins visible",
+        "CPU can be moved slightly"
+      ],
+      "correct": 1,
+      "explanation": "In LGA sockets, a properly seated CPU allows the retention arm to close with moderate, consistent force without excessive resistance. The CPU should be completely flat in the socket.",
+      "difficulty": "medium",
+      "tags": ["CPU", "LGA", "installation", "seating"]
+    },
+    {
+      "id": "ch2-q46",
+      "question": "Which component should you test individually if a new build won't POST?",
+      "options": [
+        "Graphics card",
+        "All storage devices",
+        "Each RAM module separately",
+        "All case fans"
+      ],
+      "correct": 2,
+      "explanation": "Testing RAM modules one at a time helps identify faulty modules or slots. Start with one module in the primary slot, then test each module individually in known-good slots.",
+      "difficulty": "medium",
+      "tags": ["troubleshooting", "POST", "RAM", "testing"]
+    },
+    {
+      "id": "ch2-q47",
+      "question": "What is the correct method for handling a motherboard during installation?",
+      "options": [
+        "Hold by the edges and expansion slots",
+        "Hold by the CPU socket area",
+        "Support from underneath at multiple points",
+        "Grip the RAM slots for stability"
+      ],
+      "correct": 0,
+      "explanation": "Always hold motherboards by the edges and expansion slot brackets to avoid damaging sensitive components, traces, or connectors. Never apply pressure to the middle of the board.",
+      "difficulty": "easy",
+      "tags": ["motherboard", "handling", "safety", "installation"]
+    },
+    {
+      "id": "ch2-q48",
+      "question": "Which standoff configuration prevents motherboard short circuits?",
+      "options": [
+        "Use all available standoff points",
+        "Only use standoffs that align with motherboard holes",
+        "Extra standoffs provide better grounding",
+        "Standoffs only needed at corners"
+      ],
+      "correct": 1,
+      "explanation": "Only install standoffs where the motherboard has mounting holes. Extra standoffs can create short circuits by contacting traces on the back of the motherboard.",
+      "difficulty": "medium",
+      "tags": ["standoffs", "motherboard", "short circuit", "installation"]
+    },
+    {
+      "id": "ch2-q49",
+      "question": "What should you do if a case fan connector doesn't reach the motherboard header?",
+      "options": [
+        "Use excessive force to stretch the cable",
+        "Connect to PSU molex connector instead",
+        "Use a fan extension cable",
+        "Relocate the fan to a different position"
+      ],
+      "correct": 2,
+      "explanation": "Fan extension cables maintain PWM control and monitoring capabilities while providing needed length. Direct PSU connection loses speed control and monitoring features.",
+      "difficulty": "easy",
+      "tags": ["fans", "cables", "extension", "connectivity"]
+    },
+    {
+      "id": "ch2-q50",
+      "question": "Which POST code indicates successful hardware initialization?",
+      "options": [
+        "00 or FF",
+        "A0 or A2",
+        "Single short beep",
+        "No beeps or codes"
+      ],
+      "correct": 2,
+      "explanation": "A single short beep from the system speaker indicates successful POST completion and hardware initialization. Different motherboard manufacturers may use specific codes, but one beep is universally positive.",
+      "difficulty": "medium",
+      "tags": ["POST", "beep codes", "troubleshooting", "initialization"]
     }
   ]
 }

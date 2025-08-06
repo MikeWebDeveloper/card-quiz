@@ -88,28 +88,32 @@ export function Exam() {
   
   const { updateExamStats } = useQuizStore();
   
-  const handleStartExam = (examType: ExamType) => {
-    let questions: Question[] = [];
+  const handleStartExam = async (examType: ExamType) => {
+    try {
+      let questions: Question[] = [];
+      
+      if (examType.startsWith('checkpoint')) {
+        const checkpointNum = examType.replace('checkpoint', '');
+        questions = await getCheckpointQuestions(`checkpoint${checkpointNum}`);
+      } else if (examType === 'final-short') {
+        questions = shuffleArray(await getFinalExamQuestions('short'));
+      } else if (examType === 'final-full') {
+        questions = shuffleArray(await getFinalExamQuestions('full'));
+      }
+      
+      // For demo, if no questions available, use all available questions
+      if (questions.length === 0) {
+        questions = shuffleArray(await getFinalExamQuestions('short'));
+      }
     
-    if (examType.startsWith('checkpoint')) {
-      const checkpointNum = examType.replace('checkpoint', '');
-      questions = getCheckpointQuestions(`checkpoint${checkpointNum}`);
-    } else if (examType === 'final-short') {
-      questions = shuffleArray(getFinalExamQuestions('short'));
-    } else if (examType === 'final-full') {
-      questions = shuffleArray(getFinalExamQuestions('full'));
+      setExamQuestions(questions);
+      setSelectedExam(examType);
+      setStartTime(new Date());
+      setShowResults(false);
+      setQuizResults(null);
+    } catch (error) {
+      console.error('Failed to load exam questions:', error);
     }
-    
-    // For demo, if no questions available, use all available questions
-    if (questions.length === 0) {
-      questions = shuffleArray(getFinalExamQuestions('short'));
-    }
-    
-    setExamQuestions(questions);
-    setSelectedExam(examType);
-    setStartTime(new Date());
-    setShowResults(false);
-    setQuizResults(null);
   };
   
   const handleExamComplete = (score: number, answers: Record<string, number>) => {

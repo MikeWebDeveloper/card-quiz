@@ -491,6 +491,216 @@
       "explanation": "A grounded mat (antistatic mat) on a workbench provides an ESD-safe surface for working on sensitive electronic components.",
       "difficulty": "easy",
       "tags": ["ESD", "safety", "workspace"]
+    },
+    {
+      "id": "ch1-q36",
+      "question": "What is the maximum theoretical bandwidth of DDR5-6400 memory?",
+      "options": [
+        "25.6 GB/s",
+        "51.2 GB/s",
+        "102.4 GB/s",
+        "204.8 GB/s"
+      ],
+      "correct": 1,
+      "explanation": "DDR5-6400 provides 51.2 GB/s of theoretical bandwidth per channel (6400 MT/s × 8 bytes). Dual-channel configuration would double this to 102.4 GB/s total.",
+      "difficulty": "medium",
+      "tags": ["memory", "DDR5", "specifications", "performance"]
+    },
+    {
+      "id": "ch1-q37",
+      "question": "Which Intel CPU socket supports 13th generation Core processors?",
+      "options": [
+        "LGA 1151",
+        "LGA 1200",
+        "LGA 1700",
+        "LGA 1851"
+      ],
+      "correct": 2,
+      "explanation": "LGA 1700 socket supports Intel 12th and 13th generation Core processors (Alder Lake and Raptor Lake). LGA 1851 is for 15th generation processors.",
+      "difficulty": "medium",
+      "tags": ["CPU", "socket", "Intel", "compatibility"]
+    },
+    {
+      "id": "ch1-q38",
+      "question": "What is the primary advantage of NVMe Gen 5 SSDs over Gen 4?",
+      "options": [
+        "Lower power consumption",
+        "Better encryption",
+        "Double the theoretical bandwidth",
+        "Longer lifespan"
+      ],
+      "correct": 2,
+      "explanation": "NVMe Gen 5 provides up to 16 GB/s theoretical bandwidth per lane, double that of Gen 4 (8 GB/s). This translates to potential read speeds exceeding 12,000 MB/s.",
+      "difficulty": "medium",
+      "tags": ["storage", "NVMe", "SSD", "performance", "specifications"]
+    },
+    {
+      "id": "ch1-q39",
+      "question": "When troubleshooting POST failures, what should you check FIRST?",
+      "options": [
+        "RAM seating and compatibility",
+        "Power supply connections",
+        "CPU installation",
+        "BIOS settings"
+      ],
+      "correct": 1,
+      "explanation": "Power supply connections should be checked first during POST troubleshooting. Without proper power (24-pin ATX, 8-pin CPU), the system cannot begin the boot process.",
+      "difficulty": "easy",
+      "tags": ["troubleshooting", "POST", "power", "methodology"]
+    },
+    {
+      "id": "ch1-q40",
+      "question": "Which component requires the HIGHEST wattage rating in a modern gaming PC?",
+      "options": [
+        "CPU (Intel i9-13900K)",
+        "Graphics card (RTX 4090)",
+        "32GB DDR5 RAM",
+        "NVMe SSD"
+      ],
+      "correct": 1,
+      "explanation": "Modern high-end graphics cards like the RTX 4090 can consume 450W+ under load, significantly more than CPUs (125-250W), RAM (~20W), or SSDs (~5-10W).",
+      "difficulty": "medium",
+      "tags": ["power", "GPU", "specifications", "power consumption"]
+    },
+    {
+      "id": "ch1-q41",
+      "question": "What is the minimum clearance recommended around a computer case for proper airflow?",
+      "options": [
+        "1 inch (2.5 cm)",
+        "3 inches (7.6 cm)",
+        "6 inches (15.2 cm)",
+        "12 inches (30.5 cm)"
+      ],
+      "correct": 2,
+      "explanation": "A minimum of 6 inches (15.2 cm) clearance is recommended around computer cases to ensure proper airflow and prevent overheating, especially near intake and exhaust fans.",
+      "difficulty": "easy",
+      "tags": ["cooling", "airflow", "maintenance", "best practices"]
+    },
+    {
+      "id": "ch1-q42",
+      "question": "Which UEFI feature helps prevent unauthorized operating system installation?",
+      "options": [
+        "Fast Boot",
+        "Secure Boot",
+        "TPM 2.0",
+        "Legacy Mode"
+      ],
+      "correct": 1,
+      "explanation": "Secure Boot verifies digital signatures of boot loaders and OS kernels to prevent unauthorized or malicious software from loading during the boot process.",
+      "difficulty": "medium",
+      "tags": ["UEFI", "security", "boot", "Secure Boot"]
+    },
+    {
+      "id": "ch1-q43",
+      "question": "What is the standard voltage for modern DDR5 memory?",
+      "options": [
+        "1.2V",
+        "1.35V",
+        "1.5V",
+        "1.65V"
+      ],
+      "correct": 0,
+      "explanation": "DDR5 memory operates at 1.2V standard voltage, which is lower than DDR4 (1.2V) and provides better power efficiency while supporting higher speeds.",
+      "difficulty": "medium",
+      "tags": ["memory", "DDR5", "voltage", "specifications"]
+    },
+    {
+      "id": "ch1-q44",
+      "question": "When handling a motherboard, which safety practice is MOST critical?",
+      "options": [
+        "Wearing safety glasses",
+        "Using proper ESD protection",
+        "Working in well-lit area",
+        "Having backup components ready"
+      ],
+      "correct": 1,
+      "explanation": "ESD protection is most critical when handling motherboards because they contain numerous sensitive semiconductor components that can be permanently damaged by static electricity as low as 30 volts.",
+      "difficulty": "easy",
+      "tags": ["safety", "ESD", "motherboard", "best practices"]
+    },
+    {
+      "id": "ch1-q45",
+      "question": "Which connector type delivers both power and data to modern storage devices?",
+      "options": [
+        "SATA",
+        "Molex",
+        "M.2",
+        "IDE"
+      ],
+      "correct": 2,
+      "explanation": "M.2 connectors provide both power and data connections through a single interface, unlike SATA which requires separate power and data cables.",
+      "difficulty": "medium",
+      "tags": ["storage", "M.2", "connectors", "interfaces"]
+    },
+    {
+      "id": "ch1-q46",
+      "question": "What should you do IMMEDIATELY after a component upgrade fails to boot?",
+      "options": [
+        "Try different RAM modules",
+        "Reset CMOS/UEFI settings",
+        "Remove the new component and restore previous configuration",
+        "Update BIOS firmware"
+      ],
+      "correct": 2,
+      "explanation": "The first step when an upgrade fails is to remove the new component and restore the previous working configuration to isolate the problem and ensure system stability.",
+      "difficulty": "easy",
+      "tags": ["troubleshooting", "methodology", "installation", "best practices"]
+    },
+    {
+      "id": "ch1-q47",
+      "question": "Which CPU feature allows processing multiple threads simultaneously on a single core?",
+      "options": [
+        "Overclocking",
+        "Hyperthreading/SMT",
+        "Turbo Boost",
+        "Cache memory"
+      ],
+      "correct": 1,
+      "explanation": "Hyperthreading (Intel) or Simultaneous Multithreading (AMD) allows a single physical CPU core to process two threads simultaneously, improving multitasking performance.",
+      "difficulty": "medium",
+      "tags": ["CPU", "multithreading", "performance", "architecture"]
+    },
+    {
+      "id": "ch1-q48",
+      "question": "What is the maximum power delivery capability of USB-C with Power Delivery 3.1?",
+      "options": [
+        "60W",
+        "100W",
+        "140W",
+        "240W"
+      ],
+      "correct": 3,
+      "explanation": "USB Power Delivery 3.1 can deliver up to 240W (48V at 5A), sufficient to power laptops, monitors, and other high-power devices through a single USB-C cable.",
+      "difficulty": "hard",
+      "tags": ["USB", "power", "specifications", "connectivity"]
+    },
+    {
+      "id": "ch1-q49",
+      "question": "Which tool is essential for measuring component temperatures during troubleshooting?",
+      "options": [
+        "Multimeter",
+        "Thermal imaging camera",
+        "Software monitoring utility",
+        "Oscilloscope"
+      ],
+      "correct": 2,
+      "explanation": "Software monitoring utilities like HWiNFO64, Core Temp, or MSI Afterburner are essential for measuring CPU, GPU, and other component temperatures during troubleshooting.",
+      "difficulty": "easy",
+      "tags": ["troubleshooting", "tools", "temperature", "monitoring"]
+    },
+    {
+      "id": "ch1-q50",
+      "question": "What is the primary purpose of TPM 2.0 in modern computers?",
+      "options": [
+        "Improving graphics performance",
+        "Hardware-based security and encryption",
+        "Increasing CPU clock speeds",
+        "Managing system memory"
+      ],
+      "correct": 1,
+      "explanation": "TPM 2.0 (Trusted Platform Module) provides hardware-based security functions including secure boot, BitLocker encryption, and secure storage of encryption keys and credentials.",
+      "difficulty": "medium",
+      "tags": ["security", "TPM", "encryption", "hardware"]
     }
   ]
 }

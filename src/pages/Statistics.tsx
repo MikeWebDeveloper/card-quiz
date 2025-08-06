@@ -1,11 +1,34 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { useQuizStore } from '../store/quizStore';
 import { getAllChapters } from '../utils/questionLoader';
+import { Loading } from '../components/Loading';
+import type { Chapter } from '../types/quiz.types';
 
 export function Statistics() {
   const { userStats, resetStats } = useQuizStore();
-  const chapters = getAllChapters();
+  const [chapters, setChapters] = useState<Chapter[]>([]);
+  const [loading, setLoading] = useState(true);
   const [activeTab, setActiveTab] = useState<'practice' | 'exam'>('practice');
+
+  useEffect(() => {
+    const loadChapters = async () => {
+      try {
+        setLoading(true);
+        const allChapters = await getAllChapters();
+        setChapters(allChapters);
+      } catch (error) {
+        console.error('Failed to load chapters:', error);
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    loadChapters();
+  }, []);
+
+  if (loading) {
+    return <Loading />;
+  }
   
   // Practice Mode Statistics with null checks
   const practiceStats = userStats.practice || { totalQuestionsAttempted: 0, totalCorrectAnswers: 0, totalTimeSpent: 0, chapterStats: {} };

@@ -1,37 +1,29 @@
 import type { Chapter, Question } from '../types/quiz.types';
 
-// Import all chapter files
-import chapter1 from '../data/questions/chapter1.json';
-import chapter2 from '../data/questions/chapter2.json';
-import chapter3 from '../data/questions/chapter3.json';
-import chapter4 from '../data/questions/chapter4.json';
-import chapter5 from '../data/questions/chapter5.json';
-import chapter6 from '../data/questions/chapter6.json';
-import chapter7 from '../data/questions/chapter7.json';
-import chapter8 from '../data/questions/chapter8.json';
-import chapter9 from '../data/questions/chapter9.json';
-import chapter10 from '../data/questions/chapter10.json';
-import chapter11 from '../data/questions/chapter11.json';
-import chapter12 from '../data/questions/chapter12.json';
-import chapter13 from '../data/questions/chapter13.json';
-import chapter14 from '../data/questions/chapter14.json';
+// Dynamic import cache to avoid re-loading
+const chapterCache: Record<number, Chapter> = {};
 
-// Map of all available chapters
-const chapters: Record<number, Chapter> = {
-  1: chapter1 as Chapter,
-  2: chapter2 as Chapter,
-  3: chapter3 as Chapter,
-  4: chapter4 as Chapter,
-  5: chapter5 as Chapter,
-  6: chapter6 as Chapter,
-  7: chapter7 as Chapter,
-  8: chapter8 as Chapter,
-  9: chapter9 as Chapter,
-  10: chapter10 as Chapter,
-  11: chapter11 as Chapter,
-  12: chapter12 as Chapter,
-  13: chapter13 as Chapter,
-  14: chapter14 as Chapter,
+// Dynamic chapter loader - only loads chapters when needed
+const loadChapter = async (chapterId: number): Promise<Chapter> => {
+  if (chapterCache[chapterId]) {
+    return chapterCache[chapterId];
+  }
+
+  try {
+    const module = await import(`../data/questions/chapter${chapterId}.json`);
+    const chapter = module.default as Chapter;
+    chapterCache[chapterId] = chapter;
+    return chapter;
+  } catch (error) {
+    console.error(`Failed to load chapter ${chapterId}:`, error);
+    throw new Error(`Chapter ${chapterId} not found`);
+  }
+};
+
+// Load multiple chapters in parallel
+const loadChapters = async (chapterIds: number[]): Promise<Chapter[]> => {
+  const promises = chapterIds.map(id => loadChapter(id));
+  return Promise.all(promises);
 };
 
 // Fisher-Yates shuffle algorithm for proper randomization
@@ -44,20 +36,25 @@ export const shuffleArray = <T>(array: T[]): T[] => {
   return shuffled;
 };
 
-export const getAllChapters = (): Chapter[] => {
-  return Object.values(chapters);
+export const getAllChapters = async (): Promise<Chapter[]> => {
+  const chapterIds = Array.from({ length: 14 }, (_, i) => i + 1);
+  return await loadChapters(chapterIds);
 };
 
-export const getChapterById = (chapterId: number): Chapter | undefined => {
-  return chapters[chapterId];
+export const getChapterById = async (chapterId: number): Promise<Chapter | undefined> => {
+  try {
+    return await loadChapter(chapterId);
+  } catch {
+    return undefined;
+  }
 };
 
-export const getQuestionsByChapters = (chapterIds: number[]): Question[] => {
+export const getQuestionsByChapters = async (chapterIds: number[]): Promise<Question[]> => {
+  const chapters = await loadChapters(chapterIds);
   const questions: Question[] = [];
   
-  chapterIds.forEach(id => {
-    const chapter = chapters[id];
-    if (chapter) {
+  chapters.forEach(chapter => {
+    if (chapter?.questions) {
       questions.push(...chapter.questions);
     }
   });
@@ -65,7 +62,7 @@ export const getQuestionsByChapters = (chapterIds: number[]): Question[] => {
   return questions;
 };
 
-export const getCheckpointQuestions = (checkpoint: string): Question[] => {
+export const getCheckpointQuestions = async (checkpoint: string): Promise<Question[]> => {
   const checkpointChapters: Record<string, number[]> = {
     'checkpoint1': [1, 2, 3, 4],
     'checkpoint2': [5, 6],
@@ -75,7 +72,7 @@ export const getCheckpointQuestions = (checkpoint: string): Question[] => {
   };
   
   const chapterIds = checkpointChapters[checkpoint] || [];
-  const questions = getQuestionsByChapters(chapterIds);
+  const questions = await getQuestionsByChapters(chapterIds);
   
   // Shuffle and limit questions for checkpoint exams
   const shuffled = shuffleArray(questions);
@@ -85,24 +82,24 @@ export const getCheckpointQuestions = (checkpoint: string): Question[] => {
   return shuffled.slice(0, Math.min(maxQuestions, shuffled.length));
 };
 
-export const getFinalExamQuestions = (variant: 'short' | 'full' = 'full'): Question[] => {
-  const chapterIds = variant === 'short' ? [1, 2, 3, 4, 5, 6, 7, 8, 9] : Object.keys(chapters).map(Number);
-  return getQuestionsByChapters(chapterIds);
+export const getFinalExamQuestions = async (variant: 'short' | 'full' = 'full'): Promise<Question[]> => {
+  const chapterIds = variant === 'short' ? [1, 2, 3, 4, 5, 6, 7, 8, 9] : Array.from({ length: 14 }, (_, i) => i + 1);
+  return await getQuestionsByChapters(chapterIds);
 };
 
-export const getRandomQuestions = (count: number, chapterIds?: number[]): Question[] => {
+export const getRandomQuestions = async (count: number, chapterIds?: number[]): Promise<Question[]> => {
   const sourceQuestions = chapterIds 
-    ? getQuestionsByChapters(chapterIds)
-    : getQuestionsByChapters(Object.keys(chapters).map(Number));
+    ? await getQuestionsByChapters(chapterIds)
+    : await getQuestionsByChapters(Array.from({ length: 14 }, (_, i) => i + 1));
   
   const shuffled = shuffleArray(sourceQuestions);
   return shuffled.slice(0, Math.min(count, shuffled.length));
 };
 
 // Get randomized questions for a specific chapter (used in Practice mode)
-export const getRandomizedChapterQuestions = (chapterId: number): Question[] => {
-  const chapter = chapters[chapterId];
-  if (!chapter) return [];
+export const getRandomizedChapterQuestions = async (chapterId: number): Promise<Question[]> => {
+  const chapter = await getChapterById(chapterId);
+  if (!chapter?.questions) return [];
   
   return shuffleArray(chapter.questions);
 };

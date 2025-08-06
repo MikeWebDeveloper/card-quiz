@@ -1,5 +1,5 @@
 import type { Question as QuestionType } from '../types/quiz.types';
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useTransition } from 'react';
 
 interface QuestionProps {
   question: QuestionType;
@@ -10,6 +10,7 @@ interface QuestionProps {
 
 export function Question({ question, onAnswer, showResult = false }: QuestionProps) {
   const [selectedOption, setSelectedOption] = useState<number | null>(null);
+  const [, startTransition] = useTransition();
 
   // Reset selected option when question changes (new question loads)
   useEffect(() => {
@@ -18,8 +19,11 @@ export function Question({ question, onAnswer, showResult = false }: QuestionPro
 
   const handleOptionClick = (index: number) => {
     if (!showResult) {
-      setSelectedOption(index);
-      onAnswer(index);
+      // Use React 19 transitions for smooth UX during state updates
+      startTransition(() => {
+        setSelectedOption(index);
+        onAnswer(index);
+      });
     }
   };
 
